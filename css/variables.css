@@ -1,0 +1,25 @@
+:root {
+    /* Paleta de Cores - Tons de Verde */
+    --cor-primaria: #09C184;         /* Verde Vibrante (Base) */
+    --cor-secundaria: #248F6B;       /* Verde Médio */
+    --cor-terciaria: #295C4B;        /* Verde Escuro */
+    --cor-quaternaria: #21332D;      /* Verde Petróleo Escuro */
+    --cor-fundo-profundo: #2B3330;   /* Verde Cinzento / Grafite */
+
+    /*OUTROS TIPOS DE CORES*/
+    --cor-adm: #4190FF;
+
+    /* Configurações de Tipografia */
+    --fonte-padrao: 'Montserrat', sans-serif;
+
+    /* Pesos da Montserrat (Weights) */
+    --peso-claro: 300;
+    --peso-regular: 400;
+    --peso-italico: 400; /* normal italic */
+    --peso-semibold: 600;
+    --peso-negrito: 700;
+    --peso-negrito-italico: 700;
+    --peso-extranegrito: 800;
+    --peso-extranegrito-italico: 800;
+    --peso-preto-italico: 900;
+}
