@@ -1,17 +1,22 @@
 :root {
-    --primary-color: #09C184;
-    --default-font: 'Montserrat', sans-serif;
+    /* Paleta de Cores - Tons de Verde */
+    --cor-primaria: #09C184;         /* Verde Vibrante (Base) */
+    --cor-secundaria: #248F6B;       /* Verde Médio */
+    --cor-terciaria: #295C4B;        /* Verde Escuro */
+    --cor-quaternaria: #21332D;      /* Verde Petróleo Escuro */
+    --cor-fundo-profundo: #2B3330;   /* Verde Cinzento / Grafite */
 
-    /* Pesos da Montserrat */
-    --font-light: 300;
-    --font-regular: 400;
-    --font-italic: 400;
+    /* Configurações de Tipografia */
+    --fonte-padrao: 'Montserrat', sans-serif;
 
-    /* normal italic */
-    --font-semibold: 600;
-    --font-bold: 700;
-    --font-bold-italic: 700;
-    --font-extrabold: 800;
-    --font-extrabold-italic: 800;
-    --font-black-italic: 900;
+    /* Pesos da Montserrat (Weights) */
+    --peso-claro: 300;
+    --peso-regular: 400;
+    --peso-italico: 400; /* normal italic */
+    --peso-semibold: 600;
+    --peso-negrito: 700;
+    --peso-negrito-italico: 700;
+    --peso-extranegrito: 800;
+    --peso-extranegrito-italico: 800;
+    --peso-preto-italico: 900;
 }
