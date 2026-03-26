@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #09C184;
+    --default-font: 'Montserrat', sans-serif;
+
+    /* Pesos da Montserrat */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-italic: 400;
+
+    /* normal italic */
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-bold-italic: 700;
+    --font-extrabold: 800;
+    --font-extrabold-italic: 800;
+    --font-black-italic: 900;
+}
