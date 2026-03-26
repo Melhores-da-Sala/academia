@@ -6,6 +6,9 @@
     --cor-quaternaria: #21332D;      /* Verde Petróleo Escuro */
     --cor-fundo-profundo: #2B3330;   /* Verde Cinzento / Grafite */
 
+    /*OUTROS TIPOS DE CORES*/
+    --cor-adm: #4190FF;
+
     /* Configurações de Tipografia */
     --fonte-padrao: 'Montserrat', sans-serif;
 
