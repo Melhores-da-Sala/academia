@@ -1,0 +1,818 @@
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #382157;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 448px) {
+    body {
+        width: 100%;
+    }
+}
+
+
+.homem_foda {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homem_foda img {
+    width: 100vw;
+    max-width: 550px;
+    user-select: none;
+    height: auto;
+    margin-bottom: -16px;
+    margin-right: 0;
+}
+
+
+.logo_gs {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_gs img {
+    display: flex;
+    width: 150px;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 448px) {
+    .logo_gs img {
+        width: 100px;
+    }
+}
+
+
+.caixa_email,
+.caixa_senha {
+    display: flex;
+    width: 250px;
+    height: 45px;
+    padding: 7px;
+    padding-left: 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.caixa_email {
+    margin-bottom: 20px;
+}
+
+.caixa_senha {
+    margin-bottom: 40px;
+}
+
+.email,
+.senha {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.email :focus,
+.senha :focus,
+.nome :focus {
+    outline: groove 2px #9855F6;
+    transition: ease 0.2s;
+}
+
+.email_i {
+    position: absolute;
+    top: 17%;
+    left: 12%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.senha_i {
+    position: absolute;
+    top: 12%;
+    bottom: 60px;
+    left: 12%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+#toggle_olho {
+    position: absolute;
+    right: 35px;
+    top: 12px;
+    font-size: 20px;
+    color: #7F7F7F;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#toggle_olho:hover {
+    color: #000000;
+}
+
+@media screen and (max-width: 748px) {
+    .caixa_email,
+    .caixa_senha {
+        width: 220px;
+        height: 45px;
+        padding: 7px;
+        padding-left: 40px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .email_i {
+        top: 17%;
+        left: 15%;
+        font-size: 20px;
+    }
+
+    .senha_i {
+        top: 12%;
+        left: 14%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .caixa_email,
+    .caixa_senha {
+        width: 200px;
+        height: 40px;
+        padding: 7px;
+        padding-left: 40px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .email_i {
+        top: 21%;
+        left: 15%;
+        font-size: 15px;
+    }
+
+    .senha_i {
+        top: 14%;
+        left: 15%;
+        font-size: 15px;
+    }
+
+    #toggle_olho {
+        right: 35px;
+        top: 10px;
+        font-size: 18px;
+    }
+}
+
+
+/* ===== LOGIN ===== */
+
+.container_login {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid transparent;
+    background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to top, #0BE495, #A631FF) border-box;
+    border-radius: 15px;
+}
+
+.entrar {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: #9855F6;
+    border: none;
+    font-size: 15px;
+}
+
+.botao_entrar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botao_entrar :hover {
+    background-color: #6619b3;
+    transform: scale(1.02);
+    transition: ease 0.2s;
+}
+
+.botao_entrar :active {
+    transform: scale(0.98);
+}
+
+.esqueci_senha {
+    display: flex;
+    color: #47DDAE;
+    text-decoration: none;
+    margin-top: 16px;
+    justify-content: center;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 748px) {
+    .container_login {
+        width: 280px;
+        height: 350px;
+    }
+
+    .entrar {
+        width: 220px;
+    }
+
+    .esqueci_senha {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .container_login {
+        width: 250px;
+        height: 310px;
+    }
+
+    .entrar {
+        margin-top: -10px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .esqueci_senha {
+        font-size: 10px;
+        margin-top: 18px;
+    }
+
+    .botao_entrar :hover {
+        margin-top: -10px;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+}
+
+
+/* ===== CADASTRO ===== */
+
+.container_cadastro {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid transparent;
+    background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to top, #0BE495, #A631FF) border-box;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.caixa_nome {
+    display: flex;
+    width: 250px;
+    height: 45px;
+    padding: 7px;
+    padding-left: 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nome {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nome_i {
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.cadastrar {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: #9855F6;
+    border: none;
+    font-size: 15px;
+}
+
+.botao_cadastrar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botao_cadastrar :hover {
+    background-color: #6619b3;
+    transform: scale(1.01);
+    transition: ease 0.2s;
+    border-radius: 10px;
+}
+
+.botao_cadastrar :active {
+    transform: scale(0.98);
+}
+
+.possui_conta {
+    display: flex;
+    color: #47DDAE;
+    text-decoration: none;
+    margin-top: 15px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 748px) {
+    .container_cadastro {
+        width: 280px;
+        height: 380px;
+    }
+
+    .container_cadastro .caixa_email,
+    .container_cadastro .caixa_senha,
+    .container_cadastro .caixa_nome {
+        width: 230px;
+    }
+
+    .email,
+    .senha,
+    .nome {
+        margin-bottom: -5px;
+    }
+
+    .cadastrar {
+        width: 230px;
+        margin-top: -5px;
+    }
+
+    .possui_conta {
+        font-size: 11px;
+    }
+
+    .nome_i {
+        top: 18%;
+        left: 12%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .container_cadastro {
+        width: 250px;
+        height: 345px;
+    }
+
+    .caixa_nome {
+        width: 200px;
+        height: 40px;
+        padding: 7px;
+        padding-left: 40px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .cadastrar {
+        margin-top: -10px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .possui_conta {
+        font-size: 10px;
+    }
+
+    .botao_cadastrar :hover {
+        margin-top: -10px;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+
+    .nome_i {
+        top: 18%;
+        left: 15%;
+        font-size: 15px;
+    }
+}
+
+
+/* ===== RECUPERAR SENHA ===== */
+
+.container_recuperar {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid transparent;
+    background:
+        linear-gradient(black, black) padding-box,
+        linear-gradient(to top, #0BE495, #A631FF) border-box;
+    border-radius: 15px;
+}
+
+.container_recuperar .caixa_email {
+    width: 205px;
+    height: 30px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.container_recuperar .email_i {
+    position: absolute;
+    top: 77%;
+    left: 12%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.recuperar {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: #fc2424;
+    border: none;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.recuperar:hover {
+    background-color: #b31919;
+    transform: scale(1.02);
+}
+
+.recuperar:active {
+    transform: scale(0.98);
+}
+
+.botao_recuperar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.voltar > a {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 40px;
+    color: #0BE495;
+}
+
+.voltar > a:hover {
+    color: #3ca872;
+    transition: ease 0.3s;
+}
+
+@media screen and (max-width: 748px) {
+    .container_recuperar {
+        width: 280px;
+        height: 320px;
+    }
+
+    .container_recuperar .caixa_email {
+        width: 170px;
+        height: 30px;
+        margin-top: 60px;
+    }
+
+    .container_recuperar .email_i {
+        top: 68%;
+        left: 15%;
+        font-size: 20px;
+    }
+
+    .recuperar {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .container_recuperar {
+        width: 250px;
+        height: 310px;
+    }
+
+    .container_recuperar .caixa_email {
+        width: 150px;
+        height: 30px;
+        margin-top: 80px;
+    }
+
+    .container_recuperar .email_i {
+        top: 74%;
+        font-size: 15px;
+    }
+
+    .recuperar {
+        margin-top: 25px;
+        width: 200px;
+        height: 40px;
+    }
+}
+
+
+/* ===== PORTAL DE ACESSO ===== */
+
+.logo_portal_acesso > img {
+    display: flex;
+    width: 200px;
+    height: 70px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.titulo_portal {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+/* ===== MEDIA QUERYS ===== */
+
+@media screen and (max-width: 748px) {
+    .titulo_portal {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .titulo_portal {
+        font-size: 22px;
+    }
+}
+
+.subtitulo_portal {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 748px) {
+    .subtitulo_portal {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .subtitulo_portal {
+        font-size: 14px;
+    }
+}
+
+.grid_escolha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 300px;
+    width: fit-content;
+    margin: 40px auto;
+}
+
+@media screen and (max-width: 748px) {
+    .grid_escolha {
+        column-gap: 20px;
+    }
+}
+
+.escolha_aluno,
+.escolha_professor {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    width: 320px;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.escolha_aluno {
+    border: solid 5px #09C184;
+}
+
+.escolha_professor {
+    border: solid 5px #4190FF;
+}
+
+.escolha_aluno:hover {
+    border-color: #09d994;
+    transform: scale(1.02);
+    transition: ease 0.1s;
+}
+
+.escolha_aluno:active {
+    border-color: #09d994;
+    transform: scale(0.99);
+    transition: ease 0.1s;
+}
+
+.escolha_professor:hover {
+    border-color: #43baff;
+    transform: scale(1.02);
+    transition: ease 0.1s;
+}
+
+.escolha_professor:active {
+    border-color: #43baff;
+    transform: scale(0.99);
+    transition: ease 0.1s;
+}
+
+@media screen and (max-width: 748px) {
+    .escolha_aluno,
+    .escolha_professor {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .escolha_aluno,
+    .escolha_professor {
+        display: none;
+    }
+}
+
+.escolha_aluno > .img_portal_aluno {
+    display: flex;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.escolha_professor > .img_portal_professor {
+    display: flex;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 748px) {
+    .escolha_aluno > .img_portal_aluno {
+        width: 165px;
+    }
+
+    .escolha_professor > .img_portal_professor {
+        width: 170px;
+    }
+}
+
+.ou {
+    display: none;
+}
+
+@media screen and (max-width: 448px) {
+    .ou {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 23px;
+        color: #7F7F7F;
+        margin: 0 auto;
+    }
+}
+
+.escolha_aluno > h1 {
+    display: flex;
+    justify-content: center;
+    color: #1ca477;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.escolha_professor > h1 {
+    display: flex;
+    justify-content: center;
+    color: #4190FF;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 748px) {
+    .escolha_aluno > h1,
+    .escolha_professor > h1 {
+        font-size: 25px;
+    }
+}
+
+.escolha_botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.escolha_botoes > a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 448px) {
+    .escolha_botoes {
+        width: 100vw;
+        gap: 15px;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .escolha_botoes > a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+.botao_p_aluno {
+    display: none;
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: #09C184;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.botao_p_aluno:active {
+    background-color: #0bb079;
+    transform: scale(0.98);
+    transition: ease 0.1s;
+}
+
+.botao_p_professor {
+    display: none;
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4190FF;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.botao_p_professor:active {
+    background-color: #1083c5;
+    transform: scale(0.98);
+    transition: ease 0.1s;
+}
+
+@media screen and (max-width: 448px) {
+    .botao_p_aluno,
+    .botao_p_professor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+    }
+}
