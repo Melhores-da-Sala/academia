@@ -1,12 +1,12 @@
 :root {
     /* Paleta de Cores - Tons de Verde */
-    --cor-primaria: #09C184;         /* Verde Vibrante (Base) */
-    --cor-secundaria: #248F6B;       /* Verde Médio */
-    --cor-terciaria: #295C4B;        /* Verde Escuro */
-    --cor-quaternaria: #21332D;      /* Verde Petróleo Escuro */
-    --cor-fundo-profundo: #2B3330;   /* Verde Cinzento / Grafite */
+    --cor-primaria: #09C184;
+    --cor-secundaria: #248F6B;
+    --cor-terciaria: #295C4B;
+    --cor-quaternaria: #21332D;
+    --cor-fundo-profundo: #2B3330;
 
-    /*OUTROS TIPOS DE CORES*/
+    /* Outros tipos de cores */
     --cor-adm: #4190FF;
 
     /* Configurações de Tipografia */
@@ -15,11 +15,19 @@
     /* Pesos da Montserrat (Weights) */
     --peso-claro: 300;
     --peso-regular: 400;
-    --peso-italico: 400; /* normal italic */
+    --peso-italico: 400;
     --peso-semibold: 600;
     --peso-negrito: 700;
     --peso-negrito-italico: 700;
     --peso-extranegrito: 800;
     --peso-extranegrito-italico: 800;
     --peso-preto-italico: 900;
+
+    /* Cores globais */
+    --bg-main: #b8b8b8;
+    --bg-navbar: #2e3532;
+    --bg-logo-box: #cccccc;
+    --brand-green: #14b886;
+    --btn-green: #295e4d;
+    --text-white: #ffffff;
 }
