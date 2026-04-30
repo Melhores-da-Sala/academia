@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-.cabecalho {
+.dashprof-cabecalho {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -24,19 +24,23 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.menu-hamburguer {
+.dashprof-menu-hamburguer {
     font-size: 30px;
     cursor: pointer;
     transition: color 0.3s;
 }
 
-.logo {
+.dashprof-logo {
     font-size: 24px;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.modo-escuro {
+.dashprof-logo img {
+    max-height: 40px;
+}
+
+.dashprof-modo-escuro {
     background-color: #295C4B;
     color: white;
     padding: 8px 15px;
@@ -49,7 +53,7 @@
     transition: 0.3s;
 }
 
-.container-principal {
+.dashprof-container-principal {
     display: flex; 
     min-height: 100vh; 
     background-color: #ffffff;
@@ -57,7 +61,7 @@
     transition: background-color 0.3s;
 }
 
-.barra-lateral {
+.dashprof-barra-lateral {
     width: 300px;
     background-color: #4C9CFF;
     color: white;
@@ -70,18 +74,18 @@
     transition: 0.3s;
 }
 
-.barra-lateral.oculta {
+.dashprof-barra-lateral.dashprof-oculta {
     display: none;
 }
    
-.perfil {
+.dashprof-perfil {
     display: flex;
     align-items: center;
     padding: 0 20px 30px 20px;
     gap: 15px;
 }
 
-.foto-perfil {
+.dashprof-foto-perfil {
     font-size: 60px;
     color: #ffffff;
     width: 60px;
@@ -91,16 +95,17 @@
     align-items:center;
 }
 
-.info-perfil h1 { font-family: 'Montserrat'; font-size: 30px; }
-.info-perfil p { font-family: 'Montserrat'; font-size: 13px; }
+.dashprof-info-perfil h1 { font-family: 'Montserrat'; font-size: 30px; }
+.dashprof-info-perfil h2 { font-family: 'Montserrat'; font-size: 24px; font-weight: bold; }
+.dashprof-info-perfil p { font-family: 'Montserrat'; font-size: 13px; }
 
-.menu-navegacao {
+.dashprof-menu-navegacao {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.item-menu {
+.dashprof-item-menu {
     text-decoration: none;
     color: white;
     background-color: transparent; 
@@ -111,21 +116,16 @@
     transition: 0.3s;
 }
 
-.item-menu:hover, .item-menu.ativo {
+.dashprof-item-menu:hover, .dashprof-item-menu.dashprof-ativo {
     background-color: #2A3B8F; 
 }
 
-.rodape-lateral {
+.dashprof-rodape-lateral {
     margin-top: auto; 
     padding: 20px 20px 50px 20px;
 }
 
-.texto-frame {
-    font-size: 10px;
-    margin-bottom: 10px;
-}
-
-.botao-sair {
+.dashprof-botao-sair {
     background-color: #E63900; 
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -138,27 +138,27 @@
     font-size: 16px;
     transition: 0.3s;
 }
-.botao-sair:hover { background-color: #cc3300; }
+.dashprof-botao-sair:hover { background-color: #cc3300; }
 
-.conteudo {
+.dashprof-conteudo {
     padding: 30px;
     width: 100%;
 }
 
-.boas-vindas {
+.dashprof-boas-vindas {
     color: #555555;
     margin-bottom: 20px;
     transition: color 0.3s;
 }
 
-.linha-cards {
+.dashprof-linha-cards {
     display: flex;
     align-items: stretch; 
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.card {
+.dashprof-card {
     flex: 1 1 0; 
     display: flex;
     flex-direction: column; 
@@ -167,39 +167,39 @@
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.card-borda {
+.dashprof-card-borda {
     border: 3px solid #4C9CFF;
     background-color: #EEEEEE;
 }
-.card-borda h3 {
+.dashprof-card-borda h3 {
     transition: color 0.3s;
 }
 
-.card-azul-cheio {
+.dashprof-card-azul-cheio {
     background-color: #4C9CFF;
     color: white;
     display: flex;
     flex-direction: column;
 }
 
-.cabecalho-card {
+.dashprof-cabecalho-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.espacohr {
+.dashprof-espacohr {
     padding: 10px;
 }
 
-.texto-pequeno {
+.dashprof-texto-pequeno {
     font-size: 12px;
     font-weight: normal;
     transition: color 0.3s;
 }
 
-.seletor-aluno {
+.dashprof-seletor-aluno {
     background-color: #4C9CFF;
     color: white;
     padding: 5px 15px;
@@ -211,14 +211,20 @@
     gap: 5px;
 }
 
-.conteudo-lista p {
+.dashprof-conteudo-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashprof-conteudo-lista p {
     font-size: 13px;
     color: #333;
     transition: color 0.3s;
 }
 
-.centralizado { text-align: center; }
-.centralizado-vertical {
+.dashprof-centralizado { text-align: center; }
+.dashprof-centralizado-vertical {
     flex: 1;
     display: flex;
     align-items: center;
@@ -227,14 +233,14 @@
     font-weight: bold;
 }
 
-.caixa-progresso {
+.dashprof-caixa-progresso {
     background-color: #4C9CFF; 
     border-radius: 20px;
     padding: 20px;
     color: white;
 }
 
-.topo-progresso {
+.dashprof-topo-progresso {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -243,36 +249,36 @@
     padding-bottom: 10px;
 }
 
-.controles-busca {
+.dashprof-controles-busca {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.campo-busca {
+.dashprof-campo-busca {
     background: transparent;
     border: none;
     color: white;
     font-size: 18px;
     outline: none;
 }
-.campo-busca::placeholder {
+.dashprof-campo-busca::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.lista-alunos {
+.dashprof-lista-alunos {
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
 
-.cartao-aluno {
+.dashprof-cartao-aluno {
     flex: 1;
     text-align: center;
 }
 
-.grafico {
+.dashprof-grafico {
     display: flex;
     justify-content: center;
     gap: 5px;
@@ -280,14 +286,14 @@
     margin-bottom: 10px;
 }
 
-.coluna-grafico {
+.dashprof-coluna-grafico {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 }
 
-.barra-cinza {
+.dashprof-barra-cinza {
     width: 15px;
     height: 80px; 
     background-color: #E0E0E0; 
@@ -296,24 +302,24 @@
     align-items: flex-end; 
 }
 
-.barra-verde {
+.dashprof-barra-verde {
     width: 100%;
     background-color: #00D26A; 
     border-radius: 5px;
 }
 
-.dia {
+.dashprof-dia {
     font-size: 10px;
     margin-top: 5px;
     font-weight: bold;
 }
 
-.nome-aluno {
+.dashprof-nome-aluno {
     margin: 10px 0;
     font-size: 18px;
 }
 
-.caixa-status {
+.dashprof-caixa-status {
     background-color: #001BFA; 
     border-radius: 15px;
     padding: 15px;
@@ -322,11 +328,11 @@
     line-height: 1.6;
 }
 
-.caixa-status p {
+.dashprof-caixa-status p {
     font-weight: bold;
 }
 
-.btn-seta {
+.dashprof-btn-seta {
     background: transparent;
     border: none;
     color: white;
@@ -336,9 +342,9 @@
     align-items: center;
     justify-content: center;
 }
-.btn-seta:hover { opacity: 0.7; }
+.dashprof-btn-seta:hover { opacity: 0.7; }
 
-.btn-editar {
+.dashprof-btn-editar {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -346,30 +352,95 @@
     color: #333;
     transition: color 0.3s, transform 0.3s;
 }
-.btn-editar:hover {
+.dashprof-btn-editar:hover {
     color: #4C9CFF;
     transform: scale(1.1);
 }
 
-body.dark-mode {
+body.dashprof-dark-mode {
     background-color: #121212;
 }
-body.dark-mode .cabecalho, 
-body.dark-mode .container-principal {
+body.dashprof-dark-mode .dashprof-cabecalho, 
+body.dashprof-dark-mode .dashprof-container-principal {
     background-color: #121212;
 }
 
-body.dark-mode .boas-vindas,
-body.dark-mode .logo,
-body.dark-mode .menu-hamburguer,
-body.dark-mode .card-borda h3,
-body.dark-mode .texto-pequeno,
-body.dark-mode .conteudo-lista p,
-body.dark-mode .btn-editar {
+body.dashprof-dark-mode .dashprof-boas-vindas,
+body.dashprof-dark-mode .dashprof-logo,
+body.dashprof-dark-mode .dashprof-menu-hamburguer,
+body.dashprof-dark-mode .dashprof-card-borda h3,
+body.dashprof-dark-mode .dashprof-texto-pequeno,
+body.dashprof-dark-mode .dashprof-conteudo-lista p,
+body.dashprof-dark-mode .dashprof-btn-editar {
     color: #eeeeee;
 }
 
-body.dark-mode .card-borda {
+body.dashprof-dark-mode .dashprof-card-borda {
     background-color: #1e1e1e;
     border-color: #333333;
+}
+
+/* ==============================================================
+   RESPONSIVIDADE (Tablets e Mobiles)
+============================================================== */
+
+@media (max-width: 1024px) {
+    .dashprof-linha-cards {
+        flex-wrap: wrap; 
+    }
+    .dashprof-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+    .dashprof-lista-alunos {
+        flex-wrap: wrap; 
+    }
+    .dashprof-cartao-aluno {
+        flex: 1 1 calc(50% - 15px); 
+        margin-bottom: 20px;
+    }
+    .dashprof-barra-lateral {
+        width: 250px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .dashprof-cabecalho {
+        padding: 15px;
+    }
+    
+    .dashprof-container-principal {
+        flex-direction: column; 
+    }
+    
+    .dashprof-barra-lateral {
+        width: 100%;
+        border-radius: 0; 
+        padding-bottom: 20px;
+    }
+    
+    .dashprof-conteudo {
+        padding: 15px;
+    }
+    
+    .dashprof-linha-cards {
+        flex-direction: column; 
+    }
+    
+    .dashprof-card {
+        flex: 1 1 100%; 
+    }
+    
+    .dashprof-topo-progresso {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .dashprof-lista-alunos {
+        flex-direction: column; 
+    }
+    
+    .dashprof-cartao-aluno {
+        flex: 1 1 100%;
+    }
 }

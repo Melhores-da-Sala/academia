@@ -3,130 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel do Professor</title>
+    <title>Painel do Professor - GSports</title>
     <link rel="stylesheet" href="/css/dashboardprofessor.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <header class="cabecalho">
-        <div class="menu-hamburguer" id="btn-hamburguer"><i class="bi bi-list"></i></div>
-        <div class="logo">
-        <a href="dashboardprofessor.html">
-        <img src="assets/logo.png" alt="Logo">
-    </a>
-</div>
-        <div class="modo-escuro" id="btn-modo-escuro" style="cursor: pointer;">
-            <span class="icone-lua"><i class="bi bi-circle-half"></i></span> Modo escuro
+    <header class="dashprof-cabecalho">
+        <div class="dashprof-menu-hamburguer" id="dashprof-btn-hamburguer"><i class="bi bi-list"></i></div>
+        <div class="dashprof-logo">
+            <a href="dashboardprofessor.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dashprof-modo-escuro" id="dashprof-btn-modo-escuro" style="cursor: pointer;">
+            <span class="dashprof-icone-lua"><i class="bi bi-circle-half"></i></span> Modo escuro
         </div>
     </header>
 
-    <div class="container-principal">
-
-        <aside class="barra-lateral" id="barra-lateral">
-            <div class="perfil">
-            <div class="foto-perfil">            
-            <i class="bi bi-person-circle"></i>            
-            </div>
-                <div class="info-perfil">
+    <div class="dashprof-container-principal">
+        <aside class="dashprof-barra-lateral" id="dashprof-barra-lateral">
+            <div class="dashprof-perfil">
+                <div class="dashprof-foto-perfil">            
+                    <i class="bi bi-person-circle"></i>            
+                </div>
+                <div class="dashprof-info-perfil">
                     <h2>Olá Ruan!</h2>
                     <p>Professor</p>
                 </div>
             </div>
 
-            <nav class="menu-navegacao">
-                <a href="dashboardprofessor.html" class="item-menu ativo">
+            <nav class="dashprof-menu-navegacao">
+                <a href="dashboardprofessor.html" class="dashprof-item-menu dashprof-ativo">
                     <i class="bi bi-house-door"></i> DashBoard</a>
-                <a href="aulasprofessor.html" class="item-menu">
+                <a href="aulasprofessor.html" class="dashprof-item-menu">
                     <i class="bi bi-book"></i> Aulas</a>
-                <a href="calendarioprofessor.html" class="item-menu">
+                <a href="calendarioprofessor.html" class="dashprof-item-menu">
                     <i class="bi bi-calendar3"></i> Calendário</a>
-                <a href="anotacoesprofessor.html" class="item-menu">
+                <a href="anotacoesprofessor.html" class="dashprof-item-menu">
                     <i class="bi bi-pencil"></i> Anotações</a>
-                <a href="alunosprofessor.html" class="item-menu">
+                <a href="alunosprofessor.html" class="dashprof-item-menu">
                     <i class="bi bi-people-fill"></i> Alunos</a>
             </nav>
 
-            <div class="rodape-lateral">
-                <button class="botao-sair">
+            <div class="dashprof-rodape-lateral">
+                <button class="dashprof-botao-sair">
                     <i class="bi bi-arrow-left"></i> Sair</button>
             </div>
         </aside>
 
-        <main class="conteudo">
-            <h1 class="boas-vindas">Bem-vindo de volta, Ruan!</h1>
+        <main class="dashprof-conteudo">
+            <h1 class="dashprof-boas-vindas">Bem-vindo de volta, Ruan!</h1>
 
-            <div class="linha-cards">
+            <div class="dashprof-linha-cards">
                 
-                <div class="card card-borda">
-                    <div class="cabecalho-card">
-                        <h3>Relatórios <span class="texto-pequeno">- Suas anotações</span></h3>
-                        <button class="btn-editar"><i class="bi bi-pencil"></i></button>
+                <div class="dashprof-card dashprof-card-borda">
+                    <div class="dashprof-cabecalho-card">
+                        <h3>Relatórios <span class="dashprof-texto-pequeno">- Suas anotações</span></h3>
+                        <button class="dashprof-btn-editar"><i class="bi bi-pencil"></i></button>
                     </div>
                     <hr>
-                    <div class="espacohr"></div>
-                    <div class="conteudo-lista">                        
+                    <div class="dashprof-espacohr"></div>
+                    <div class="dashprof-conteudo-lista">                        
                         <p><strong>João Pedro Alves</strong> - Melhorar o desempenho geral</p>
-                        <br>
                         <p><strong>Ana Augusta Rodrigues</strong> - Alterar dieta</p>
-                        <br>
                         <p><strong>Pedro Martin Pereira</strong> - Melhorar a postura no agachamento</p>
                     </div>
                 </div>
 
-                <div class="card card-borda">
-                    <div class="cabecalho-card">
+                <div class="dashprof-card dashprof-card-borda">
+                    <div class="dashprof-cabecalho-card">
                         <h3>Dietas</h3>
-                        <div class="seletor-aluno"> 
-                            <button class="btn-seta"><i class="bi bi-arrow-left"></i></button> 
+                        <div class="dashprof-seletor-aluno"> 
+                            <button class="dashprof-btn-seta"><i class="bi bi-arrow-left"></i></button> 
                             Pedro  
-                            <button class="btn-seta"><i class="bi bi-arrow-right"></i></button>
+                            <button class="dashprof-btn-seta"><i class="bi bi-arrow-right"></i></button>
                         </div>
-                        <button class="btn-editar"><i class="bi bi-pencil"></i></button>
+                        <button class="dashprof-btn-editar"><i class="bi bi-pencil"></i></button>
                     </div>
                     <hr>
-                    <div class="espacohr"></div>
-                    <div class="conteudo-lista">
+                    <div class="dashprof-espacohr"></div>
+                    <div class="dashprof-conteudo-lista">
                         <p><strong>Café da manhã</strong> - 3 ovos mexidos + 1 pão integral</p>
-                        <br>
                         <p><strong>Lanche</strong> - 1 fruta OU iogurte natural</p>
-                        <br>
                         <p><strong>Refeição</strong> - 150-200g frango/carne + arroz + feijão + salada + azeite</p>
                     </div>
                 </div>
 
-                <div class="card card-azul-cheio">
-                    <h3 class="centralizado">Mensagens</h3>
-                    <div class="centralizado-vertical">
+                <div class="dashprof-card dashprof-card-azul-cheio">
+                    <h3 class="dashprof-centralizado">Mensagens</h3>
+                    <div class="dashprof-centralizado-vertical">
                         <p>Nenhuma mensagem</p>
                     </div>
                 </div>
             </div>
 
-            <div class="caixa-progresso">
-                
-                <div class="topo-progresso">
+            <div class="dashprof-caixa-progresso">
+                <div class="dashprof-topo-progresso">
                     <h2>Progresso dos alunos</h2>
-                    <div class="controles-busca">
-                        <button class="btn-seta"><i class="bi bi-arrow-left"></i></button>
-                        <button class="btn-seta"><i class="bi bi-arrow-right"></i></button>
+                    <div class="dashprof-controles-busca">
+                        <button class="dashprof-btn-seta"><i class="bi bi-arrow-left"></i></button>
+                        <button class="dashprof-btn-seta"><i class="bi bi-arrow-right"></i></button>
                     </div>
                 </div>
 
-                <div class="lista-alunos">
+                <div class="dashprof-lista-alunos">
                     
-                    <div class="cartao-aluno">
-                        <div class="grafico">
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 40%;"></div></div><span class="dia">SEG</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 50%;"></div></div><span class="dia">TER</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 45%;"></div></div><span class="dia">QUA</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 60%;"></div></div><span class="dia">QUI</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 30%;"></div></div><span class="dia">SEX</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 30%;"></div></div><span class="dia">SAB</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 10%;"></div></div><span class="dia">DOM</span></div>
+                    <div class="dashprof-cartao-aluno">
+                        <div class="dashprof-grafico">
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 40%;"></div></div><span class="dashprof-dia">SEG</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 50%;"></div></div><span class="dashprof-dia">TER</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 45%;"></div></div><span class="dashprof-dia">QUA</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 60%;"></div></div><span class="dashprof-dia">QUI</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 30%;"></div></div><span class="dashprof-dia">SEX</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 30%;"></div></div><span class="dashprof-dia">SAB</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 10%;"></div></div><span class="dashprof-dia">DOM</span></div>
                         </div>
-                        <h3 class="nome-aluno">Pedro</h3>
-                        <div class="caixa-status">
+                        <h3 class="dashprof-nome-aluno">Pedro</h3>
+                        <div class="dashprof-caixa-status">
                             <p><i class="bi bi-heart"></i> BPM inicial - 105</p>
                             <p><i class="bi bi-heart"></i> BPM final - 143</p>
                             <p><i class="bi bi-heart"></i> BPM médio - 126</p>
@@ -134,18 +128,18 @@
                         </div>
                     </div>
 
-                    <div class="cartao-aluno">
-                        <div class="grafico">
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 80%;"></div></div><span class="dia">SEG</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 70%;"></div></div><span class="dia">TER</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 20%;"></div></div><span class="dia">QUA</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 40%;"></div></div><span class="dia">QUI</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 25%;"></div></div><span class="dia">SEX</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 50%;"></div></div><span class="dia">SAB</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 10%;"></div></div><span class="dia">DOM</span></div>
+                    <div class="dashprof-cartao-aluno">
+                        <div class="dashprof-grafico">
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 80%;"></div></div><span class="dashprof-dia">SEG</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 70%;"></div></div><span class="dashprof-dia">TER</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 20%;"></div></div><span class="dashprof-dia">QUA</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 40%;"></div></div><span class="dashprof-dia">QUI</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 25%;"></div></div><span class="dashprof-dia">SEX</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 50%;"></div></div><span class="dashprof-dia">SAB</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 10%;"></div></div><span class="dashprof-dia">DOM</span></div>
                         </div>
-                        <h3 class="nome-aluno">Ana</h3>
-                        <div class="caixa-status">
+                        <h3 class="dashprof-nome-aluno">Ana</h3>
+                        <div class="dashprof-caixa-status">
                             <p><i class="bi bi-heart"></i> BPM inicial - 101</p>
                             <p><i class="bi bi-heart"></i> BPM final - 133</p>
                             <p><i class="bi bi-heart"></i> BPM médio - 117</p>
@@ -153,18 +147,18 @@
                         </div>
                     </div>
 
-                    <div class="cartao-aluno">
-                        <div class="grafico">
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 15%;"></div></div><span class="dia">SEG</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 25%;"></div></div><span class="dia">TER</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 20%;"></div></div><span class="dia">QUA</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 25%;"></div></div><span class="dia">QUI</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 20%;"></div></div><span class="dia">SEX</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 15%;"></div></div><span class="dia">SAB</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 10%;"></div></div><span class="dia">DOM</span></div>
+                    <div class="dashprof-cartao-aluno">
+                        <div class="dashprof-grafico">
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 15%;"></div></div><span class="dashprof-dia">SEG</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 25%;"></div></div><span class="dashprof-dia">TER</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 20%;"></div></div><span class="dashprof-dia">QUA</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 25%;"></div></div><span class="dashprof-dia">QUI</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 20%;"></div></div><span class="dashprof-dia">SEX</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 15%;"></div></div><span class="dashprof-dia">SAB</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 10%;"></div></div><span class="dashprof-dia">DOM</span></div>
                         </div>
-                        <h3 class="nome-aluno">João</h3>
-                        <div class="caixa-status">
+                        <h3 class="dashprof-nome-aluno">João</h3>
+                        <div class="dashprof-caixa-status">
                             <p><i class="bi bi-heart"></i> BPM inicial - 107</p>
                             <p><i class="bi bi-heart"></i> BPM final - 134</p>
                             <p><i class="bi bi-heart"></i> BPM médio - 120</p>
@@ -172,18 +166,18 @@
                         </div>
                     </div>
 
-                    <div class="cartao-aluno">
-                        <div class="grafico">
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 15%;"></div></div><span class="dia">SEG</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 35%;"></div></div><span class="dia">TER</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 60%;"></div></div><span class="dia">QUA</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 35%;"></div></div><span class="dia">QUI</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 60%;"></div></div><span class="dia">SEX</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 35%;"></div></div><span class="dia">SAB</span></div>
-                            <div class="coluna-grafico"><div class="barra-cinza"><div class="barra-verde" style="height: 10%;"></div></div><span class="dia">DOM</span></div>
+                    <div class="dashprof-cartao-aluno">
+                        <div class="dashprof-grafico">
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 15%;"></div></div><span class="dashprof-dia">SEG</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 35%;"></div></div><span class="dashprof-dia">TER</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 60%;"></div></div><span class="dashprof-dia">QUA</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 35%;"></div></div><span class="dashprof-dia">QUI</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 60%;"></div></div><span class="dashprof-dia">SEX</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 35%;"></div></div><span class="dashprof-dia">SAB</span></div>
+                            <div class="dashprof-coluna-grafico"><div class="dashprof-barra-cinza"><div class="dashprof-barra-verde" style="height: 10%;"></div></div><span class="dashprof-dia">DOM</span></div>
                         </div>
-                        <h3 class="nome-aluno">Maria</h3>
-                        <div class="caixa-status">
+                        <h3 class="dashprof-nome-aluno">Maria</h3>
+                        <div class="dashprof-caixa-status">
                             <p><i class="bi bi-heart"></i> BPM inicial - 107</p>
                             <p><i class="bi bi-heart"></i> BPM final - 134</p>
                             <p><i class="bi bi-heart"></i> BPM médio - 120</p>
@@ -197,15 +191,15 @@
     </div>
 
     <script>
-        const btnModoEscuro = document.getElementById('btn-modo-escuro');
+        const btnModoEscuro = document.getElementById('dashprof-btn-modo-escuro');
         btnModoEscuro.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('dashprof-dark-mode');
         });
 
-        const btnHamburguer = document.getElementById('btn-hamburguer');
-        const barraLateral = document.getElementById('barra-lateral');
+        const btnHamburguer = document.getElementById('dashprof-btn-hamburguer');
+        const barraLateral = document.getElementById('dashprof-barra-lateral');
         btnHamburguer.addEventListener('click', () => {
-            barraLateral.classList.toggle('oculta');
+            barraLateral.classList.toggle('dashprof-oculta');
         });
     </script>
 </body>
