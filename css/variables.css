@@ -8,6 +8,10 @@
 
     /*OUTROS TIPOS DE CORES*/
     --cor-adm: #4190FF;
+    --roxo-adm: #8a05be;
+    --roxo-hover: #530371;
+    --cor-sair: #CA2C14;
+    --titulo-gray: #555555;
 
     /* Configurações de Tipografia */
     --fonte-padrao: 'Montserrat', sans-serif;

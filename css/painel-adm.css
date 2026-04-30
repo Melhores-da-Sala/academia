@@ -1,0 +1,393 @@
+body {
+    font-family: var(--fonte-padrao);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== LAYOUT ===== */
+.app {
+    display: flex;
+}
+
+.main {
+    margin-left: 20px;
+    transition: margin 0.4s ease-in-out;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    padding: 20px;
+}
+
+#list {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.header img {
+    height: 40px;
+    width: auto;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    height: 100vh;
+    width: 260px;
+    background-color: var(--roxo-adm);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0 20px 20px 0;
+    padding: 20px 20px 0 0;
+    transition: margin-left 0.4s ease-in-out;
+    white-space: nowrap;
+}
+
+.sidebar.oculta {
+    margin-left: -260px;
+}
+
+.sidebar.oculta + .main {
+    margin-inline: auto;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.sidebar-title i {
+    font-size: 60px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: var(--peso-semibold);
+}
+
+.link-page {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 14px 0 14px 30px;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.link-page:hover {
+    background-color: var(--roxo-hover);
+}
+
+.link-page.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+.link-page i {
+    font-size: 25px;
+}
+
+.links {
+    font-weight: var(--peso-semibold);
+}
+
+/* ===== BOTÕES COMPARTILHADOS ===== */
+.sair,
+.sair-seta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-sair);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: var(--peso-negrito);
+    color: white;
+}
+
+.sair {
+    display: inline-flex;
+}
+
+.sair-seta {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sair i,
+.sair-seta i {
+    margin-right: 30px;
+    color: black;
+}
+
+.sair span {
+    margin-right: 30px;
+}
+
+.link {
+    display: flex;
+    gap: 20px;
+}
+
+.link i {
+    color: black;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-main {
+    color: var(--titulo-gray);
+    font-size: 23px;
+    margin: 0 0 15px;
+}
+
+/* ===== CARDS (compartilhado) ===== */
+.card,
+.card-msg {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 7px solid var(--cor-primaria);
+    max-width: 36%;
+}
+
+.card-up,
+.card-up-msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--peso-semibold);
+}
+
+.card-up small {
+    font-size: 10px;
+}
+
+.hr {
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+}
+
+.card-down {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-down p,
+.card-down-msg p {
+    font-weight: var(--peso-semibold);
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-down-msg p {
+    font-size: 15px;
+}
+
+.content-card-msg {
+    margin: auto 0;
+}
+
+.msg {
+    margin: 0 auto;
+    font-weight: var(--peso-negrito);
+}
+
+.ver-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: var(--cor-adm);
+    padding: 4px 15px;
+    margin: auto auto 0;
+    border-radius: 50px;
+    font-weight: var(--peso-negrito);
+    font-size: 12px;
+    min-width: 100px;
+    width: max-content;
+}
+
+.ver-mais span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ver-mais i {
+    font-size: 14px;
+}
+
+/* ===== PROGRESSO DOS ALUNOS ===== */
+.dashboard-down {
+    background-color: var(--cor-adm);
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin-top: 15px;
+    color: white;
+}
+
+.dashboard-down .title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dashboard-down .title h3 {
+    font-weight: var(--peso-semibold);
+    font-size: 18px;
+    margin-right: auto;
+}
+
+.dashboard-down .title i {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.aluno {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 23%;
+}
+
+.aluno h4 {
+    margin: 5px 0 10px;
+    font-size: 16px;
+    font-weight: var(--peso-negrito);
+}
+
+/* ===== GRÁFICO DE BARRAS ===== */
+.grafico {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 13%;
+    max-width: 16px;
+    height: 100%;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.barra::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.barra::after {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    color: black;
+    font-weight: var(--peso-negrito);
+}
+
+/* Labels dos dias */
+.barra:nth-child(1)::after { content: "SEG"; }
+.barra:nth-child(2)::after { content: "TER"; }
+.barra:nth-child(3)::after { content: "QUA"; }
+.barra:nth-child(4)::after { content: "QUI"; }
+.barra:nth-child(5)::after { content: "SEX"; }
+.barra:nth-child(6)::after { content: "SAB"; }
+.barra:nth-child(7)::after { content: "DOM"; }
+
+/* Alturas por aluno */
+.aluno:nth-child(1) .barra:nth-child(1)::before { height: 45%; }
+.aluno:nth-child(1) .barra:nth-child(2)::before { height: 50%; }
+.aluno:nth-child(1) .barra:nth-child(3)::before { height: 60%; }
+.aluno:nth-child(1) .barra:nth-child(4)::before { height: 35%; }
+.aluno:nth-child(1) .barra:nth-child(5)::before { height: 25%; }
+
+.aluno:nth-child(2) .barra:nth-child(1)::before { height: 75%; }
+.aluno:nth-child(2) .barra:nth-child(2)::before { height: 55%; }
+.aluno:nth-child(2) .barra:nth-child(5)::before { height: 25%; }
+.aluno:nth-child(2) .barra:nth-child(6)::before { height: 40%; }
+
+.aluno:nth-child(3) .barra:nth-child(2)::before { height: 15%; }
+.aluno:nth-child(3) .barra:nth-child(3)::before { height: 15%; }
+.aluno:nth-child(3) .barra:nth-child(4)::before { height: 20%; }
+.aluno:nth-child(3) .barra:nth-child(5)::before { height: 20%; }
+
+.aluno:nth-child(4) .barra:nth-child(1)::before { height: 20%; }
+.aluno:nth-child(4) .barra:nth-child(2)::before { height: 40%; }
+.aluno:nth-child(4) .barra:nth-child(3)::before { height: 60%; }
+.aluno:nth-child(4) .barra:nth-child(4)::before { height: 40%; }
+.aluno:nth-child(4) .barra:nth-child(5)::before { height: 35%; }
+
+/* ===== INFO BOX ===== */
+.info {
+    background-color: #0022FF;
+    border-radius: 15px;
+    padding: 10px 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    font-weight: var(--peso-semibold);
+    margin: 0;
+}
+
+.info i {
+    font-size: 15px;
+}
