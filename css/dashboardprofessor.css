@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Light.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-Light.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 30px;
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-hamburguer {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.modo-escuro {
+    background-color: #295C4B;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Montserrat';
+    transition: 0.3s;
+}
+
+.container-principal {
+    display: flex; 
+    min-height: 100vh; 
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s;
+}
+
+.barra-lateral {
+    width: 300px;
+    background-color: #4C9CFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3s;
+}
+
+.barra-lateral.oculta {
+    display: none;
+}
+   
+.perfil {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 30px 20px;
+    gap: 15px;
+}
+
+.foto-perfil {
+    font-size: 60px;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.info-perfil h1 { font-family: 'Montserrat'; font-size: 30px; }
+.info-perfil p { font-family: 'Montserrat'; font-size: 13px; }
+
+.menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-menu {
+    text-decoration: none;
+    color: white;
+    background-color: transparent; 
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.item-menu:hover, .item-menu.ativo {
+    background-color: #2A3B8F; 
+}
+
+.rodape-lateral {
+    margin-top: auto; 
+    padding: 20px 20px 50px 20px;
+}
+
+.texto-frame {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.botao-sair {
+    background-color: #E63900; 
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.botao-sair:hover { background-color: #cc3300; }
+
+.conteudo {
+    padding: 30px;
+    width: 100%;
+}
+
+.boas-vindas {
+    color: #555555;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.linha-cards {
+    display: flex;
+    align-items: stretch; 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1 1 0; 
+    display: flex;
+    flex-direction: column; 
+    border-radius: 20px;
+    padding: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.card-borda {
+    border: 3px solid #4C9CFF;
+    background-color: #EEEEEE;
+}
+.card-borda h3 {
+    transition: color 0.3s;
+}
+
+.card-azul-cheio {
+    background-color: #4C9CFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.espacohr {
+    padding: 10px;
+}
+
+.texto-pequeno {
+    font-size: 12px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.seletor-aluno {
+    background-color: #4C9CFF;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo-lista p {
+    font-size: 13px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.centralizado { text-align: center; }
+.centralizado-vertical {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.caixa-progresso {
+    background-color: #4C9CFF; 
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.topo-progresso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3); 
+    padding-bottom: 10px;
+}
+
+.controles-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.campo-busca {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+.campo-busca::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lista-alunos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cartao-aluno {
+    flex: 1;
+    text-align: center;
+}
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.coluna-grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.barra-cinza {
+    width: 15px;
+    height: 80px; 
+    background-color: #E0E0E0; 
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.barra-verde {
+    width: 100%;
+    background-color: #00D26A; 
+    border-radius: 5px;
+}
+
+.dia {
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.nome-aluno {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.caixa-status {
+    background-color: #001BFA; 
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.caixa-status p {
+    font-weight: bold;
+}
+
+.btn-seta {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-seta:hover { opacity: 0.7; }
+
+.btn-editar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+.btn-editar:hover {
+    color: #4C9CFF;
+    transform: scale(1.1);
+}
+
+body.dark-mode {
+    background-color: #121212;
+}
+body.dark-mode .cabecalho, 
+body.dark-mode .container-principal {
+    background-color: #121212;
+}
+
+body.dark-mode .boas-vindas,
+body.dark-mode .logo,
+body.dark-mode .menu-hamburguer,
+body.dark-mode .card-borda h3,
+body.dark-mode .texto-pequeno,
+body.dark-mode .conteudo-lista p,
+body.dark-mode .btn-editar {
+    color: #eeeeee;
+}
+
+body.dark-mode .card-borda {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
