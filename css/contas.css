@@ -49,14 +49,6 @@ body.tela-login {
     justify-content: center;
 }
 
-.logo_gs img {
-    display: flex;
-    width: 150px;
-    margin: 30px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
 @media screen and (max-width: 448px) {
     .logo_gs img {
@@ -554,8 +546,9 @@ body.tela-login {
 
 .logo_portal_acesso > img {
     display: flex;
-    width: 200px;
-    height: 70px;
+    margin: 30px;
+    max-width: 100%;
+    text-align: center; 
     justify-content: center;
     margin: 0 auto;
     margin-top: 10px;
