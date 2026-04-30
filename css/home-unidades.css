@@ -1,0 +1,341 @@
+
+body {
+    background-color: var(--bg-main);
+    min-height: 100vh;
+}
+
+/* HEADER (NAVBAR) */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-navbar);
+    height: 100px;
+    width: 100%;
+}
+
+.logo-area {
+    background-color: var(--bg-logo-box);
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 85px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8vw;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--brand-green);
+    font-weight: 400;
+    font-size: 20px;
+    transition: opacity 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-links a.menu-selecionado {
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.profile-icon {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.profile-icon i {
+    font-size: 40px;
+    color: var(--brand-green);
+    cursor: pointer;
+}
+
+/* CONTEÚDO PRINCIPAL (HERO) */
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.imagem-homem {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 700px;
+    background-image: url('/assets/homem-treino.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+
+.texto-direita {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: var(--text-white);
+}
+
+.texto-direita h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.texto-direita p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 400px;
+    margin-left: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.botao-matricula {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--btn-green);
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px 80px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.botao-matricula:hover {
+    background-color: #1e4a3b;
+}
+
+/* FOOTER */
+
+.rodape {
+    background-color: var(--bg-navbar);
+    padding: 40px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.rodape-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.rodape-logo img {
+    height: 50px;
+}
+
+.rodape-links p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.rodape-social {
+    display: flex;
+    gap: 20px;
+}
+
+.rodape-social a {
+    color: var(--brand-green);
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.rodape-social a:hover {
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVIDADE */
+
+.menu-icon {
+    display: none;
+    color: var(--brand-green);
+    font-size: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.logo-white {
+    display: none;
+}
+
+.logo-dark {
+    display: block;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .logo-dark {
+        display: none;
+    }
+
+    .logo-white {
+        display: block;
+        height: 60px;
+    }
+
+    .navbar {
+        height: 100px;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links.ativo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-navbar);
+        padding: 30px 0;
+        gap: 30px;
+        z-index: 999;
+        box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+    }
+
+    .logo-area {
+        background-color: transparent;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .profile-icon {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .profile-icon i {
+        font-size: 45px;
+    }
+
+    .principal {
+        padding: 0;
+    }
+
+    .imagem-homem {
+        border-radius: 0;
+        height: 600px;
+    }
+
+    .texto-direita {
+        right: auto;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    .texto-direita h1 {
+        font-size: 34px;
+    }
+
+    .texto-direita p {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .botao-matricula {
+        font-size: 26px;
+        padding: 18px 50px;
+        bottom: -30px;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .rodape-links p {
+        font-size: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        height: 80px;
+    }
+
+    .menu-icon {
+        font-size: 40px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .profile-icon i {
+        font-size: 35px;
+    }
+
+    .imagem-homem {
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .texto-direita h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .texto-direita p {
+        font-size: 12px;
+    }
+
+    .botao-matricula {
+        font-size: 20px;
+        padding: 15px 40px;
+        bottom: -25px;
+    }
+}
