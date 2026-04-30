@@ -14,11 +14,14 @@ html, body {
 
 body {
     height: 100vh;
-    background-color: #382157;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.tela_cadastro, .tela_login, .tela_recuperar {
+    background-color: #382157;;
 }
 
 @media screen and (max-width: 448px) {

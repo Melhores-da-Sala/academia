@@ -1,0 +1,220 @@
+.painel_aluno_sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 275px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+
+    background-color: var(--cor-primaria);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* PERFIL */
+.painel_aluno_dados_perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+}
+
+.painel_aluno_foto_user i {
+    font-size: 42px;
+}
+
+.painel_aluno_nav_botoes a.painel_aluno_esta_pagina {
+    border-left: 5px solid white;
+    background-color: rgba(2, 115, 77, 0.441);
+}
+
+.painel_aluno_nav_botoes a.painel_aluno_esta_pagina:hover {
+    background-color: rgba(33, 165, 121, 0.441);
+}
+
+/* BOTÕES */
+.painel_aluno_nav_botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.painel_aluno_nav_botoes a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor-secundaria);
+
+    height: 60px;
+    padding-left: 15px;
+
+    text-decoration: none;
+    color: white;
+    margin-left: -20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.painel_aluno_nav_botoes a:hover {
+    background-color: rgba(255, 255, 255, 0.155);
+    color: rgba(255, 255, 255, 0.642);
+}
+
+.painel_aluno_nav_botoes .painel_aluno_sair {
+    background-color: var(--cor-botao-sair);
+    margin-top: 40px;
+}
+
+.painel_aluno_nav_botoes .painel_aluno_sair i {
+    color: rgb(103, 12, 12);
+    font-size: 22px;
+}
+
+.painel_aluno_nav_botoes .painel_aluno_sair:hover {
+    background-color: rgb(254, 35, 35);
+    color: rgba(255, 255, 255, 0.788);
+}
+
+/* Lado esquerdo do painel */
+
+.painel_aluno_painel_principal {
+    margin-left: 315px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.painel_aluno_tres_blocos {
+    display: flex;
+    gap: 30px;
+}
+
+.painel_aluno_proximo_treino,
+.painel_aluno_progresso,
+.painel_aluno_mensagens {
+    width: 275px;
+    height: 200px;
+    border-radius: 20px;
+    border: solid 5px var(--cor-primaria);
+}
+
+.painel_aluno_atividades {
+    height: 200px;
+    width: 885px;
+    border-radius: 20px;
+    border: solid 5px var(--cor-primaria);
+    margin-right: -315px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.painel_aluno_proximo_treino {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.painel_aluno_proximo_treino h2 {
+    text-align: center;
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+}
+
+.painel_aluno_proximo_treino .painel_aluno_horario {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    gap: 10px;
+    font-size: 23px;
+}
+
+.painel_aluno_proximo_treino button {
+    width: 175px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+    color: aliceblue;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+}
+
+.painel_aluno_proximo_treino button:hover {
+    transform: scale(1.01);
+    transition: ease 0.2s;
+}
+
+.painel_aluno_progresso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.painel_aluno_progresso h2 {
+    text-align: center;
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+}
+
+.painel_aluno_grafico {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 140px;
+}
+
+.painel_aluno_barra {
+    height: 110px;
+    width: 25px;
+    border-radius: 6px;
+    background-color: rgb(227, 227, 227);
+
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.painel_aluno_barra div {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    border-radius: 6px;
+}
+
+.painel_aluno_mensagens h2 {
+    text-align: center;
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.painel_aluno_mensagens .painel_aluno_conteudo_vazio {
+    display: flex;
+    color: rgb(192, 192, 192);
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.painel_aluno_atividades h2 {
+    margin-top: 17px;
+    margin-left: 17px;
+}
+
+.painel_aluno_atividades div {
+    margin-left: 17px;
+    margin-top: 20px;
+    font-weight: 600;
+    gap: 10px;
+}
