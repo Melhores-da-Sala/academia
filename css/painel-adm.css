@@ -55,7 +55,7 @@ a {
     margin-left: -260px;
 }
 
-.sidebar.oculta + .main {
+.sidebar.oculta+.main {
     margin-inline: auto;
 }
 
@@ -337,36 +337,106 @@ a {
 }
 
 /* Labels dos dias */
-.barra:nth-child(1)::after { content: "SEG"; }
-.barra:nth-child(2)::after { content: "TER"; }
-.barra:nth-child(3)::after { content: "QUA"; }
-.barra:nth-child(4)::after { content: "QUI"; }
-.barra:nth-child(5)::after { content: "SEX"; }
-.barra:nth-child(6)::after { content: "SAB"; }
-.barra:nth-child(7)::after { content: "DOM"; }
+.barra:nth-child(1)::after {
+    content: "SEG";
+}
+
+.barra:nth-child(2)::after {
+    content: "TER";
+}
+
+.barra:nth-child(3)::after {
+    content: "QUA";
+}
+
+.barra:nth-child(4)::after {
+    content: "QUI";
+}
+
+.barra:nth-child(5)::after {
+    content: "SEX";
+}
+
+.barra:nth-child(6)::after {
+    content: "SAB";
+}
+
+.barra:nth-child(7)::after {
+    content: "DOM";
+}
 
 /* Alturas por aluno */
-.aluno:nth-child(1) .barra:nth-child(1)::before { height: 45%; }
-.aluno:nth-child(1) .barra:nth-child(2)::before { height: 50%; }
-.aluno:nth-child(1) .barra:nth-child(3)::before { height: 60%; }
-.aluno:nth-child(1) .barra:nth-child(4)::before { height: 35%; }
-.aluno:nth-child(1) .barra:nth-child(5)::before { height: 25%; }
+.aluno:nth-child(1) .barra:nth-child(1)::before {
+    height: 45%;
+}
 
-.aluno:nth-child(2) .barra:nth-child(1)::before { height: 75%; }
-.aluno:nth-child(2) .barra:nth-child(2)::before { height: 55%; }
-.aluno:nth-child(2) .barra:nth-child(5)::before { height: 25%; }
-.aluno:nth-child(2) .barra:nth-child(6)::before { height: 40%; }
+.aluno:nth-child(1) .barra:nth-child(2)::before {
+    height: 50%;
+}
 
-.aluno:nth-child(3) .barra:nth-child(2)::before { height: 15%; }
-.aluno:nth-child(3) .barra:nth-child(3)::before { height: 15%; }
-.aluno:nth-child(3) .barra:nth-child(4)::before { height: 20%; }
-.aluno:nth-child(3) .barra:nth-child(5)::before { height: 20%; }
+.aluno:nth-child(1) .barra:nth-child(3)::before {
+    height: 60%;
+}
 
-.aluno:nth-child(4) .barra:nth-child(1)::before { height: 20%; }
-.aluno:nth-child(4) .barra:nth-child(2)::before { height: 40%; }
-.aluno:nth-child(4) .barra:nth-child(3)::before { height: 60%; }
-.aluno:nth-child(4) .barra:nth-child(4)::before { height: 40%; }
-.aluno:nth-child(4) .barra:nth-child(5)::before { height: 35%; }
+.aluno:nth-child(1) .barra:nth-child(4)::before {
+    height: 35%;
+}
+
+.aluno:nth-child(1) .barra:nth-child(5)::before {
+    height: 25%;
+}
+
+.aluno:nth-child(2) .barra:nth-child(1)::before {
+    height: 75%;
+}
+
+.aluno:nth-child(2) .barra:nth-child(2)::before {
+    height: 55%;
+}
+
+.aluno:nth-child(2) .barra:nth-child(5)::before {
+    height: 25%;
+}
+
+.aluno:nth-child(2) .barra:nth-child(6)::before {
+    height: 40%;
+}
+
+.aluno:nth-child(3) .barra:nth-child(2)::before {
+    height: 15%;
+}
+
+.aluno:nth-child(3) .barra:nth-child(3)::before {
+    height: 15%;
+}
+
+.aluno:nth-child(3) .barra:nth-child(4)::before {
+    height: 20%;
+}
+
+.aluno:nth-child(3) .barra:nth-child(5)::before {
+    height: 20%;
+}
+
+.aluno:nth-child(4) .barra:nth-child(1)::before {
+    height: 20%;
+}
+
+.aluno:nth-child(4) .barra:nth-child(2)::before {
+    height: 40%;
+}
+
+.aluno:nth-child(4) .barra:nth-child(3)::before {
+    height: 60%;
+}
+
+.aluno:nth-child(4) .barra:nth-child(4)::before {
+    height: 40%;
+}
+
+.aluno:nth-child(4) .barra:nth-child(5)::before {
+    height: 35%;
+}
 
 /* ===== INFO BOX ===== */
 .info {
@@ -390,4 +460,209 @@ a {
 
 .info i {
     font-size: 15px;
+}
+
+/* ===================================================
+   RESPONSIVIDADE — Painel ADM
+   Adicione este bloco ao final do style.css
+=================================================== */
+
+/* ===== TABLET (até 1024px) ===== */
+@media (max-width: 1024px) {
+
+    .card,
+    .card-msg {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .dashboard-up {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .aluno {
+        max-width: 45%;
+    }
+
+    .data {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ===== MOBILE (até 768px) ===== */
+@media (max-width: 768px) {
+
+    /* ----- HEADER ----- */
+    .header {
+        margin-left: 0;
+        padding: 14px 16px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    #list {
+        font-size: 32px;
+    }
+
+    .header img {
+        height: 32px;
+    }
+
+    /* Esconde o botão "Sair" do header no mobile (já existe na sidebar) */
+    .header .sair {
+        display: none;
+    }
+
+    /* ----- LAYOUT GERAL ----- */
+    .app {
+        position: relative;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ----- SIDEBAR OVERLAY ----- */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 200;
+        border-radius: 0 20px 20px 0;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.25);
+        /* Começa escondida no mobile */
+        margin-left: -260px;
+        transition: margin-left 0.4s ease-in-out;
+    }
+
+    /* Quando o JS adiciona a classe 'oculta' no desktop,
+       no mobile ela significa "escondida" — invertemos a lógica */
+    .sidebar:not(.oculta) {
+        margin-left: 0;
+    }
+
+    .sidebar.oculta {
+        margin-left: -260px;
+    }
+
+    /* Overlay escuro atrás da sidebar */
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 199;
+    }
+
+    .sidebar-overlay.visivel {
+        display: block;
+    }
+
+    /* Remove o efeito de margin no .main quando sidebar abre no mobile */
+    .sidebar.oculta+.main {
+        margin-inline: 0;
+    }
+
+    /* ----- TÍTULO PRINCIPAL ----- */
+    .titulo-main {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    /* ----- CARDS (DASHBOARD UP) ----- */
+    .dashboard-up {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .card,
+    .card-msg {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Card de mensagens fica compacto */
+    .card-msg {
+        padding: 14px 18px;
+    }
+
+    .content-card-msg {
+        padding: 10px 0;
+    }
+
+    /* ----- DASHBOARD DOWN (PROGRESSO) ----- */
+    .dashboard-down {
+        padding: 14px 16px;
+        margin-top: 14px;
+    }
+
+    .dashboard-down .title h3 {
+        font-size: 16px;
+    }
+
+    /* Alunos em coluna, um por vez */
+    .data {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aluno {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Gráfico um pouco mais alto para melhor leitura */
+    .grafico {
+        height: 70px;
+    }
+
+    .barra {
+        max-width: 22px;
+    }
+
+    /* Info box com fonte um pouco maior */
+    .info p {
+        font-size: 13px;
+    }
+
+    /* ----- BOTÃO VER MAIS ----- */
+    .ver-mais {
+        font-size: 13px;
+        padding: 6px 18px;
+    }
+
+    /* ----- SIDEBAR: ajuste de espaçamento interno ----- */
+    .sair-seta {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ===== MOBILE PEQUENO (até 400px) ===== */
+@media (max-width: 400px) {
+    .header {
+        padding: 12px;
+    }
+
+    #list {
+        font-size: 28px;
+    }
+
+    .dashboard-down {
+        padding: 12px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
 }
