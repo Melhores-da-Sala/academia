@@ -9,12 +9,38 @@
     flex-direction: column;
     gap: 30px;
     padding: 20px;
-
     background-color: var(--cor-primaria);
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
+.painel_aluno_header_mobile { 
+    display: none; 
+    position: fixed;
+    top: 3%;
+    left: 0;
+    width: 70%;
+    height: 70px;
+    padding: 10px 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--cor-primaria);
+}
+
+.painel_aluno_burguer { 
+    display: none; 
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    width: 65px;
+    height: 65px;
+    font-size: 45px;
+    color: white;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    z-index: 1001;
+    
+}
 /* PERFIL */
 .painel_aluno_dados_perfil {
     display: flex;
@@ -217,4 +243,60 @@
     margin-top: 20px;
     font-weight: 600;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .painel_aluno_header_mobile {
+        display: flex;
+    }
+
+    .painel_aluno_burguer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* SIDEBAR MOBILE */
+    .painel_aluno_sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        z-index: 999;
+        transition: 0.3s;
+    }
+
+    .painel_aluno_sidebar.ativo {
+        left: 0;
+    }
+
+    /* CONTEÚDO */
+    .painel_aluno_painel_principal {
+        margin-left: 0;
+        padding: 15px;
+        padding-top: 90px;
+    }
+
+    /* GRID MOBILE (1 coluna) */
+    .painel_aluno_tres_blocos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* CARDS 100% */
+    .painel_aluno_proximo_treino,
+    .painel_aluno_progresso,
+    .painel_aluno_mensagens,
+    .painel_aluno_atividades {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* REMOVE WIDTH FIXO BUGADO */
+    .painel_aluno_atividades {
+        margin-right: 0;
+    }
 }
