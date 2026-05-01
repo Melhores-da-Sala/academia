@@ -7,7 +7,7 @@ const dias = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"];
 const grafico = document.getElementById("grafico");
 
 const btn = document.getElementById("btnMenu");
-const menu = document.querySelector(".acao_clicar_burguer_painel_aluno");
+const menu = document.getElementById("menuMobile") || document.querySelector(".acao_clicar_burguer_painel_aluno");
 
 const container = document.querySelector(".painel_aluno_nav_botoes");
 const links = document.querySelectorAll(".painel_aluno_nav_botoes a");
