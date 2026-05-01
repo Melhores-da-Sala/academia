@@ -4,6 +4,8 @@ const saudacao_h1 = document.querySelector('.painel_aluno_painel_principal h1');
 const dados = [40, 20, 10, 60, 25, 80, 50];
 const dias = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"];
 const grafico = document.getElementById("grafico");
+const btn = document.getElementById("btnMenu");
+const menu = document.querySelector(".acao_clicar_burguer_painel_aluno");
 
 
 if (nomeAluno) {
@@ -41,4 +43,8 @@ dados.forEach((valor, index) => {
     container.appendChild(label);
 
     grafico.appendChild(container);
+});
+
+btn.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
 });

@@ -38,9 +38,35 @@
     color: white;
     background-color: var(--cor-primaria);
     border-radius: 50%;
-    z-index: 1001;
-    
 }
+
+.acao_clicar_burguer_painel_aluno {
+    display: none;
+    position: fixed;
+    top: 13.2%;
+    background-color: #D7D7D7;
+}
+
+.acao_clicar_burguer_painel_aluno.ativo {
+    display: block;
+}
+
+.acao_clicar_burguer_painel_aluno i{
+    font-size: 27px;
+    gap: 20px;
+}
+
+.acao_clicar_burguer_painel_aluno small{
+    font-size: 17px;
+    font-weight: 530;
+}
+
+.acao_clicar_burguer_painel_aluno a {
+    text-decoration: none;
+    color: black;
+}
+
+
 /* PERFIL */
 .painel_aluno_dados_perfil {
     display: flex;
@@ -110,23 +136,24 @@
 /* Lado esquerdo do painel */
 
 .painel_aluno_painel_principal {
-    margin-left: 315px;
-    padding: 20px;
-
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    margin-left: 315px;
+    padding: 20px;
 }
 
 .painel_aluno_tres_blocos {
     display: flex;
     gap: 30px;
+    justify-content: center;
 }
 
 .painel_aluno_proximo_treino,
 .painel_aluno_progresso,
 .painel_aluno_mensagens {
-    width: 275px;
+    width: 30%;
     height: 200px;
     border-radius: 20px;
     border: solid 5px var(--cor-primaria);
@@ -134,10 +161,11 @@
 
 .painel_aluno_atividades {
     height: 200px;
-    width: 885px;
+    width: 100%;
+    max-width: 95%;
     border-radius: 20px;
     border: solid 5px var(--cor-primaria);
-    margin-right: -315px;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -245,10 +273,27 @@
     gap: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and  (max-width: 768px) {
 
     .painel_aluno_header_mobile {
         display: flex;
+    }
+
+    .acao_clicar_burguer_painel_aluno {
+        display: none;
+    }
+
+    .acao_clicar_burguer_painel_aluno.ativo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        padding: 15px;
+    }
+
+    .acao_clicar_burguer_painel_aluno a div {
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0.149), transparent) 1;
     }
 
     .painel_aluno_burguer {
@@ -264,7 +309,6 @@
         top: 0;
         left: -100%;
         height: 100vh;
-        z-index: 999;
         transition: 0.3s;
     }
 
@@ -284,6 +328,8 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+        text-align: center;
+        justify-content: center;
     }
 
     /* CARDS 100% */
@@ -291,12 +337,100 @@
     .painel_aluno_progresso,
     .painel_aluno_mensagens,
     .painel_aluno_atividades {
-        width: 100%;
+        width: 70%;
         max-width: 100%;
+        margin: 0 auto;
     }
 
     /* REMOVE WIDTH FIXO BUGADO */
     .painel_aluno_atividades {
-        margin-right: 0;
+        width: 70%;
+        max-width: 100%;
+        margin: 0 auto;
     }
+}
+
+@media screen and (max-width: 448px) {
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .acao_clicar_burguer_painel_aluno {
+        display: none;
+    }
+
+    .acao_clicar_burguer_painel_aluno.ativo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        padding: 15px;
+    }
+
+    .acao_clicar_burguer_painel_aluno a div {
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0.149), transparent) 1;
+    }
+
+    .painel_aluno_header_mobile {
+        display: flex;
+    }
+
+    .painel_aluno_burguer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* SIDEBAR MOBILE */
+    .painel_aluno_sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .painel_aluno_sidebar.ativo {
+        left: 0;
+    }
+
+    /* CONTEÚDO */
+    .painel_aluno_painel_principal {
+        margin-left: 0;
+        padding: 15px;
+        padding-top: 90px;
+    }
+
+    /* GRID MOBILE (1 coluna) */
+    .painel_aluno_tres_blocos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* CARDS 100% */
+    .painel_aluno_proximo_treino,
+    .painel_aluno_progresso,
+    .painel_aluno_mensagens,
+    .painel_aluno_atividades {
+        width: 70%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* REMOVE WIDTH FIXO BUGADO */
+    .painel_aluno_atividades {
+        width: 70%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
 }
