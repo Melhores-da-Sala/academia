@@ -149,9 +149,7 @@ body.tela-login {
     transition: ease 0.2s;
 }
 
-.email_i_login i,
-.email_i_cadastro i,
-.email_i_recuperar i {
+.email_i_login i {
     position: absolute;
     top: 22%;
     left: 14%;
@@ -159,8 +157,15 @@ body.tela-login {
     color: #7F7F7F;
 }
 
-.senha_i_login i,
-.senha_i_cadastro i {
+.email_i_recuperar i {
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.senha_i_login i {
     position: absolute;
     top: 13%;
     left: 14%;
@@ -168,10 +173,26 @@ body.tela-login {
     color: #7F7F7F;
 }
 
+.senha_i_cadastro i {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.email_i_cadastro i {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
 .nome_i_cadastro i {
     position: absolute;
     bottom: 40%;
-    left: 14%;
+    left: 7%;
     font-size: 20px;
     color: #7F7F7F;
 }
@@ -180,6 +201,16 @@ body.tela-login {
     position: absolute;
     top: 15%;
     right: 15%;
+    font-size: 20px;
+    color: #7F7F7F;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#toggle_olho_cadastro {
+    position: absolute;
+    top: 16%;
+    right: 9%;
     font-size: 20px;
     color: #7F7F7F;
     cursor: pointer;
