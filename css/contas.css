@@ -645,6 +645,15 @@ body.tela-login {
 
 /* ===== PORTAL DE ACESSO ===== */
 
+.fundo_painel_acesso {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .logo_portal_acesso_preta_painel > img {
     display: flex;
     width: 300px;
@@ -712,7 +721,7 @@ body.tela-login {
 .escolha_professor_painel {
     display: flex;
     flex-direction: column;
-    background-color: #e6e6e6;
+    background-color: #d6d6d6;
     width: 320px;
     height: 270px;
     margin: 20px auto;
@@ -731,24 +740,28 @@ body.tela-login {
 
 .escolha_aluno_painel:hover {
     border-color: #09d994;
+    background-color: #e5e5e5;
     transform: scale(1.02);
     transition: ease 0.1s;
 }
 
 .escolha_aluno_painel:active {
     border-color: #09d994;
+    background-color: #e5e5e5;
     transform: scale(0.99);
     transition: ease 0.1s;
 }
 
 .escolha_professor_painel:hover {
     border-color: #43baff;
+    background-color: #e5e5e5;
     transform: scale(1.02);
     transition: ease 0.1s;
 }
 
 .escolha_professor_painel:active {
     border-color: #43baff;
+    background-color: #e5e5e5;
     transform: scale(0.99);
     transition: ease 0.1s;
 }
