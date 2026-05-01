@@ -8,20 +8,16 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     touch-action: none;
 }
 
-body {
-    height: 100vh;
+body.tela-login {
+    background-color: #382157;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.tela_cadastro, .tela_login, .tela_recuperar {
-    background-color: #382157;;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 448px) {
@@ -30,47 +26,85 @@ body {
     }
 }
 
-
-.homem_foda {
-    width: 400px;
+.homem_foda_login {
+    width: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.homem_foda img {
-    width: 100vw;
-    max-width: 550px;
+.homem_foda_login img {
+    width: 150vw;
+    max-width: 750px;
     user-select: none;
     height: auto;
     margin-bottom: -16px;
     margin-right: 0;
 }
 
+.homem_foda_cadastro {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.logo_gs {
+.homem_foda_cadastro img {
+    width: 150vw;
+    max-width: 750px;
+    user-select: none;
+    height: auto;
+    margin-bottom: -16px;
+    margin-right: 0;
+}
+
+.homem_foda_recuperar {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homem_foda_recuperar img {
+    width: 150vw;
+    max-width: 750px;
+    user-select: none;
+    height: auto;
+    margin-bottom: -16px;
+    margin-right: 0;
+}
+
+.logo_gs_login {
     display: flex;
     justify-content: center;
 }
 
-.logo_gs img {
+.logo_gs_cadastro {
     display: flex;
-    width: 150px;
-    margin: 30px;
-    text-align: center;
-    align-items: center;
     justify-content: center;
+}
+
+.logo_gs_recuperar img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
 }
 
 @media screen and (max-width: 448px) {
-    .logo_gs img {
+    .logo_gs_login img {
+        width: 100px;
+    }
+    .logo_gs_cadastro img {
         width: 100px;
     }
 }
 
-
-.caixa_email,
-.caixa_senha {
+.caixa_email_login,
+.caixa_senha_login,
+.caixa_email_cadastro,
+.caixa_senha_cadastro,
+.caixa_nome_cadastro,
+.caixa_email_recuperar {
     display: flex;
     width: 250px;
     height: 45px;
@@ -81,50 +115,102 @@ body {
     border-radius: 10px;
 }
 
-.caixa_email {
+.caixa_senha_login {
     margin-bottom: 20px;
 }
 
-.caixa_senha {
-    margin-bottom: 40px;
+.caixa_senha_cadastro {
+    margin-bottom: 20px;
 }
 
-.email,
-.senha {
+.caixa_nome_cadastro {
+    margin-top: -20px;
+}
+
+.email_login,
+.senha_login,
+.email_cadastro,
+.senha_cadastro,
+.nome_cadastro,
+.email_recuperar {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.email :focus,
-.senha :focus,
-.nome :focus {
+.email_login :focus,
+.senha_login :focus,
+.email_cadastro :focus,
+.senha_cadastro :focus,
+.nome_cadastro :focus,
+.email_recuperar :focus {
     outline: groove 2px #9855F6;
     transition: ease 0.2s;
 }
 
-.email_i {
+.email_i_login i {
     position: absolute;
-    top: 17%;
-    left: 12%;
+    top: 22%;
+    left: 14%;
     font-size: 20px;
     color: #7F7F7F;
 }
 
-.senha_i {
+.email_i_recuperar i {
     position: absolute;
-    top: 12%;
-    bottom: 60px;
-    left: 12%;
+    top: 24%;
+    left: 8%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.senha_i_login i {
+    position: absolute;
+    top: 13%;
+    left: 14%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.senha_i_cadastro i {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.email_i_cadastro i {
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    font-size: 20px;
+    color: #7F7F7F;
+}
+
+.nome_i_cadastro i {
+    position: absolute;
+    bottom: 40%;
+    left: 7%;
     font-size: 20px;
     color: #7F7F7F;
 }
 
 #toggle_olho {
     position: absolute;
-    right: 35px;
-    top: 12px;
+    top: 15%;
+    right: 15%;
+    font-size: 20px;
+    color: #7F7F7F;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#toggle_olho_cadastro {
+    position: absolute;
+    top: 16%;
+    right: 9%;
     font-size: 20px;
     color: #7F7F7F;
     cursor: pointer;
@@ -132,12 +218,14 @@ body {
 }
 
 #toggle_olho:hover {
-    color: #000000;
+    color: #a5a5a5;
 }
 
 @media screen and (max-width: 748px) {
-    .caixa_email,
-    .caixa_senha {
+    .caixa_email_login,
+    .caixa_senha_login,
+    .caixa_email_cadastro,
+    .caixa_senha_cadastro {
         width: 220px;
         height: 45px;
         padding: 7px;
@@ -147,13 +235,15 @@ body {
         border-radius: 10px;
     }
 
-    .email_i {
+    .email_i_login,
+    .email_i_cadastro {
         top: 17%;
         left: 15%;
         font-size: 20px;
     }
 
-    .senha_i {
+    .senha_i_login,
+    .senha_i_cadastro {
         top: 12%;
         left: 14%;
         font-size: 20px;
@@ -161,8 +251,10 @@ body {
 }
 
 @media screen and (max-width: 448px) {
-    .caixa_email,
-    .caixa_senha {
+    .caixa_email_login,
+    .caixa_senha_login,
+    .caixa_email_cadastro,
+    .caixa_senha_cadastro {
         width: 200px;
         height: 40px;
         padding: 7px;
@@ -172,13 +264,15 @@ body {
         border-radius: 10px;
     }
 
-    .email_i {
+    .email_i_login,
+    .email_i_cadastro {
         top: 21%;
         left: 15%;
         font-size: 15px;
     }
 
-    .senha_i {
+    .senha_i_login,
+    .senha_i_cadastro {
         top: 14%;
         left: 15%;
         font-size: 15px;
@@ -207,7 +301,7 @@ body {
     border-radius: 15px;
 }
 
-.entrar {
+.entrar_login {
     width: 250px;
     height: 45px;
     border-radius: 10px;
@@ -215,31 +309,64 @@ body {
     background-color: #9855F6;
     border: none;
     font-size: 15px;
+    margin-top: -10px;
 }
 
-.botao_entrar {
+.botao_entrar_login {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.botao_entrar :hover {
+.botao_entrar_login :hover {
     background-color: #6619b3;
     transform: scale(1.02);
     transition: ease 0.2s;
 }
 
-.botao_entrar :active {
+.botao_entrar_login :active {
     transform: scale(0.98);
 }
 
-.esqueci_senha {
+.esqueci_senha_login {
     display: flex;
     color: #47DDAE;
     text-decoration: none;
-    margin-top: 16px;
     justify-content: center;
     font-size: 15px;
+}
+
+.caixa_email_login,
+.caixa_senha_login,
+.caixa_email_cadastro,
+.caixa_senha_cadastro,
+.caixa_nome_cadastro,
+.caixa_email_recuperar {
+    background-color: #202020;
+    color: rgb(255, 255, 255);
+    border: 1px solid #b9b9b949;
+}
+
+.caixa_email_login::placeholder,
+.caixa_senha_login::placeholder,
+.caixa_email_cadastro::placeholder,
+.caixa_senha_cadastro::placeholder,
+.caixa_nome_cadastro::placeholder,
+.caixa_email_recuperar::placeholder {
+    color: #c0c0c0;
+}
+
+.container_login {
+    padding-top: 25px;
+    gap: 10px;
+}
+
+.logo_gs_login {
+    margin-bottom: 15px;
+}
+
+.logo_gs_login img {
+    width: 200px;
 }
 
 @media screen and (max-width: 748px) {
@@ -248,11 +375,11 @@ body {
         height: 350px;
     }
 
-    .entrar {
+    .entrar_login {
         width: 220px;
     }
 
-    .esqueci_senha {
+    .esqueci_senha_login {
         font-size: 12px;
     }
 }
@@ -263,19 +390,17 @@ body {
         height: 310px;
     }
 
-    .entrar {
-        margin-top: -10px;
+    .entrar_login {
+        margin-top: -20px;
         width: 200px;
         height: 40px;
     }
 
-    .esqueci_senha {
+    .esqueci_senha_login {
         font-size: 10px;
-        margin-top: 18px;
     }
 
-    .botao_entrar :hover {
-        margin-top: -10px;
+    .botao_entrar_login :hover {
         margin-bottom: 0;
         box-shadow: none;
     }
@@ -290,6 +415,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
     border: 3px solid transparent;
     background:
         linear-gradient(black, black) padding-box,
@@ -298,34 +425,7 @@ body {
     margin-bottom: 20px;
 }
 
-.caixa_nome {
-    display: flex;
-    width: 250px;
-    height: 45px;
-    padding: 7px;
-    padding-left: 40px;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.nome {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.nome_i {
-    position: absolute;
-    top: 18%;
-    left: 12%;
-    font-size: 20px;
-    color: #7F7F7F;
-}
-
-.cadastrar {
+.cadastrar_cadastro {
     width: 250px;
     height: 45px;
     border-radius: 10px;
@@ -335,30 +435,38 @@ body {
     font-size: 15px;
 }
 
-.botao_cadastrar {
+.botao_cadastrar_cadastro {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.botao_cadastrar :hover {
+.botao_cadastrar_cadastro :hover {
     background-color: #6619b3;
     transform: scale(1.01);
     transition: ease 0.2s;
     border-radius: 10px;
 }
 
-.botao_cadastrar :active {
+.botao_cadastrar_cadastro :active {
     transform: scale(0.98);
 }
 
-.possui_conta {
+.possui_conta_cadastro {
     display: flex;
     color: #47DDAE;
     text-decoration: none;
-    margin-top: 15px;
+    margin-top: -10px;
     justify-content: center;
     font-size: 12px;
+}
+
+.logo_gs_cadastro {
+    margin-bottom: 15px;
+}
+
+.logo_gs_cadastro img {
+    width: 200px;
 }
 
 @media screen and (max-width: 748px) {
@@ -367,28 +475,28 @@ body {
         height: 380px;
     }
 
-    .container_cadastro .caixa_email,
-    .container_cadastro .caixa_senha,
-    .container_cadastro .caixa_nome {
+    .container_cadastro .caixa_email_cadastro,
+    .container_cadastro .caixa_senha_cadastro,
+    .container_cadastro .caixa_nome_cadastro {
         width: 230px;
     }
 
-    .email,
-    .senha,
-    .nome {
+    .email_cadastro,
+    .senha_cadastro,
+    .nome_cadastro {
         margin-bottom: -5px;
     }
 
-    .cadastrar {
+    .cadastrar_cadastro {
         width: 230px;
         margin-top: -5px;
     }
 
-    .possui_conta {
+    .possui_conta_cadastro {
         font-size: 11px;
     }
 
-    .nome_i {
+    .nome_i_cadastro {
         top: 18%;
         left: 12%;
         font-size: 20px;
@@ -401,7 +509,7 @@ body {
         height: 345px;
     }
 
-    .caixa_nome {
+    .caixa_nome_cadastro {
         width: 200px;
         height: 40px;
         padding: 7px;
@@ -411,23 +519,23 @@ body {
         border-radius: 10px;
     }
 
-    .cadastrar {
+    .cadastrar_cadastro {
         margin-top: -10px;
         width: 200px;
         height: 40px;
     }
 
-    .possui_conta {
+    .possui_conta_cadastro {
         font-size: 10px;
     }
 
-    .botao_cadastrar :hover {
+    .botao_cadastrar_cadastro :hover {
         margin-top: -10px;
         margin-bottom: 0;
         box-shadow: none;
     }
 
-    .nome_i {
+    .nome_i_cadastro {
         top: 18%;
         left: 15%;
         font-size: 15px;
@@ -439,30 +547,24 @@ body {
 
 .container_recuperar {
     width: 300px;
-    height: 350px;
+    height: 340px;
+    padding: 25px 20px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 3px solid transparent;
+    justify-content: space-around;
     background:
         linear-gradient(black, black) padding-box,
         linear-gradient(to top, #0BE495, #A631FF) border-box;
     border-radius: 15px;
 }
 
-.container_recuperar .caixa_email {
-    width: 205px;
-    height: 30px;
-    margin-top: 100px;
-    margin-bottom: 0;
-}
-
-.container_recuperar .email_i {
-    position: absolute;
-    top: 77%;
-    left: 12%;
-    font-size: 20px;
-    color: #7F7F7F;
+.container_recuperar .caixa_email_recuperar {
+    width: 250px;
+    height: 45px;
+    margin: 0;
 }
 
 .recuperar {
@@ -473,7 +575,7 @@ body {
     background-color: #fc2424;
     border: none;
     font-size: 15px;
-    margin-top: 30px;
+    margin: 0;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -493,7 +595,7 @@ body {
     justify-content: center;
 }
 
-.voltar > a {
+.voltar_recuperar > a {
     position: absolute;
     top: 2%;
     left: 2%;
@@ -501,7 +603,7 @@ body {
     color: #0BE495;
 }
 
-.voltar > a:hover {
+.voltar_recuperar > a:hover {
     color: #3ca872;
     transition: ease 0.3s;
 }
@@ -509,19 +611,10 @@ body {
 @media screen and (max-width: 748px) {
     .container_recuperar {
         width: 280px;
-        height: 320px;
     }
 
-    .container_recuperar .caixa_email {
-        width: 170px;
-        height: 30px;
-        margin-top: 60px;
-    }
-
-    .container_recuperar .email_i {
-        top: 68%;
-        left: 15%;
-        font-size: 20px;
+    .container_recuperar .caixa_email_recuperar {
+        width: 220px;
     }
 
     .recuperar {
@@ -532,63 +625,65 @@ body {
 @media screen and (max-width: 448px) {
     .container_recuperar {
         width: 250px;
-        height: 310px;
     }
 
-    .container_recuperar .caixa_email {
-        width: 150px;
-        height: 30px;
-        margin-top: 80px;
-    }
-
-    .container_recuperar .email_i {
-        top: 74%;
-        font-size: 15px;
+    .container_recuperar .caixa_email_recuperar {
+        width: 200px;
+        height: 40px;
     }
 
     .recuperar {
-        margin-top: 25px;
         width: 200px;
         height: 40px;
+    }
+
+    .logo_gs_recuperar img {
+        width: 200px;
     }
 }
 
 
 /* ===== PORTAL DE ACESSO ===== */
 
-.logo_portal_acesso > img {
+.fundo_painel_acesso {
+    background-color: #ffffff;
     display: flex;
-    width: 200px;
-    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo_portal_acesso_preta_painel > img {
+    display: flex;
+    width: 300px;
+    text-align: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 10px;
 }
 
-.titulo_portal {
+.titulo_portal_painel {
     display: flex;
     justify-content: center;
     font-size: 30px;
     margin-top: 30px;
 }
 
-
-/* ===== MEDIA QUERYS ===== */
-
 @media screen and (max-width: 748px) {
-    .titulo_portal {
+    .titulo_portal_painel {
         font-size: 25px;
         margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 448px) {
-    .titulo_portal {
+    .titulo_portal_painel {
         font-size: 22px;
     }
 }
 
-.subtitulo_portal {
+.subtitulo_portal_painel {
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -596,37 +691,37 @@ body {
 }
 
 @media screen and (max-width: 748px) {
-    .subtitulo_portal {
+    .subtitulo_portal_painel {
         font-size: 15px;
         margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 448px) {
-    .subtitulo_portal {
+    .subtitulo_portal_painel {
         font-size: 14px;
     }
 }
 
-.grid_escolha {
+.grid_escolha_painel {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 300px;
+    column-gap: 100px;
     width: fit-content;
     margin: 40px auto;
 }
 
 @media screen and (max-width: 748px) {
-    .grid_escolha {
+    .grid_escolha_painel {
         column-gap: 20px;
     }
 }
 
-.escolha_aluno,
-.escolha_professor {
+.escolha_aluno_painel,
+.escolha_professor_painel {
     display: flex;
     flex-direction: column;
-    background-color: #e6e6e6;
+    background-color: #d6d6d6;
     width: 320px;
     height: 270px;
     margin: 20px auto;
@@ -635,93 +730,82 @@ body {
     align-items: center;
 }
 
-.escolha_aluno {
+.escolha_aluno_painel {
     border: solid 5px #09C184;
 }
 
-.escolha_professor {
+.escolha_professor_painel {
     border: solid 5px #4190FF;
 }
 
-.escolha_aluno:hover {
+.escolha_aluno_painel:hover {
     border-color: #09d994;
+    background-color: #e5e5e5;
     transform: scale(1.02);
     transition: ease 0.1s;
 }
 
-.escolha_aluno:active {
+.escolha_aluno_painel:active {
     border-color: #09d994;
+    background-color: #e5e5e5;
     transform: scale(0.99);
     transition: ease 0.1s;
 }
 
-.escolha_professor:hover {
+.escolha_professor_painel:hover {
     border-color: #43baff;
+    background-color: #e5e5e5;
     transform: scale(1.02);
     transition: ease 0.1s;
 }
 
-.escolha_professor:active {
+.escolha_professor_painel:active {
     border-color: #43baff;
+    background-color: #e5e5e5;
     transform: scale(0.99);
     transition: ease 0.1s;
 }
 
 @media screen and (max-width: 748px) {
-    .escolha_aluno,
-    .escolha_professor {
+    .escolha_aluno_painel,
+    .escolha_professor_painel {
         width: 200px;
         height: 250px;
     }
 }
 
 @media screen and (max-width: 448px) {
-    .escolha_aluno,
-    .escolha_professor {
+    .escolha_aluno_painel,
+    .escolha_professor_painel {
         display: none;
     }
 }
 
-.escolha_aluno > .img_portal_aluno {
+.escolha_aluno_painel > .img_portal_aluno_painel {
     display: flex;
     width: 170px;
     text-align: center;
     margin: 0 auto;
 }
 
-.escolha_professor > .img_portal_professor {
+.escolha_professor_painel > .img_portal_professor_painel {
     display: flex;
-    width: 200px;
-    text-align: center;
+    width: 170px;
+    justify-content: center;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 748px) {
-    .escolha_aluno > .img_portal_aluno {
+    .escolha_aluno_painel > .img_portal_aluno_painel {
         width: 165px;
     }
 
-    .escolha_professor > .img_portal_professor {
+    .escolha_professor_painel > .img_portal_professor_painel {
         width: 170px;
     }
 }
 
-.ou {
-    display: none;
-}
-
-@media screen and (max-width: 448px) {
-    .ou {
-        display: block;
-        text-align: center;
-        width: 100%;
-        font-size: 23px;
-        color: #7F7F7F;
-        margin: 0 auto;
-    }
-}
-
-.escolha_aluno > h1 {
+.escolha_aluno_painel > h1 {
     display: flex;
     justify-content: center;
     color: #1ca477;
@@ -729,7 +813,7 @@ body {
     margin-top: 30px;
 }
 
-.escolha_professor > h1 {
+.escolha_professor_painel > h1 {
     display: flex;
     justify-content: center;
     color: #4190FF;
@@ -738,13 +822,13 @@ body {
 }
 
 @media screen and (max-width: 748px) {
-    .escolha_aluno > h1,
-    .escolha_professor > h1 {
+    .escolha_aluno_painel > h1,
+    .escolha_professor_painel > h1 {
         font-size: 25px;
     }
 }
 
-.escolha_botoes {
+.escolha_botoes_painel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -753,26 +837,26 @@ body {
     margin-top: 30px;
 }
 
-.escolha_botoes > a {
+.escolha_botoes_painel > a {
     text-decoration: none;
 }
 
 @media screen and (max-width: 448px) {
-    .escolha_botoes {
+    .escolha_botoes_painel {
         width: 100vw;
         gap: 15px;
         margin: 0;
         margin-top: 50px;
     }
 
-    .escolha_botoes > a {
+    .escolha_botoes_painel > a {
         display: block;
         width: fit-content;
         margin: 0 auto;
     }
 }
 
-.botao_p_aluno {
+.botao_p_aluno_painel {
     display: none;
     width: 250px;
     height: 70px;
@@ -785,13 +869,13 @@ body {
     text-decoration: none;
 }
 
-.botao_p_aluno:active {
+.botao_p_aluno_painel:active {
     background-color: #0bb079;
     transform: scale(0.98);
     transition: ease 0.1s;
 }
 
-.botao_p_professor {
+.botao_p_professor_painel {
     display: none;
     width: 250px;
     height: 70px;
@@ -803,19 +887,33 @@ body {
     font-weight: 600;
 }
 
-.botao_p_professor:active {
+.botao_p_professor_painel:active {
     background-color: #1083c5;
     transform: scale(0.98);
     transition: ease 0.1s;
 }
 
+.ou_painel {
+    display: none;
+}
+
 @media screen and (max-width: 448px) {
-    .botao_p_aluno,
-    .botao_p_professor {
+    .botao_p_aluno_painel,
+    .botao_p_professor_painel {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 250px;
+        margin: 0 auto;
+    }
+
+    .ou_painel {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 23px;
+        font-weight: 550;
+        color: #7F7F7F;
         margin: 0 auto;
     }
 }

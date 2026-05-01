@@ -43,7 +43,7 @@
 .acao_clicar_burguer_painel_aluno {
     display: none;
     position: fixed;
-    top: 13.2%;
+    top: 90px;
     background-color: #D7D7D7;
 }
 
@@ -79,13 +79,24 @@
     font-size: 42px;
 }
 
-.painel_aluno_nav_botoes a.painel_aluno_esta_pagina {
-    border-left: 5px solid white;
-    background-color: rgba(2, 115, 77, 0.441);
+.painel_aluno_nav_botoes {
+    position: relative;
 }
 
-.painel_aluno_nav_botoes a.painel_aluno_esta_pagina:hover {
-    background-color: rgba(33, 165, 121, 0.441);
+#barra-ativa {
+    position: absolute;
+    left: -20px;
+    width: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.738);
+    border-radius: 3px;
+    transition: top 0.3s ease, height 0.3s ease;
+}
+
+.painel_aluno_esta_pagina {
+    border-left: solid 5px white;
 }
 
 /* BOTÕES */
