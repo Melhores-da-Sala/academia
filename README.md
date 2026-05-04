@@ -142,8 +142,3 @@ Durante o desenvolvimento, o maior desafio foi a criação de tabelas e dashboar
 
 O projeto passou por várias melhorias desde o protótipo inicial. No começo, a interface tinha muitos elementos visuais que distraíam o usuário. Ao longo das revisões, simplificamos o layout, melhoramos o contraste das cores para acessibilidade e refinamos o espaçamento entre os componentes. Esses ajustes foram fundamentais para transformar um simples site em um sistema de gestão profissional e robusto.
 
----
-
-## Autoavaliação ⭐
-
-Minha contribuição individual focou na arquitetura do CSS e na implementação da responsividade. Sinto que meus pontos fortes foram a organização do código e a atenção aos detalhes visuais. Como ponto a melhorar, identifico a necessidade de estudar mais sobre animações avançadas para tornar a interface ainda mais fluida. No geral, o resultado superou as expectativas e entregou uma solução real para um problema comum no setor fitness.
