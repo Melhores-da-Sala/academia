@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Light.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-Light.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.dashprof-cabecalho {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 30px;
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashprof-menu-hamburguer {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dashprof-logo {
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.dashprof-logo img {
+    max-height: 40px;
+}
+
+.dashprof-modo-escuro {
+    background-color: #295C4B;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Montserrat';
+    transition: 0.3s;
+}
+
+.dashprof-container-principal {
+    display: flex; 
+    min-height: 100vh; 
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s;
+}
+
+.dashprof-barra-lateral {
+    width: 300px;
+    background-color: #4C9CFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3s;
+}
+
+.dashprof-barra-lateral.dashprof-oculta {
+    display: none;
+}
+   
+.dashprof-perfil {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 30px 20px;
+    gap: 15px;
+}
+
+.dashprof-foto-perfil {
+    font-size: 60px;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.dashprof-info-perfil h1 { font-family: 'Montserrat'; font-size: 30px; }
+.dashprof-info-perfil h2 { font-family: 'Montserrat'; font-size: 24px; font-weight: bold; }
+.dashprof-info-perfil p { font-family: 'Montserrat'; font-size: 13px; }
+
+.dashprof-menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashprof-item-menu {
+    text-decoration: none;
+    color: white;
+    background-color: transparent; 
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dashprof-item-menu:hover, .dashprof-item-menu.dashprof-ativo {
+    background-color: #2A3B8F; 
+}
+
+.dashprof-rodape-lateral {
+    margin-top: auto; 
+    padding: 20px 20px 50px 20px;
+}
+
+.dashprof-botao-sair {
+    background-color: #E63900; 
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.dashprof-botao-sair:hover { background-color: #cc3300; }
+
+.dashprof-conteudo {
+    padding: 30px;
+    width: 100%;
+}
+
+.dashprof-boas-vindas {
+    color: #555555;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.dashprof-linha-cards {
+    display: flex;
+    align-items: stretch; 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.dashprof-card {
+    flex: 1 1 0; 
+    display: flex;
+    flex-direction: column; 
+    border-radius: 20px;
+    padding: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dashprof-card-borda {
+    border: 3px solid #4C9CFF;
+    background-color: #EEEEEE;
+}
+.dashprof-card-borda h3 {
+    transition: color 0.3s;
+}
+
+.dashprof-card-azul-cheio {
+    background-color: #4C9CFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashprof-cabecalho-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dashprof-espacohr {
+    padding: 10px;
+}
+
+.dashprof-texto-pequeno {
+    font-size: 12px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.dashprof-seletor-aluno {
+    background-color: #4C9CFF;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashprof-conteudo-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashprof-conteudo-lista p {
+    font-size: 13px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.dashprof-centralizado { text-align: center; }
+.dashprof-centralizado-vertical {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashprof-caixa-progresso {
+    background-color: #4C9CFF; 
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.dashprof-topo-progresso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3); 
+    padding-bottom: 10px;
+}
+
+.dashprof-controles-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashprof-campo-busca {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+.dashprof-campo-busca::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dashprof-lista-alunos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.dashprof-cartao-aluno {
+    flex: 1;
+    text-align: center;
+}
+
+.dashprof-grafico {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.dashprof-coluna-grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dashprof-barra-cinza {
+    width: 15px;
+    height: 80px; 
+    background-color: #E0E0E0; 
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.dashprof-barra-verde {
+    width: 100%;
+    background-color: #00D26A; 
+    border-radius: 5px;
+}
+
+.dashprof-dia {
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.dashprof-nome-aluno {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.dashprof-caixa-status {
+    background-color: #001BFA; 
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.dashprof-caixa-status p {
+    font-weight: bold;
+}
+
+.dashprof-btn-seta {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashprof-btn-seta:hover { opacity: 0.7; }
+
+.dashprof-btn-editar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+.dashprof-btn-editar:hover {
+    color: #4C9CFF;
+    transform: scale(1.1);
+}
+
+body.dashprof-dark-mode {
+    background-color: #121212;
+}
+body.dashprof-dark-mode .dashprof-cabecalho, 
+body.dashprof-dark-mode .dashprof-container-principal {
+    background-color: #121212;
+}
+
+body.dashprof-dark-mode .dashprof-boas-vindas,
+body.dashprof-dark-mode .dashprof-logo,
+body.dashprof-dark-mode .dashprof-menu-hamburguer,
+body.dashprof-dark-mode .dashprof-card-borda h3,
+body.dashprof-dark-mode .dashprof-texto-pequeno,
+body.dashprof-dark-mode .dashprof-conteudo-lista p,
+body.dashprof-dark-mode .dashprof-btn-editar {
+    color: #eeeeee;
+}
+
+body.dashprof-dark-mode .dashprof-card-borda {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
+
+/* ==============================================================
+   RESPONSIVIDADE (Tablets e Mobiles)
+============================================================== */
+
+@media (max-width: 1024px) {
+    .dashprof-linha-cards {
+        flex-wrap: wrap; 
+    }
+    .dashprof-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+    .dashprof-lista-alunos {
+        flex-wrap: wrap; 
+    }
+    .dashprof-cartao-aluno {
+        flex: 1 1 calc(50% - 15px); 
+        margin-bottom: 20px;
+    }
+    .dashprof-barra-lateral {
+        width: 250px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .dashprof-cabecalho {
+        padding: 15px;
+    }
+    
+    .dashprof-container-principal {
+        flex-direction: column; 
+    }
+    
+    .dashprof-barra-lateral {
+        width: 100%;
+        border-radius: 0; 
+        padding-bottom: 20px;
+    }
+    
+    .dashprof-conteudo {
+        padding: 15px;
+    }
+    
+    .dashprof-linha-cards {
+        flex-direction: column; 
+    }
+    
+    .dashprof-card {
+        flex: 1 1 100%; 
+    }
+    
+    .dashprof-topo-progresso {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .dashprof-lista-alunos {
+        flex-direction: column; 
+    }
+    
+    .dashprof-cartao-aluno {
+        flex: 1 1 100%;
+    }
+}
