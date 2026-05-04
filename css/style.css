@@ -1,5 +1,7 @@
 @import url(variables.css);
 @import url(global.css);
+@import url(contas.css);
+@import url(painel_aluno.css);
 @import url(dashboardprofessor.css);
 @import url(contas.css);
 @import url(home-unidades.css);

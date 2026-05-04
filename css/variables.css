@@ -1,10 +1,12 @@
 :root {
     /* Paleta de Cores - Tons de Verde */
-    --cor-primaria: #09C184;
-    --cor-secundaria: #248F6B;
-    --cor-terciaria: #295C4B;
-    --cor-quaternaria: #21332D;
-    --cor-fundo-profundo: #2B3330;
+    --cor-primaria: #09C184;         /* Verde Vibrante (Base) */
+    --cor-secundaria: #248F6B;       /* Verde Médio */
+    --cor-terciaria: #295C4B;        /* Verde Escuro */
+    --cor-quaternaria: #21332D;      /* Verde Petróleo Escuro */
+    --cor-fundo-profundo: #2B3330;   /* Verde Cinzento / Grafite */
+    --cor-fundo-contas: #382157;     /* Roxo Escuro / Grafite */
+    --cor-botao-sair: #CA2C14;
 
     /* Outros tipos de cores */
     --cor-adm: #4190FF;
