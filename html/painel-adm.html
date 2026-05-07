@@ -1,248 +1,236 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+```html
+<!-- ================= HEADER ADM (TOPO DO SITE) ================= -->
+<div class="adm-header">
+    <i class="bi bi-list" id="adm-menu-toggle"></i>
 
-<head>
-    <!-- Configurações básicas -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="/assets/gs logo.png" alt="logo">
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Botão sair -->
+    <a href="/index.html" class="adm-header-logout-btn">
+        <i class="bi bi-arrow-left"></i>
+        <span class="adm-header-logout-text">Sair</span>
+    </a>
+</div>
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<div class="adm-dashboard-app">
 
-    <title>Painel ADM</title>
-</head>
+    <!-- ================= SIDEBAR ADM ================= -->
+    <aside class="adm-sidebar">
 
-<body>
+        <!-- Perfil do administrador -->
+        <div class="adm-sidebar-profile">
+            <i class="bi bi-person-circle"></i>
 
-    <!-- ================= HEADER (TOPO DO SITE) ================= -->
-    <div class="header">
-        <i class="bi bi-list" id="list"></i>
-        <img src="/assets/gs logo.png" alt="logo">
-
-        <!-- Botão sair -->
-        <a href="/index.html" class="sair">
-            <i class="bi bi-arrow-left"></i>
-            <span class="texto">Sair</span>
-        </a>
-    </div>
-
-    <div class="app">
-
-        <!-- ================= SIDEBAR (MENU LATERAL) ================= -->
-        <div class="sidebar">
-
-            <!-- Perfil do usuário -->
-            <div class="sidebar-title">
-                <i class="bi bi-person-circle"></i>
-                <div class="top">
-                    <h1>Olá Ruan!</h1>
-                    <p>Administrador</p>
-                </div>
+            <div class="adm-sidebar-profile-info">
+                <h1>Olá Ruan!</h1>
+                <p>Administrador</p>
             </div>
-
-            <!-- Links de navegação -->
-            <div class="links">
-                <div class="link-page active">
-                    <i class="bi bi-house"></i>
-                    <a href="">Dashboard</a>
-                </div>
-                <div class="link-page">
-                    <i class="bi bi-calendar"></i>
-                    <a href="">Calendário</a>
-                </div>
-                <div class="link-page">
-                    <i class="bi bi-pen"></i>
-                    <a href="">Anotações</a>
-                </div>
-                <div class="link-page">
-                    <i class="bi bi-people-fill"></i>
-                    <a href="">Personais</a>
-                </div>
-            </div>
-
-            <!-- Sair (rodapé da sidebar) -->
-            <a href="index.html" class="sair-seta">
-                <div class="link">
-                    <i class="bi bi-arrow-left"></i>
-                    <span class="texto">Sair</span>
-                </div>
-            </a>
         </div>
 
-        <!-- ================= MAIN (CONTEÚDO PRINCIPAL) ================= -->
-        <div class="main">
+        <!-- Navegação -->
+        <nav class="adm-sidebar-navigation">
 
-            <!-- Título principal -->
-            <h1 class="titulo-main">Bem-vindo de volta, Ruan!</h1>
+            <div class="adm-sidebar-nav-item adm-sidebar-nav-item-active">
+                <i class="bi bi-house"></i>
+                <a href="">Dashboard</a>
+            </div>
 
-            <!-- ================= PARTE DE CIMA (CARDS) ================= -->
-            <div class="dashboard-up">
+            <div class="adm-sidebar-nav-item">
+                <i class="bi bi-calendar"></i>
+                <a href="">Calendário</a>
+            </div>
 
-                <!-- ===== CARD: RELATÓRIOS ===== -->
-                <div class="card">
-                    <div class="card-up">
-                        <p>Relatórios <small> - Suas anotações</small></p>
-                        <i class="bi bi-pen"></i>
-                    </div>
+            <div class="adm-sidebar-nav-item">
+                <i class="bi bi-pen"></i>
+                <a href="">Anotações</a>
+            </div>
 
-                    <div class="hr"></div>
+            <div class="adm-sidebar-nav-item">
+                <i class="bi bi-people-fill"></i>
+                <a href="">Personais</a>
+            </div>
 
-                    <div class="card-down">
-                        <p>Personal Kleber - Melhorar o desempenho geral</p>
-                        <p>Ana Augusta Rodrigues - Limpar 2 banheiros</p>
-                        <p>Pedro Martin Pereira - Melhorar a didática em aula</p>
-                    </div>
+        </nav>
 
-                    <a href="" class="ver-mais">
-                        <i class="bi bi-arrow-down"></i>
-                        <span>Ver mais</span>
-                    </a>
+        <!-- Logout -->
+        <a href="index.html" class="adm-sidebar-logout-link">
+            <div class="adm-sidebar-logout-content">
+                <i class="bi bi-arrow-left"></i>
+                <span class="adm-sidebar-logout-text">Sair</span>
+            </div>
+        </a>
+
+    </aside>
+
+    <!-- ================= MAIN ADM ================= -->
+    <main class="adm-dashboard-main">
+
+        <!-- Título -->
+        <h1 class="adm-dashboard-title">
+            Bem-vindo de volta, Ruan!
+        </h1>
+
+        <!-- ================= TOPO DASHBOARD ================= -->
+        <section class="adm-dashboard-top-section">
+
+            <!-- ===== CARD RELATÓRIOS ===== -->
+            <div class="adm-dashboard-card">
+
+                <div class="adm-dashboard-card-header">
+                    <p>
+                        Relatórios
+                        <small>- Suas anotações</small>
+                    </p>
+
+                    <i class="bi bi-pen"></i>
                 </div>
 
-                <!-- ===== CARD: DIETAS ===== -->
-                <div class="card">
-                    <div class="card-up">
-                        <p>Dietas</p>
+                <div class="adm-dashboard-card-divider"></div>
 
-                        <a href="#" class="ver-mais">
-                            <span>
-                                <i class="bi bi-arrow-left"></i>
-                                Pedro
-                                <i class="bi bi-arrow-right"></i>
-                            </span>
-                        </a>
-
-                        <i class="bi bi-pen icone-editar"></i>
-                    </div>
-
-                    <div class="hr"></div>
-
-                    <div class="card-down">
-                        <p><strong>Café da manhã</strong> - 3 ovos mexidos + 1 pão integral</p>
-                        <p><strong>Lanche</strong> - 1 fruta OU iogurte natural</p>
-                        <p><strong>Refeição</strong> - 150-200g frango/carne + arroz + feijão + salada + azeite</p>
-                    </div>
-
-                    <a href="#" class="ver-mais btn-inferior">
-                        <i class="bi bi-arrow-down"></i>
-                        <span>Ver mais</span>
-                    </a>
+                <div class="adm-dashboard-card-body">
+                    <p>Personal Kleber - Melhorar o desempenho geral</p>
+                    <p>Ana Augusta Rodrigues - Limpar 2 banheiros</p>
+                    <p>Pedro Martin Pereira - Melhorar a didática em aula</p>
                 </div>
 
-                <!-- ===== CARD: MENSAGENS ===== -->
-                <div class="card-msg">
-                    <p class="msg">Mensagens</p>
-                    <div class="content-card-msg">
-                        <div class="card-down-msg">
-                            <p>Nenhuma mensagem</p>
-                        </div>
+                <a href="" class="adm-dashboard-card-action">
+                    <i class="bi bi-arrow-down"></i>
+                    <span>Ver mais</span>
+                </a>
+
+            </div>
+
+            <!-- ===== CARD DIETAS ===== -->
+            <div class="adm-dashboard-card">
+
+                <div class="adm-dashboard-card-header">
+
+                    <p>Dietas</p>
+
+                    <a href="#" class="adm-dashboard-card-switch-user">
+                        <span>
+                            <i class="bi bi-arrow-left"></i>
+                            Pedro
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+                    </a>
+
+                    <i class="bi bi-pen adm-dashboard-edit-icon"></i>
+
+                </div>
+
+                <div class="adm-dashboard-card-divider"></div>
+
+                <div class="adm-dashboard-card-body">
+                    <p>
+                        <strong>Café da manhã</strong>
+                        - 3 ovos mexidos + 1 pão integral
+                    </p>
+
+                    <p>
+                        <strong>Lanche</strong>
+                        - 1 fruta OU iogurte natural
+                    </p>
+
+                    <p>
+                        <strong>Refeição</strong>
+                        - 150-200g frango/carne + arroz + feijão + salada + azeite
+                    </p>
+                </div>
+
+                <a href="#" class="adm-dashboard-card-action adm-dashboard-card-action-bottom">
+                    <i class="bi bi-arrow-down"></i>
+                    <span>Ver mais</span>
+                </a>
+
+            </div>
+
+            <!-- ===== CARD MENSAGENS ===== -->
+            <div class="adm-dashboard-message-card">
+
+                <p class="adm-dashboard-message-title">
+                    Mensagens
+                </p>
+
+                <div class="adm-dashboard-message-content">
+
+                    <div class="adm-dashboard-message-body">
+                        <p>Nenhuma mensagem</p>
                     </div>
+
                 </div>
 
             </div>
 
-            <!-- ================= PARTE DE BAIXO (PROGRESSO) ================= -->
-            <div class="dashboard-down">
+        </section>
 
-                <!-- Título + navegação -->
-                <div class="title">
-                    <h3>Progresso dos alunos</h3>
+        <!-- ================= PROGRESSO DOS ALUNOS ================= -->
+        <section class="adm-dashboard-progress-section">
+
+            <!-- Título -->
+            <div class="adm-dashboard-progress-header">
+
+                <h3>Progresso dos alunos</h3>
+
+                <div class="adm-dashboard-progress-navigation">
                     <i class="bi bi-arrow-left"></i>
                     <i class="bi bi-arrow-right"></i>
                 </div>
 
-                <!-- Lista de alunos -->
-                <div class="data">
+            </div>
 
-                    <!-- ===== ALUNO: PEDRO ===== -->
-                    <div class="aluno">
-                        <div class="grafico">
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra"></div>
-                            <div class="barra"></div>
-                            <div class="barra"></div>
-                        </div>
-                        <h4>Pedro</h4>
-                        <div class="info">
-                            <p><i class="bi bi-heart"></i> BPM inicial - 105</p>
-                            <p><i class="bi bi-heart"></i> BPM final - 143</p>
-                            <p><i class="bi bi-heart"></i> BPM médio - 126</p>
-                            <p><i class="bi bi-tools"></i> Treino de perna</p>
-                        </div>
+            <!-- Lista -->
+            <div class="adm-dashboard-students-grid">
+
+                <!-- ===== ALUNO PEDRO ===== -->
+                <div class="adm-student-progress-card">
+
+                    <div class="adm-student-progress-chart">
+
+                        <div class="adm-progress-bar adm-progress-bar-active"></div>
+                        <div class="adm-progress-bar adm-progress-bar-active"></div>
+                        <div class="adm-progress-bar adm-progress-bar-active"></div>
+                        <div class="adm-progress-bar adm-progress-bar-active"></div>
+
+                        <div class="adm-progress-bar"></div>
+                        <div class="adm-progress-bar"></div>
+                        <div class="adm-progress-bar"></div>
+
                     </div>
 
-                    <!-- ===== ALUNO: ANA ===== -->
-                    <div class="aluno">
-                        <div class="grafico">
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra"></div>
-                            <div class="barra"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra"></div>
-                            <div class="barra"></div>
-                        </div>
-                        <h4>Ana</h4>
-                        <div class="info">
-                            <p><i class="bi bi-heart"></i> BPM inicial - 101</p>
-                            <p><i class="bi bi-heart"></i> BPM final - 133</p>
-                            <p><i class="bi bi-heart"></i> BPM médio - 117</p>
-                            <p><i class="bi bi-tools"></i> Treino de glúteos</p>
-                        </div>
-                    </div>
+                    <h4 class="adm-student-name">Pedro</h4>
 
-                    <!-- ===== ALUNO: JOÃO ===== -->
-                    <div class="aluno">
-                        <div class="grafico">
-                            <div class="barra"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra"></div>
-                            <div class="barra"></div>
-                        </div>
-                        <h4>João</h4>
-                        <div class="info">
-                            <p><i class="bi bi-heart"></i> BPM inicial - 107</p>
-                            <p><i class="bi bi-heart"></i> BPM final - 134</p>
-                            <p><i class="bi bi-heart"></i> BPM médio - 120</p>
-                            <p><i class="bi bi-tools"></i> Treino de glúteos</p>
-                        </div>
-                    </div>
+                    <div class="adm-student-info">
 
-                    <!-- ===== ALUNO: MARIA ===== -->
-                    <div class="aluno">
-                        <div class="grafico">
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra ativo"></div>
-                            <div class="barra"></div>
-                            <div class="barra"></div>
-                        </div>
-                        <h4>Maria</h4>
-                        <div class="info">
-                            <p><i class="bi bi-heart"></i> BPM inicial - 107</p>
-                            <p><i class="bi bi-heart"></i> BPM final - 134</p>
-                            <p><i class="bi bi-heart"></i> BPM médio - 120</p>
-                            <p><i class="bi bi-tools"></i> Treino de glúteos</p>
-                        </div>
+                        <p>
+                            <i class="bi bi-heart"></i>
+                            BPM inicial - 105
+                        </p>
+
+                        <p>
+                            <i class="bi bi-heart"></i>
+                            BPM final - 143
+                        </p>
+
+                        <p>
+                            <i class="bi bi-heart"></i>
+                            BPM médio - 126
+                        </p>
+
+                        <p>
+                            <i class="bi bi-tools"></i>
+                            Treino de perna
+                        </p>
+
                     </div>
 
                 </div>
+
             </div>
 
-        </div>
-    </div>
-    <script src="/js/painel-adm.js"></script>
-</body>
+        </section>
 
-</html>
+    </main>
+
+</div>
+```
