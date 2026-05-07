@@ -8,17 +8,17 @@ a {
 }
 
 /* ===== LAYOUT ===== */
-.app {
+.adm-dashboard-app {
     display: flex;
 }
 
-.main {
+.adm-dashboard-main {
     margin-left: 20px;
     transition: margin 0.4s ease-in-out;
 }
 
 /* ===== HEADER ===== */
-.header {
+.adm-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,18 +26,18 @@ a {
     padding: 20px;
 }
 
-#list {
+#adm-menu-toggle {
     font-size: 40px;
     cursor: pointer;
 }
 
-.header img {
+.adm-header img {
     height: 40px;
     width: auto;
 }
 
 /* ===== SIDEBAR ===== */
-.sidebar {
+.adm-sidebar {
     height: 100vh;
     width: 260px;
     background-color: var(--roxo-adm);
@@ -51,33 +51,33 @@ a {
     white-space: nowrap;
 }
 
-.sidebar.oculta {
+.adm-sidebar.oculta {
     margin-left: -260px;
 }
 
-.sidebar.oculta+.main {
+.adm-sidebar.oculta+.adm-dashboard-main {
     margin-inline: auto;
 }
 
-.sidebar-title {
+.adm-sidebar-profile {
     display: flex;
     align-items: center;
     gap: 15px;
     padding-left: 10px;
 }
 
-.sidebar-title i {
+.adm-sidebar-profile i {
     font-size: 60px;
 }
 
-.top {
+.adm-sidebar-profile-info {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     font-weight: var(--peso-semibold);
 }
 
-.link-page {
+.adm-sidebar-nav-item {
     position: relative;
     display: flex;
     gap: 10px;
@@ -88,11 +88,11 @@ a {
     transition: background-color 0.3s ease;
 }
 
-.link-page:hover {
+.adm-sidebar-nav-item:hover {
     background-color: var(--roxo-hover);
 }
 
-.link-page.active::before {
+.adm-sidebar-nav-item-active::before {
     content: "";
     position: absolute;
     top: 0;
@@ -103,17 +103,17 @@ a {
     border-radius: 0 20px 20px 0;
 }
 
-.link-page i {
+.adm-sidebar-nav-item i {
     font-size: 25px;
 }
 
-.links {
+.adm-sidebar-navigation {
     font-weight: var(--peso-semibold);
 }
 
 /* ===== BOTÕES COMPARTILHADOS ===== */
-.sair,
-.sair-seta {
+.adm-header-logout-btn,
+.adm-sidebar-logout-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -124,49 +124,49 @@ a {
     color: white;
 }
 
-.sair {
+.adm-header-logout-btn {
     display: inline-flex;
 }
 
-.sair-seta {
+.adm-sidebar-logout-link {
     width: 50%;
     margin: 0 auto;
 }
 
-.sair i,
-.sair-seta i {
+.adm-header-logout-btn i,
+.adm-sidebar-logout-link i {
     margin-right: 30px;
     color: black;
 }
 
-.sair span {
+.adm-header-logout-text {
     margin-right: 30px;
 }
 
-.link {
+.adm-sidebar-logout-content {
     display: flex;
     gap: 20px;
 }
 
-.link i {
+.adm-sidebar-logout-content i {
     color: black;
 }
 
 /* ===== DASHBOARD ===== */
-.dashboard-up {
+.adm-dashboard-top-section {
     display: flex;
     justify-content: space-between;
 }
 
-.titulo-main {
+.adm-dashboard-title {
     color: var(--titulo-gray);
     font-size: 23px;
     margin: 0 0 15px;
 }
 
-/* ===== CARDS (compartilhado) ===== */
-.card,
-.card-msg {
+/* ===== CARDS ===== */
+.adm-dashboard-card,
+.adm-dashboard-message-card {
     display: flex;
     flex-direction: column;
     background-color: #eee;
@@ -176,52 +176,52 @@ a {
     max-width: 36%;
 }
 
-.card-up,
-.card-up-msg {
+.adm-dashboard-card-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: var(--peso-semibold);
 }
 
-.card-up small {
+.adm-dashboard-card-header small {
     font-size: 10px;
 }
 
-.hr {
+.adm-dashboard-card-divider {
     background-color: black;
     width: 100%;
     height: 1px;
     margin: 5px 0;
 }
 
-.card-down {
+.adm-dashboard-card-body {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.card-down p,
-.card-down-msg p {
+.adm-dashboard-card-body p,
+.adm-dashboard-message-body p {
     font-weight: var(--peso-semibold);
     font-size: 12px;
     text-align: center;
 }
 
-.card-down-msg p {
+.adm-dashboard-message-body p {
     font-size: 15px;
 }
 
-.content-card-msg {
+.adm-dashboard-message-content {
     margin: auto 0;
 }
 
-.msg {
+.adm-dashboard-message-title {
     margin: 0 auto;
     font-weight: var(--peso-negrito);
 }
 
-.ver-mais {
+.adm-dashboard-card-action,
+.adm-dashboard-card-switch-user {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,18 +236,22 @@ a {
     width: max-content;
 }
 
-.ver-mais span {
+.adm-dashboard-card-switch-user span {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.ver-mais i {
+.adm-dashboard-card-action i {
     font-size: 14px;
 }
 
+.adm-dashboard-edit-icon {
+    cursor: pointer;
+}
+
 /* ===== PROGRESSO DOS ALUNOS ===== */
-.dashboard-down {
+.adm-dashboard-progress-section {
     background-color: var(--cor-adm);
     border-radius: 20px;
     padding: 15px 30px;
@@ -255,7 +259,7 @@ a {
     color: white;
 }
 
-.dashboard-down .title {
+.adm-dashboard-progress-header {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -263,25 +267,25 @@ a {
     margin-bottom: 20px;
 }
 
-.dashboard-down .title h3 {
+.adm-dashboard-progress-header h3 {
     font-weight: var(--peso-semibold);
     font-size: 18px;
     margin-right: auto;
 }
 
-.dashboard-down .title i {
+.adm-dashboard-progress-header i {
     margin-left: 15px;
     cursor: pointer;
     font-size: 20px;
 }
 
-.data {
+.adm-dashboard-students-grid {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.aluno {
+.adm-student-progress-card {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -289,14 +293,14 @@ a {
     max-width: 23%;
 }
 
-.aluno h4 {
+.adm-student-name {
     margin: 5px 0 10px;
     font-size: 16px;
     font-weight: var(--peso-negrito);
 }
 
-/* ===== GRÁFICO DE BARRAS ===== */
-.grafico {
+/* ===== GRÁFICO ===== */
+.adm-student-progress-chart {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -305,7 +309,7 @@ a {
     margin-bottom: 20px;
 }
 
-.barra {
+.adm-progress-bar {
     width: 13%;
     max-width: 16px;
     height: 100%;
@@ -314,7 +318,7 @@ a {
     position: relative;
 }
 
-.barra::before {
+.adm-progress-bar::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -326,7 +330,7 @@ a {
     z-index: 1;
 }
 
-.barra::after {
+.adm-progress-bar::after {
     position: absolute;
     bottom: -18px;
     left: 50%;
@@ -336,110 +340,58 @@ a {
     font-weight: var(--peso-negrito);
 }
 
-/* Labels dos dias */
-.barra:nth-child(1)::after {
+/* ===== LABELS ===== */
+.adm-progress-bar:nth-child(1)::after {
     content: "SEG";
 }
 
-.barra:nth-child(2)::after {
+.adm-progress-bar:nth-child(2)::after {
     content: "TER";
 }
 
-.barra:nth-child(3)::after {
+.adm-progress-bar:nth-child(3)::after {
     content: "QUA";
 }
 
-.barra:nth-child(4)::after {
+.adm-progress-bar:nth-child(4)::after {
     content: "QUI";
 }
 
-.barra:nth-child(5)::after {
+.adm-progress-bar:nth-child(5)::after {
     content: "SEX";
 }
 
-.barra:nth-child(6)::after {
+.adm-progress-bar:nth-child(6)::after {
     content: "SAB";
 }
 
-.barra:nth-child(7)::after {
+.adm-progress-bar:nth-child(7)::after {
     content: "DOM";
 }
 
-/* Alturas por aluno */
-.aluno:nth-child(1) .barra:nth-child(1)::before {
+/* ===== ALTURAS ===== */
+.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(1)::before {
     height: 45%;
 }
 
-.aluno:nth-child(1) .barra:nth-child(2)::before {
+.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(2)::before {
     height: 50%;
 }
 
-.aluno:nth-child(1) .barra:nth-child(3)::before {
+.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(3)::before {
     height: 60%;
 }
 
-.aluno:nth-child(1) .barra:nth-child(4)::before {
+.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(4)::before {
     height: 35%;
 }
 
-.aluno:nth-child(1) .barra:nth-child(5)::before {
+.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(5)::before {
     height: 25%;
 }
 
-.aluno:nth-child(2) .barra:nth-child(1)::before {
-    height: 75%;
-}
-
-.aluno:nth-child(2) .barra:nth-child(2)::before {
-    height: 55%;
-}
-
-.aluno:nth-child(2) .barra:nth-child(5)::before {
-    height: 25%;
-}
-
-.aluno:nth-child(2) .barra:nth-child(6)::before {
-    height: 40%;
-}
-
-.aluno:nth-child(3) .barra:nth-child(2)::before {
-    height: 15%;
-}
-
-.aluno:nth-child(3) .barra:nth-child(3)::before {
-    height: 15%;
-}
-
-.aluno:nth-child(3) .barra:nth-child(4)::before {
-    height: 20%;
-}
-
-.aluno:nth-child(3) .barra:nth-child(5)::before {
-    height: 20%;
-}
-
-.aluno:nth-child(4) .barra:nth-child(1)::before {
-    height: 20%;
-}
-
-.aluno:nth-child(4) .barra:nth-child(2)::before {
-    height: 40%;
-}
-
-.aluno:nth-child(4) .barra:nth-child(3)::before {
-    height: 60%;
-}
-
-.aluno:nth-child(4) .barra:nth-child(4)::before {
-    height: 40%;
-}
-
-.aluno:nth-child(4) .barra:nth-child(5)::before {
-    height: 35%;
-}
-
-/* ===== INFO BOX ===== */
-.info {
+/* ===== INFO ===== */
+.adm-student-info {
     background-color: #0022FF;
     border-radius: 15px;
     padding: 10px 12px;
@@ -449,7 +401,7 @@ a {
     gap: 8px;
 }
 
-.info p {
+.adm-student-info p {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -458,44 +410,40 @@ a {
     margin: 0;
 }
 
-.info i {
+.adm-student-info i {
     font-size: 15px;
 }
 
 /* ===================================================
-   RESPONSIVIDADE — Painel ADM
-   Adicione este bloco ao final do style.css
+   RESPONSIVIDADE
 =================================================== */
 
-/* ===== TABLET (até 1024px) ===== */
 @media (max-width: 1024px) {
 
-    .card,
-    .card-msg {
+    .adm-dashboard-card,
+    .adm-dashboard-message-card {
         max-width: 100%;
         width: 100%;
     }
 
-    .dashboard-up {
+    .adm-dashboard-top-section {
         flex-wrap: wrap;
         gap: 15px;
     }
 
-    .aluno {
+    .adm-student-progress-card {
         max-width: 45%;
     }
 
-    .data {
+    .adm-dashboard-students-grid {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-/* ===== MOBILE (até 768px) ===== */
 @media (max-width: 768px) {
 
-    /* ----- HEADER ----- */
-    .header {
+    .adm-header {
         margin-left: 0;
         padding: 14px 16px;
         position: sticky;
@@ -505,33 +453,30 @@ a {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
-    #list {
+    #adm-menu-toggle {
         font-size: 32px;
     }
 
-    .header img {
+    .adm-header img {
         height: 32px;
     }
 
-    /* Esconde o botão "Sair" do header no mobile (já existe na sidebar) */
-    .header .sair {
+    .adm-header .adm-header-logout-btn {
         display: none;
     }
 
-    /* ----- LAYOUT GERAL ----- */
-    .app {
+    .adm-dashboard-app {
         position: relative;
     }
 
-    .main {
+    .adm-dashboard-main {
         margin-left: 0;
         padding: 16px;
         width: 100%;
         box-sizing: border-box;
     }
 
-    /* ----- SIDEBAR OVERLAY ----- */
-    .sidebar {
+    .adm-sidebar {
         position: fixed;
         top: 0;
         left: 0;
@@ -539,23 +484,19 @@ a {
         z-index: 200;
         border-radius: 0 20px 20px 0;
         box-shadow: 4px 0 20px rgba(0, 0, 0, 0.25);
-        /* Começa escondida no mobile */
         margin-left: -260px;
         transition: margin-left 0.4s ease-in-out;
     }
 
-    /* Quando o JS adiciona a classe 'oculta' no desktop,
-       no mobile ela significa "escondida" — invertemos a lógica */
-    .sidebar:not(.oculta) {
+    .adm-sidebar:not(.oculta) {
         margin-left: 0;
     }
 
-    .sidebar.oculta {
+    .adm-sidebar.oculta {
         margin-left: -260px;
     }
 
-    /* Overlay escuro atrás da sidebar */
-    .sidebar-overlay {
+    .adm-sidebar-overlay {
         display: none;
         position: fixed;
         inset: 0;
@@ -563,106 +504,96 @@ a {
         z-index: 199;
     }
 
-    .sidebar-overlay.visivel {
+    .adm-sidebar-overlay.visivel {
         display: block;
     }
 
-    /* Remove o efeito de margin no .main quando sidebar abre no mobile */
-    .sidebar.oculta+.main {
+    .adm-sidebar.oculta+.adm-dashboard-main {
         margin-inline: 0;
     }
 
-    /* ----- TÍTULO PRINCIPAL ----- */
-    .titulo-main {
+    .adm-dashboard-title {
         font-size: 18px;
         margin-bottom: 12px;
     }
 
-    /* ----- CARDS (DASHBOARD UP) ----- */
-    .dashboard-up {
+    .adm-dashboard-top-section {
         flex-direction: column;
         gap: 14px;
     }
 
-    .card,
-    .card-msg {
+    .adm-dashboard-card,
+    .adm-dashboard-message-card {
         max-width: 100%;
         width: 100%;
         box-sizing: border-box;
     }
 
-    /* Card de mensagens fica compacto */
-    .card-msg {
+    .adm-dashboard-message-card {
         padding: 14px 18px;
     }
 
-    .content-card-msg {
+    .adm-dashboard-message-content {
         padding: 10px 0;
     }
 
-    /* ----- DASHBOARD DOWN (PROGRESSO) ----- */
-    .dashboard-down {
+    .adm-dashboard-progress-section {
         padding: 14px 16px;
         margin-top: 14px;
     }
 
-    .dashboard-down .title h3 {
+    .adm-dashboard-progress-header h3 {
         font-size: 16px;
     }
 
-    /* Alunos em coluna, um por vez */
-    .data {
+    .adm-dashboard-students-grid {
         flex-direction: column;
         gap: 20px;
     }
 
-    .aluno {
+    .adm-student-progress-card {
         max-width: 100%;
         width: 100%;
     }
 
-    /* Gráfico um pouco mais alto para melhor leitura */
-    .grafico {
+    .adm-student-progress-chart {
         height: 70px;
     }
 
-    .barra {
+    .adm-progress-bar {
         max-width: 22px;
     }
 
-    /* Info box com fonte um pouco maior */
-    .info p {
+    .adm-student-info p {
         font-size: 13px;
     }
 
-    /* ----- BOTÃO VER MAIS ----- */
-    .ver-mais {
+    .adm-dashboard-card-action {
         font-size: 13px;
         padding: 6px 18px;
     }
 
-    /* ----- SIDEBAR: ajuste de espaçamento interno ----- */
-    .sair-seta {
+    .adm-sidebar-logout-link {
         width: 70%;
         margin-bottom: 20px;
     }
 }
 
-/* ===== MOBILE PEQUENO (até 400px) ===== */
 @media (max-width: 400px) {
-    .header {
+
+    .adm-header {
         padding: 12px;
     }
 
-    #list {
+    #adm-menu-toggle {
         font-size: 28px;
     }
 
-    .dashboard-down {
+    .adm-dashboard-progress-section {
         padding: 12px;
     }
 
-    .info p {
+    .adm-student-info p {
         font-size: 12px;
     }
 }
