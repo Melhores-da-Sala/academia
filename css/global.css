@@ -1,13 +1,13 @@
 * {
-    font-family: var(--default-font);
+    font-family: var(--fonte-padrao);
     background-color: var(--default-background);
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Montserrat Light */
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/static/Montserrat-Light.woff2') format('woff2'),
@@ -86,7 +86,7 @@
     font-weight: 900;
     font-style: italic;
 }
-
 a {
     color: white;
+    text-decoration: none;
 }

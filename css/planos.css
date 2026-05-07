@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-pagina: #000000;
+    --fundo-cartoes: #323232;
+    --texto-primario: #ffffff;
+    --texto-secundario: #cccccc;
+    --ressalto: #9DC92D;
+    --borda-ciano: #04AFED;
+    --borda-violeta: #5E00E1;
+    --botao: #A51FFE;
+    --check-verde: #2AA639;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--fundo-pagina);
+    color: var(--texto-primario);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.grade-de-precos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+
+.plano-basico,
+.plano-medio,
+.plano-gs {
+    background: var(--fundo-cartoes);
+    border-radius: 20px;
+    padding: 32px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 520px;
+    border: 3px solid transparent;
+}
+
+
+.plano-basico:hover,
+.plano-medio:hover,
+.plano-gs:hover {
+    transform: translateY(-6px);
+}
+
+
+.plano-basico {
+    border-color: var(--ressalto);
+}
+
+.plano-medio {
+    border-color: var(--borda-ciano);
+}
+
+.plano-gs {
+    border-color: var(--borda-violeta);
+}
+
+
+.ressalto {
+    background: var(--ressalto);
+    color: #0a0a0a;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.plano-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.icone {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid currentColor;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.descricao {
+    color: var(--texto-secundario);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 20px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.lista-beneficios {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.item-beneficio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.icone-check {
+    width: 20px;
+    height: 20px;
+    background: var(--check-verde);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-check::after {
+    content: '✓';
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.preco {
+    margin: 20px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.valor-a-pagar {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--ressalto);
+}
+
+.periodo {
+    font-size: 14px;
+    color: var(--texto-secundario);
+    margin-left: 6px;
+}
+
+
+.botao-adquirir {
+    width: 100%;
+    padding: 12px;
+    background: var(--botao);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao-adquirir:hover {
+    background: #7e22ce;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .grade-de-precos {
+        gap: 20px;
+    }
+
+    .plano-basico,
+    .plano-medio,
+    .plano-gs {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .valor-a-pagar {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grade-de-precos {
+        grid-template-columns: 1fr;
+    }
+
+    .descricao {
+        font-size: 14px;
+        margin: 16px 0;
+    }
+
+    .botao-adquirir {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
