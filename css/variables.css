@@ -32,4 +32,15 @@
     --brand-green: #14b886;
     --btn-green: #295e4d;
     --text-white: #ffffff;
+
+    /* planos */
+    --fundo-pagina: #C596F4;
+    --fundo-cartoes: #323232;
+    --texto-primario: #ffffff;
+    --texto-secundario: #cccccc;
+    --ressalto: #9DC92D;
+    --borda-ciano: #04AFED;
+    --borda-violeta: #5E00E1;
+    --botao: #A51FFE;
+    --check-verde: #2AA639;
 }
