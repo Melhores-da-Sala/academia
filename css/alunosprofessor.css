@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+.dashprof-cabecalho {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: white;
+    position: relative;
+    z-index: 3000;
+}
+
+.dashprof-menu-hamburguer {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.dashprof-logo img {
+    height: 40px;
+}
+
+.dashprof-modo-escuro {
+    background-color: #295C4B;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dashprof-container-principal {
+    display: flex;
+}
+
+.dashprof-barra-lateral {
+    width: 300px;
+    min-height: calc(100vh - 70px);
+    background-color: #4C9CFF;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-top: 30px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 2000;
+    transition: left 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashprof-barra-lateral.dashprof-oculta {
+    left: -320px;
+}
+
+
+.dashprof-perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px 30px 20px;
+    color: white;
+}
+
+.dashprof-foto-perfil {
+    font-size: 60px;
+}
+
+.dashprof-info-perfil h2 {
+    font-size: 24px;
+}
+
+.dashprof-info-perfil p {
+    font-size: 14px;
+}
+
+.dashprof-menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashprof-item-menu {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.dashprof-item-menu:hover,
+.dashprof-item-menu.dashprof-ativo {
+    background-color: #2A3B8F;
+}
+
+.dashprof-rodape-lateral {
+    margin-top: auto;
+    padding: 20px;
+}
+
+.dashprof-botao-sair {
+    width: 100%;
+    border: none;
+    background-color: #E63900;
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.alunos-conteudo {
+    flex: 1;
+    padding: 20px 30px;
+    margin-left: 300px;
+    transition: 0.4s;
+}
+
+.dashprof-barra-lateral.dashprof-oculta + .alunos-conteudo {
+    margin-left: 0;
+}
+
+.alunos-topo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.alunos-filtro,
+.alunos-adicionar,
+.alunos-turma {
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.alunos-filtro,
+.alunos-adicionar {
+    background-color: #D9D9D9;
+}
+
+.alunos-turma {
+    background-color: #4B69E2;
+}
+
+.alunos-tabela {
+    display: flex;
+    gap: 20px;
+}
+
+.alunos-coluna {
+    background-color: #BFD6FF;
+    padding: 10px 20px 20px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.alunos-coluna h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.aluno-card {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 12px 18px;
+    margin-bottom: 11px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 40px;
+}
+
+
+@media(max-width: 1000px) {
+    .alunos-tabela {
+        flex-direction: column;
+    }
+
+    .alunos-topo {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 700px) {
+    .dashprof-modo-escuro {
+        display: none;
+    }
+
+    .alunos-topo {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .alunos-conteudo {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
