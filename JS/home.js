@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona o ícone do menu e a caixa de links
     const menuIcon = document.querySelector(".menu-icon");

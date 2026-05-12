@@ -1,5 +1,5 @@
 body .home-unidades {
-    background-color: var(--bg-main);
+    background-color: var(--cor-tela-inicial);
     min-height: 100vh;
 }
 
@@ -345,5 +345,110 @@ body .home-unidades {
         font-size: 20px;
         padding: 15px 40px;
         bottom: -25px;
+    }
+}
+
+
+/* UNIDADES */
+/* Container Principal */
+.gs-unidades-main-section {
+    background-color: var(--cor-tela-inicial); /* Cor de fundo baseada no print */
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gs-unidades-title {
+    color: #1a2e26;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+/* Container que segura Lista + Mapa */
+.gs-unidades-container {
+    background-color: #3b5a4d; /* Fundo verde escuro do card maior */
+    border-radius: 40px;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px;
+    gap: 20px;
+}
+
+/* Coluna da Esquerda (Lista) */
+.gs-unidades-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gs-unidade-card {
+    background-color: #1a2e26;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.gs-unidade-img-wrapper {
+    width: 120px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gs-unidade-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gs-unidade-info {
+    color: white;
+}
+
+.gs-unidade-name {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+
+.gs-unidade-address {
+    font-size: 14px;
+    color: #ff4d8d; /* Rosa neon do endereço */
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Coluna da Direita (Mapa) */
+.gs-unidades-map-wrapper {
+    flex: 1;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.gs-unidades-map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .gs-unidades-container {
+        flex-direction: column;
+    }
+    
+    .gs-unidades-map-wrapper {
+        min-height: 300px;
+        order: -1; /* Mapa aparece em cima no mobile se preferir */
     }
 }
