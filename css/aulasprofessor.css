@@ -128,7 +128,12 @@
     padding: 20px 20px 50px 20px;
 }
 
-.botao-sair {
+.aulasprof-rodape-lateral {
+    margin-top: auto; 
+    padding: 20px 20px 50px 20px;
+}
+
+.aulasprof-botao-sair {
     background-color: #E63900; 
     font-family: 'Montserrat', sans-serif;
     color: white;
