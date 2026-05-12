@@ -19,16 +19,6 @@ body.tela_contas {
     justify-content: center;
     align-items: center;
 }
-
-.homem_foda_login img {
-    width: 150vw;
-    max-width: 750px;
-    user-select: none;
-    height: auto;
-    margin-bottom: -16px;
-    margin-right: 0;
-}
-
 .homem_foda_cadastro {
     width: 750px;
     display: flex;
@@ -36,29 +26,11 @@ body.tela_contas {
     align-items: center;
 }
 
-.homem_foda_cadastro img {
-    width: 150vw;
-    max-width: 750px;
-    user-select: none;
-    height: auto;
-    margin-bottom: -16px;
-    margin-right: 0;
-}
-
 .homem_foda_recuperar {
     width: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.homem_foda_recuperar img {
-    width: 150vw;
-    max-width: 750px;
-    user-select: none;
-    height: auto;
-    margin-bottom: -16px;
-    margin-right: 0;
 }
 
 .logo_gs_login {
@@ -903,4 +875,21 @@ body.fundo_painel_acesso {
         color: #7F7F7F;
         margin: 0 auto;
     }
+}
+
+.homem_foda_login img,
+.homem_foda_cadastro img,
+.homem_foda_recuperar img {
+    height: 190px;
+    width: auto;
+    margin-bottom: -30px;
+}
+
+.homem_foda_login,
+.homem_foda_cadastro,
+.homem_foda_recuperar {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

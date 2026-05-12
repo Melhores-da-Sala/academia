@@ -24,7 +24,7 @@ function toggleSenha() {
   resize();
   window.addEventListener('resize', resize);
 
-  const COUNT = 110;
+  const COUNT = 120;
   const MAX_DIST = 130;
   const particles = [];
 
