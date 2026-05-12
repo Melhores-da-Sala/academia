@@ -1,226 +1,207 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --fundo-pagina: #000000;
-    --fundo-cartoes: #323232;
-    --texto-primario: #ffffff;
-    --texto-secundario: #cccccc;
-    --ressalto: #9DC92D;
-    --borda-ciano: #04AFED;
-    --borda-violeta: #5E00E1;
-    --botao: #A51FFE;
-    --check-verde: #2AA639;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
+body.planos {
     background: var(--fundo-pagina);
     color: var(--texto-primario);
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;   
 }
 
-.container {
+
+.gs-container-planos {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
     max-width: 1200px;
     width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.grade-de-precos {
+.gs-grade-precos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-
-.plano-basico,
-.plano-medio,
-.plano-gs {
-    background: var(--fundo-cartoes);
-    border-radius: 20px;
-    padding: 32px;
-    transition: transform 0.3s ease;
+/* Base dos Cards */
+.gs-card-plano {
+    background-color: #333333; /* Ajuste para o cinza escuro da imagem */
+    border-radius: 10px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
-    min-height: 520px;
+    position: relative; /* Necessário para a etiqueta do topo */
     border: 3px solid transparent;
+    min-height: 540px;
+    box-sizing: border-box;
 }
 
+/* Bordas e Cores Específicas */
+.gs-borda-verde { border-color: #A3D828; }
+.gs-borda-azul  { border-color: #21A8E0; }
+.gs-borda-roxa  { border-color: #6C15D8; }
 
-.plano-basico:hover,
-.plano-medio:hover,
-.plano-gs:hover {
-    transform: translateY(-6px);
+.gs-cor-verde { border-color: #A3D828; }
+.gs-cor-azul  { border-color: #21A8E0; }
+.gs-cor-roxa  { border-color: #6C15D8; }
+
+/* Efeito de Brilho do Card Principal */
+.gs-glow-roxo {
+    box-shadow: 0 0 25px rgba(108, 21, 216, 0.45);
 }
 
-
-.plano-basico {
-    border-color: var(--ressalto);
-}
-
-.plano-medio {
-    border-color: var(--borda-ciano);
-}
-
-.plano-gs {
-    border-color: var(--borda-violeta);
-}
-
-
-.ressalto {
-    background: var(--ressalto);
-    color: #0a0a0a;
-    padding: 8px 16px;
+/* Etiqueta "O mais vantajoso!" */
+.gs-etiqueta-topo {
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    background-color: #A3D828;
+    color: #ffffff;
+    padding: 6px 20px;
     border-radius: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 16px;
 }
 
+/* Header (Ícone e Título) */
+.gs-plano-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
 
-.plano-header {
+.gs-icone-circulo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.gs-plano-titulo {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Descrição Central */
+.gs-plano-descricao {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+}
+
+/* Lista de Benefícios (Plano GS) */
+.gs-lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.gs-item-beneficio {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.icone {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid currentColor;
-}
-
-.titulo {
-    font-size: 24px;
-    font-weight: 800;
-}
-
-
-.descricao {
-    color: var(--texto-secundario);
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 20px 0;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-
-.lista-beneficios {
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.item-beneficio {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.icone-check {
+.gs-icone-check {
     width: 20px;
     height: 20px;
-    background: var(--check-verde);
+    min-width: 20px;
+    background-color: #22c55e;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.icone-check::after {
+.gs-icone-check::after {
     content: '✓';
-    color: #fff;
-    font-size: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
 }
 
+/* Área de Preços (Empurra os preços para o final antes do botão) */
+.gs-area-preco {
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 24px;
+}
 
-.preco {
-    margin: 20px 0;
-    flex-grow: 1;
+.gs-preco-rotulo {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.gs-preco-linha {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-
-.valor-a-pagar {
-    font-size: 32px;
+    gap: 8px;
     font-weight: 800;
-    color: var(--ressalto);
 }
 
-.periodo {
-    font-size: 14px;
-    color: var(--texto-secundario);
-    margin-left: 6px;
+.gs-moeda {
+    font-size: 32px;
+    color: #ffffff;
 }
 
+.gs-valor-destaque {
+    font-size: 36px;
+    color: #E2D928; /* Amarelo igual à foto */
+}
 
-.botao-adquirir {
-    width: 100%;
-    padding: 12px;
-    background: var(--botao);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
+.gs-periodo {
+    font-size: 20px;
     font-weight: 700;
+    color: #ffffff;
+}
+
+/* Botão Adquirir */
+.gs-botao-adquirir {
+    width: 100%;
+    padding: 14px;
+    background-color: #9C33FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 800;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.botao-adquirir:hover {
-    background: #7e22ce;
+.gs-botao-adquirir:hover {
+    background-color: #7E22CE;
 }
 
-
-
-
+/* Responsividade */
 @media (max-width: 1024px) {
-    .grade-de-precos {
-        gap: 20px;
-    }
-
-    .plano-basico,
-    .plano-medio,
-    .plano-gs {
+    .gs-card-plano {
         min-height: auto;
-        padding: 24px;
+        padding: 30px 20px;
     }
-
-    .titulo {
+    
+    .gs-plano-titulo {
         font-size: 20px;
     }
 
-    .valor-a-pagar {
+    .gs-valor-destaque, .gs-moeda {
         font-size: 28px;
     }
 }
 
 @media (max-width: 768px) {
-    .grade-de-precos {
+    .gs-grade-precos {
         grid-template-columns: 1fr;
-    }
-
-    .descricao {
-        font-size: 14px;
-        margin: 16px 0;
-    }
-
-    .botao-adquirir {
-        font-size: 14px;
-        padding: 10px;
     }
 }

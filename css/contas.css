@@ -1,17 +1,4 @@
-canvas {
-    width: 100%;
-    height: 100%;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    touch-action: none;
-}
-
-body.tela-login {
+body.tela_contas {
     background-color: #382157;
     display: flex;
     flex-direction: column;
@@ -32,16 +19,6 @@ body.tela-login {
     justify-content: center;
     align-items: center;
 }
-
-.homem_foda_login img {
-    width: 150vw;
-    max-width: 750px;
-    user-select: none;
-    height: auto;
-    margin-bottom: -16px;
-    margin-right: 0;
-}
-
 .homem_foda_cadastro {
     width: 750px;
     display: flex;
@@ -49,29 +26,11 @@ body.tela-login {
     align-items: center;
 }
 
-.homem_foda_cadastro img {
-    width: 150vw;
-    max-width: 750px;
-    user-select: none;
-    height: auto;
-    margin-bottom: -16px;
-    margin-right: 0;
-}
-
 .homem_foda_recuperar {
     width: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.homem_foda_recuperar img {
-    width: 150vw;
-    max-width: 750px;
-    user-select: none;
-    height: auto;
-    margin-bottom: -16px;
-    margin-right: 0;
 }
 
 .logo_gs_login {
@@ -645,7 +604,7 @@ body.tela-login {
 
 /* ===== PORTAL DE ACESSO ===== */
 
-.fundo_painel_acesso {
+body.fundo_painel_acesso {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -916,4 +875,22 @@ body.tela-login {
         color: #7F7F7F;
         margin: 0 auto;
     }
+}
+
+.homem_foda_login img,
+.homem_foda_cadastro img,
+.homem_foda_recuperar img {
+    height: 190px;
+    width: auto;
+    margin-bottom: -30px;
+    margin-top: 20px;
+}
+
+.homem_foda_login,
+.homem_foda_cadastro,
+.homem_foda_recuperar {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

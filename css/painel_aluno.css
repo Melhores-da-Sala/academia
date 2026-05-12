@@ -1154,3 +1154,70 @@
 }
 
 
+
+
+/* ===================== DARK MODE ===================== */
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* TITULOS */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode small,
+body.dark-mode p {
+    color: #f1f1f1;
+}
+
+/* CARDS */
+body.dark-mode .painel_aluno_proximo_treino,
+body.dark-mode .painel_aluno_progresso,
+body.dark-mode .painel_aluno_mensagens,
+body.dark-mode .painel_aluno_atividades,
+body.dark-mode .bloco_paineldetreinos,
+body.dark-mode .treino_painel_aluno,
+body.dark-mode .bloco_nutricao,
+body.dark-mode .bloco_relatorio_painel_aluno {
+    background-color: #1e1e1e;
+    border-color: #4C9CFF;
+}
+
+/* TEXTO DOS CARDS */
+body.dark-mode .painel_aluno_mensagem_nome,
+body.dark-mode .painel_aluno_mensagem_texto,
+body.dark-mode .painel_aluno_atividades div small,
+body.dark-mode .relatorio_intro,
+body.dark-mode .relatorio_descricao,
+body.dark-mode .bloco_nutricao p {
+    color: #dcdcdc;
+}
+
+/* MENU MOBILE */
+body.dark-mode .menu_mobile_treinos {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .item_menu_mobile {
+    color: white;
+}
+
+body.dark-mode .item_menu_mobile:hover {
+    background-color: #333;
+}
+
+/* GRAFICO */
+body.dark-mode .painel_aluno_barra {
+    background-color: #444;
+}
+
+/* INPUTS E BOTÕES */
+body.dark-mode button {
+    color: white;
+}
+
+/* FUNDO PRINCIPAL */
+body.dark-mode .painel_aluno_painel_principal {
+    background-color: #121212;
+}
