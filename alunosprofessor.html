@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos - GSports</title>
+    <link rel="stylesheet" href="css/alunosprofessor.css">
+    <link rel="stylesheet" href="css/aulasprofessor.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="dashprof-cabecalho">
+        <div class="dashprof-menu-hamburguer" id="dashprof-btn-hamburguer">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="dashprof-logo">
+            <a href="#">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="dashprof-modo-escuro">
+            <i class="bi bi-circle-half"></i>
+            Modo escuro
+        </div>
+    </header>
+    <div class="dashprof-container-principal">
+        <aside class="dashprof-barra-lateral" id="dashprof-barra-lateral">
+            <div class="dashprof-perfil">
+                <div class="dashprof-foto-perfil">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="dashprof-info-perfil">
+                    <h2>Olá Ruan!</h2>
+                    <p>Professor</p>
+                </div>
+            </div>
+
+            <nav class="menu-navegacao">
+                <a href="dashboardprofessor.html" class="item-menu">
+                    <i class="bi bi-house-door"></i> DashBoard</a>
+                <a href="aulasprofessor.html" class="item-menu">
+                    <i class="bi bi-book"></i> Aulas</a>
+                <a href="calendarioprofessor.html" class="item-menu">
+                    <i class="bi bi-calendar3"></i> Calendário</a>
+                <a href="anotacoesprofessor.html" class="item-menu">
+                    <i class="bi bi-pencil"></i> Anotações</a>
+                <a href="alunosprofessor.html" class="item-menu ativo">
+                    <i class="bi bi-people-fill"></i> Alunos</a>
+            </nav>
+            <div class="dashprof-rodape-lateral">
+                <a href="home.html">
+                    <button class="dashprof-botao-sair">
+                        <i class="bi bi-arrow-left"></i> Sair</button>
+                </a>
+            </div>
+        </aside>
+        <main class="alunos-conteudo">
+            <div class="alunos-topo">
+                <div class="alunos-filtro">
+                    <i class="bi bi-search"></i>
+                    Filtrar
+                </div>
+                <div class="alunos-adicionar">
+                    <i class="bi bi-plus-lg"></i>
+                    Adicionar
+                </div>
+                <div class="alunos-turma">
+                    Turma 1
+                </div>
+            </div>
+            <div class="alunos-tabela">
+                <div class="alunos-coluna">
+                    <h2>Nome</h2>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Ana Beatriz Souza</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Carlos Eduardo Lima</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Mariana Costa Silva</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Lucas Pereira Rodrigues</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Gabriela Santos Oliveira</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Rafael Martins Alves</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Juliana Ferreira Mendes</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Fernando Rocha Castro</div>
+                    <div class="aluno-card"><i class="bi bi-person-fill"></i> Camila Gomes Ribeiro</div>
+                </div>
+                <div class="alunos-coluna">
+                    <h2>CPF</h2>
+                    <div class="aluno-card">123.456.789-10</div>
+                    <div class="aluno-card">987.654.321-00</div>
+                    <div class="aluno-card">111.222.333-44</div>
+                    <div class="aluno-card">555.666.777-88</div>
+                    <div class="aluno-card">999.888.777-66</div>
+                    <div class="aluno-card">444.555.666-02</div>
+                    <div class="aluno-card">123.123.123-99</div>
+                    <div class="aluno-card">321.321.321-01</div>
+                    <div class="aluno-card">777.888.999-03</div>
+                </div>
+                <div class="alunos-coluna">
+                    <h2>
+                        Adicionar Informações
+                        <i class="bi bi-pencil-fill"></i>
+                    </h2>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                    <div class="aluno-card"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const btnHamburguer = document.getElementById("dashprof-btn-hamburguer");
+        const barraLateral = document.getElementById("dashprof-barra-lateral");
+        btnHamburguer.addEventListener("click", () => {
+            barraLateral.classList.toggle("dashprof-oculta");
+        });
+    </script>
+</body>
+</html>
