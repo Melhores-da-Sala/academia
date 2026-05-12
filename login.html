@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GSports Login</title>
+</head>
+<body class="tela_contas">
+    <canvas id="bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;"></canvas>
+    <div class="homem_foda_login">
+        <img src="assets/musculoso.png" alt="">
+    </div>
+    <div class="container_login">
+        <div class="logo_gs_login">
+            <img src="assets/logo-branca.png" alt="">
+        </div>
+        <div class="email_login">
+            <div class="email_i_login">
+                <i class="bi bi-envelope"></i>
+            </div>
+            <input class="caixa_email_login" type="email" placeholder="Email">
+        </div>
+        <div class="senha_login">
+            <div class="senha_i_login">
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <input class="caixa_senha_login" type="password" placeholder="Senha" id="campo_senha">
+            <i class="bi bi-eye-slash" id="toggle_olho" onclick="toggleSenha()"></i>
+        </div>
+        <a href="painel_acesso.html">
+            <div class="botao_entrar_login">
+                <input class="entrar_login" type="submit" value="Entrar">
+            </div>
+        </a>
+        <div>
+            <a href="recuperar.html" class="esqueci_senha_login">Esquecia minha senha</a>
+        </div>
+    </div>
+    <script src="JS/contas.js"></script>
+</body>
+</html>

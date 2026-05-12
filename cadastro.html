@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GSports Cadastro</title>
+</head>
+<body class="tela_contas">
+    <canvas id="bg" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;"></canvas>
+    <div class="homem_foda_cadastro">
+        <img src="assets/musculoso.png" alt="">
+    </div>
+    <div class="container_cadastro">
+        <div class="logo_gs_cadastro">
+            <img src="assets/logo-branca.png" alt="">
+        </div>
+        <div class="nome_cadastro">
+            <div class="nome_i_cadastro">
+                <i class="bi bi-person-fill"></i>
+            </div>
+            <input class="caixa_nome_cadastro" type="text" placeholder="Nome Completo">
+        </div>
+        <div class="email_cadastro">
+            <div class="email_i_cadastro">
+                <i class="bi bi-envelope"></i>
+            </div>
+            <input class="caixa_email_cadastro" type="email" placeholder="Email">
+        </div>
+        <div class="senha_cadastro">
+            <div class="senha_i_cadastro">
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <input class="caixa_senha_cadastro" type="password" placeholder="Senha" id="campo_senha">
+            <i class="bi bi-eye-slash" id="toggle_olho_cadastro" onclick="toggleSenha()"></i>
+        </div>
+        <div class="botao_cadastrar_cadastro">
+            <a href="login.html">
+                <input class="cadastrar_cadastro" type="submit" value="Cadastrar">
+            </a>
+        </div>
+        <div>
+            <a href="login.html" class="possui_conta_cadastro">Já possui uma conta?</a>
+        </div>
+    </div>
+    <script src="JS/contas.js"></script>
+</body>
+</html>
