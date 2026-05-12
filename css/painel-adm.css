@@ -8,17 +8,17 @@ a {
 }
 
 /* ===== LAYOUT ===== */
-.adm-dashboard-app {
+.app {
     display: flex;
 }
 
-.adm-dashboard-main {
+.main {
     margin-left: 20px;
     transition: margin 0.4s ease-in-out;
 }
 
 /* ===== HEADER ===== */
-.adm-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,18 +26,18 @@ a {
     padding: 20px;
 }
 
-#adm-menu-toggle {
+#list {
     font-size: 40px;
     cursor: pointer;
 }
 
-.adm-header img {
+.header img {
     height: 40px;
     width: auto;
 }
 
 /* ===== SIDEBAR ===== */
-.adm-sidebar {
+.sidebar {
     height: 100vh;
     width: 260px;
     background-color: var(--roxo-adm);
@@ -51,33 +51,33 @@ a {
     white-space: nowrap;
 }
 
-.adm-sidebar.oculta {
+.sidebar.oculta {
     margin-left: -260px;
 }
 
-.adm-sidebar.oculta+.adm-dashboard-main {
+.sidebar.oculta + .main {
     margin-inline: auto;
 }
 
-.adm-sidebar-profile {
+.sidebar-title {
     display: flex;
     align-items: center;
     gap: 15px;
     padding-left: 10px;
 }
 
-.adm-sidebar-profile i {
+.sidebar-title i {
     font-size: 60px;
 }
 
-.adm-sidebar-profile-info {
+.top {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     font-weight: var(--peso-semibold);
 }
 
-.adm-sidebar-nav-item {
+.link-page {
     position: relative;
     display: flex;
     gap: 10px;
@@ -88,11 +88,11 @@ a {
     transition: background-color 0.3s ease;
 }
 
-.adm-sidebar-nav-item:hover {
+.link-page:hover {
     background-color: var(--roxo-hover);
 }
 
-.adm-sidebar-nav-item-active::before {
+.link-page.active::before {
     content: "";
     position: absolute;
     top: 0;
@@ -103,17 +103,17 @@ a {
     border-radius: 0 20px 20px 0;
 }
 
-.adm-sidebar-nav-item i {
+.link-page i {
     font-size: 25px;
 }
 
-.adm-sidebar-navigation {
+.links {
     font-weight: var(--peso-semibold);
 }
 
 /* ===== BOTÕES COMPARTILHADOS ===== */
-.adm-header-logout-btn,
-.adm-sidebar-logout-link {
+.sair,
+.sair-seta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -124,49 +124,49 @@ a {
     color: white;
 }
 
-.adm-header-logout-btn {
+.sair {
     display: inline-flex;
 }
 
-.adm-sidebar-logout-link {
+.sair-seta {
     width: 50%;
     margin: 0 auto;
 }
 
-.adm-header-logout-btn i,
-.adm-sidebar-logout-link i {
+.sair i,
+.sair-seta i {
     margin-right: 30px;
     color: black;
 }
 
-.adm-header-logout-text {
+.sair span {
     margin-right: 30px;
 }
 
-.adm-sidebar-logout-content {
+.link {
     display: flex;
     gap: 20px;
 }
 
-.adm-sidebar-logout-content i {
+.link i {
     color: black;
 }
 
 /* ===== DASHBOARD ===== */
-.adm-dashboard-top-section {
+.dashboard-up {
     display: flex;
     justify-content: space-between;
 }
 
-.adm-dashboard-title {
+.titulo-main {
     color: var(--titulo-gray);
     font-size: 23px;
     margin: 0 0 15px;
 }
 
-/* ===== CARDS ===== */
-.adm-dashboard-card,
-.adm-dashboard-message-card {
+/* ===== CARDS (compartilhado) ===== */
+.card,
+.card-msg {
     display: flex;
     flex-direction: column;
     background-color: #eee;
@@ -176,52 +176,52 @@ a {
     max-width: 36%;
 }
 
-.adm-dashboard-card-header {
+.card-up,
+.card-up-msg {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: var(--peso-semibold);
 }
 
-.adm-dashboard-card-header small {
+.card-up small {
     font-size: 10px;
 }
 
-.adm-dashboard-card-divider {
+.hr {
     background-color: black;
     width: 100%;
     height: 1px;
     margin: 5px 0;
 }
 
-.adm-dashboard-card-body {
+.card-down {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.adm-dashboard-card-body p,
-.adm-dashboard-message-body p {
+.card-down p,
+.card-down-msg p {
     font-weight: var(--peso-semibold);
     font-size: 12px;
     text-align: center;
 }
 
-.adm-dashboard-message-body p {
+.card-down-msg p {
     font-size: 15px;
 }
 
-.adm-dashboard-message-content {
+.content-card-msg {
     margin: auto 0;
 }
 
-.adm-dashboard-message-title {
+.msg {
     margin: 0 auto;
     font-weight: var(--peso-negrito);
 }
 
-.adm-dashboard-card-action,
-.adm-dashboard-card-switch-user {
+.ver-mais {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,22 +236,18 @@ a {
     width: max-content;
 }
 
-.adm-dashboard-card-switch-user span {
+.ver-mais span {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.adm-dashboard-card-action i {
+.ver-mais i {
     font-size: 14px;
 }
 
-.adm-dashboard-edit-icon {
-    cursor: pointer;
-}
-
 /* ===== PROGRESSO DOS ALUNOS ===== */
-.adm-dashboard-progress-section {
+.dashboard-down {
     background-color: var(--cor-adm);
     border-radius: 20px;
     padding: 15px 30px;
@@ -259,7 +255,7 @@ a {
     color: white;
 }
 
-.adm-dashboard-progress-header {
+.dashboard-down .title {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -267,25 +263,25 @@ a {
     margin-bottom: 20px;
 }
 
-.adm-dashboard-progress-header h3 {
+.dashboard-down .title h3 {
     font-weight: var(--peso-semibold);
     font-size: 18px;
     margin-right: auto;
 }
 
-.adm-dashboard-progress-header i {
+.dashboard-down .title i {
     margin-left: 15px;
     cursor: pointer;
     font-size: 20px;
 }
 
-.adm-dashboard-students-grid {
+.data {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.adm-student-progress-card {
+.aluno {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -293,14 +289,14 @@ a {
     max-width: 23%;
 }
 
-.adm-student-name {
+.aluno h4 {
     margin: 5px 0 10px;
     font-size: 16px;
     font-weight: var(--peso-negrito);
 }
 
-/* ===== GRÁFICO ===== */
-.adm-student-progress-chart {
+/* ===== GRÁFICO DE BARRAS ===== */
+.grafico {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -309,7 +305,7 @@ a {
     margin-bottom: 20px;
 }
 
-.adm-progress-bar {
+.barra {
     width: 13%;
     max-width: 16px;
     height: 100%;
@@ -318,7 +314,7 @@ a {
     position: relative;
 }
 
-.adm-progress-bar::before {
+.barra::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -330,7 +326,7 @@ a {
     z-index: 1;
 }
 
-.adm-progress-bar::after {
+.barra::after {
     position: absolute;
     bottom: -18px;
     left: 50%;
@@ -340,58 +336,40 @@ a {
     font-weight: var(--peso-negrito);
 }
 
-/* ===== LABELS ===== */
-.adm-progress-bar:nth-child(1)::after {
-    content: "SEG";
-}
+/* Labels dos dias */
+.barra:nth-child(1)::after { content: "SEG"; }
+.barra:nth-child(2)::after { content: "TER"; }
+.barra:nth-child(3)::after { content: "QUA"; }
+.barra:nth-child(4)::after { content: "QUI"; }
+.barra:nth-child(5)::after { content: "SEX"; }
+.barra:nth-child(6)::after { content: "SAB"; }
+.barra:nth-child(7)::after { content: "DOM"; }
 
-.adm-progress-bar:nth-child(2)::after {
-    content: "TER";
-}
+/* Alturas por aluno */
+.aluno:nth-child(1) .barra:nth-child(1)::before { height: 45%; }
+.aluno:nth-child(1) .barra:nth-child(2)::before { height: 50%; }
+.aluno:nth-child(1) .barra:nth-child(3)::before { height: 60%; }
+.aluno:nth-child(1) .barra:nth-child(4)::before { height: 35%; }
+.aluno:nth-child(1) .barra:nth-child(5)::before { height: 25%; }
 
-.adm-progress-bar:nth-child(3)::after {
-    content: "QUA";
-}
+.aluno:nth-child(2) .barra:nth-child(1)::before { height: 75%; }
+.aluno:nth-child(2) .barra:nth-child(2)::before { height: 55%; }
+.aluno:nth-child(2) .barra:nth-child(5)::before { height: 25%; }
+.aluno:nth-child(2) .barra:nth-child(6)::before { height: 40%; }
 
-.adm-progress-bar:nth-child(4)::after {
-    content: "QUI";
-}
+.aluno:nth-child(3) .barra:nth-child(2)::before { height: 15%; }
+.aluno:nth-child(3) .barra:nth-child(3)::before { height: 15%; }
+.aluno:nth-child(3) .barra:nth-child(4)::before { height: 20%; }
+.aluno:nth-child(3) .barra:nth-child(5)::before { height: 20%; }
 
-.adm-progress-bar:nth-child(5)::after {
-    content: "SEX";
-}
+.aluno:nth-child(4) .barra:nth-child(1)::before { height: 20%; }
+.aluno:nth-child(4) .barra:nth-child(2)::before { height: 40%; }
+.aluno:nth-child(4) .barra:nth-child(3)::before { height: 60%; }
+.aluno:nth-child(4) .barra:nth-child(4)::before { height: 40%; }
+.aluno:nth-child(4) .barra:nth-child(5)::before { height: 35%; }
 
-.adm-progress-bar:nth-child(6)::after {
-    content: "SAB";
-}
-
-.adm-progress-bar:nth-child(7)::after {
-    content: "DOM";
-}
-
-/* ===== ALTURAS ===== */
-.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(1)::before {
-    height: 45%;
-}
-
-.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(2)::before {
-    height: 50%;
-}
-
-.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(3)::before {
-    height: 60%;
-}
-
-.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(4)::before {
-    height: 35%;
-}
-
-.adm-student-progress-card:nth-child(1) .adm-progress-bar:nth-child(5)::before {
-    height: 25%;
-}
-
-/* ===== INFO ===== */
-.adm-student-info {
+/* ===== INFO BOX ===== */
+.info {
     background-color: #0022FF;
     border-radius: 15px;
     padding: 10px 12px;
@@ -401,7 +379,7 @@ a {
     gap: 8px;
 }
 
-.adm-student-info p {
+.info p {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -410,190 +388,6 @@ a {
     margin: 0;
 }
 
-.adm-student-info i {
+.info i {
     font-size: 15px;
-}
-
-/* ===================================================
-   RESPONSIVIDADE
-=================================================== */
-
-@media (max-width: 1024px) {
-
-    .adm-dashboard-card,
-    .adm-dashboard-message-card {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .adm-dashboard-top-section {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .adm-student-progress-card {
-        max-width: 45%;
-    }
-
-    .adm-dashboard-students-grid {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .adm-header {
-        margin-left: 0;
-        padding: 14px 16px;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background-color: white;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
-
-    #adm-menu-toggle {
-        font-size: 32px;
-    }
-
-    .adm-header img {
-        height: 32px;
-    }
-
-    .adm-header .adm-header-logout-btn {
-        display: none;
-    }
-
-    .adm-dashboard-app {
-        position: relative;
-    }
-
-    .adm-dashboard-main {
-        margin-left: 0;
-        padding: 16px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .adm-sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        z-index: 200;
-        border-radius: 0 20px 20px 0;
-        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.25);
-        margin-left: -260px;
-        transition: margin-left 0.4s ease-in-out;
-    }
-
-    .adm-sidebar:not(.oculta) {
-        margin-left: 0;
-    }
-
-    .adm-sidebar.oculta {
-        margin-left: -260px;
-    }
-
-    .adm-sidebar-overlay {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.45);
-        z-index: 199;
-    }
-
-    .adm-sidebar-overlay.visivel {
-        display: block;
-    }
-
-    .adm-sidebar.oculta+.adm-dashboard-main {
-        margin-inline: 0;
-    }
-
-    .adm-dashboard-title {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
-
-    .adm-dashboard-top-section {
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    .adm-dashboard-card,
-    .adm-dashboard-message-card {
-        max-width: 100%;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .adm-dashboard-message-card {
-        padding: 14px 18px;
-    }
-
-    .adm-dashboard-message-content {
-        padding: 10px 0;
-    }
-
-    .adm-dashboard-progress-section {
-        padding: 14px 16px;
-        margin-top: 14px;
-    }
-
-    .adm-dashboard-progress-header h3 {
-        font-size: 16px;
-    }
-
-    .adm-dashboard-students-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .adm-student-progress-card {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .adm-student-progress-chart {
-        height: 70px;
-    }
-
-    .adm-progress-bar {
-        max-width: 22px;
-    }
-
-    .adm-student-info p {
-        font-size: 13px;
-    }
-
-    .adm-dashboard-card-action {
-        font-size: 13px;
-        padding: 6px 18px;
-    }
-
-    .adm-sidebar-logout-link {
-        width: 70%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .adm-header {
-        padding: 12px;
-    }
-
-    #adm-menu-toggle {
-        font-size: 28px;
-    }
-
-    .adm-dashboard-progress-section {
-        padding: 12px;
-    }
-
-    .adm-student-info p {
-        font-size: 12px;
-    }
 }
