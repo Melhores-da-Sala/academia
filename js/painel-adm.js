@@ -1,7 +1,6 @@
 const btnMenu = document.getElementById('list');
 const sidebar = document.querySelector('.sidebar');
 
-// Cria o overlay dinamicamente
 const overlay = document.createElement('div');
 overlay.classList.add('sidebar-overlay');
 document.body.appendChild(overlay);
@@ -20,7 +19,6 @@ function fecharSidebar() {
     overlay.classList.remove('visivel');
 }
 
-// Ícone do menu hamburguer
 btnMenu.addEventListener('click', function () {
     if (isMobile()) {
         const aberta = !sidebar.classList.contains('oculta');
@@ -30,17 +28,28 @@ btnMenu.addEventListener('click', function () {
     }
 });
 
-// Clique fora da sidebar (no overlay) fecha ela
 overlay.addEventListener('click', fecharSidebar);
 
-// Garante estado correto ao redimensionar
 window.addEventListener('resize', () => {
     if (!isMobile()) {
         overlay.classList.remove('visivel');
     }
 });
 
-// Mobile: começa com sidebar oculta
 if (isMobile()) {
     sidebar.classList.add('oculta');
 }
+
+document.getElementById('link-personais').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Remove active de todos
+    document.querySelectorAll('.link-page').forEach(el => el.classList.remove('active'));
+
+    // Adiciona active no Personais
+    this.closest('.link-page').classList.add('active');
+
+    // Abre/fecha o dropdown
+    const details = document.querySelector('.dropdown');
+    details.open = !details.open;
+});

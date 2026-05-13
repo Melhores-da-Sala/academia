@@ -114,7 +114,7 @@ a {
 /* ===== BOTÕES COMPARTILHADOS ===== */
 .sair,
 .sair-seta {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-sair);
@@ -126,6 +126,7 @@ a {
 
 .sair {
     display: inline-flex;
+    gap: 8px;
 }
 
 .sair-seta {
@@ -135,17 +136,18 @@ a {
 
 .sair i,
 .sair-seta i {
-    margin-right: 30px;
     color: black;
 }
 
-.sair span {
-    margin-right: 30px;
+#sair-2 {
+    width: 60%;
 }
 
 .link {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .link i {

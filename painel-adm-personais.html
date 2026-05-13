@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <title>Painel ADM</title>
+  </head>
+
+  <body>
+    <!-- ================= HEADER (TOPO DO SITE) ================= -->
+    <div class="header">
+      <i class="bi bi-list" id="list"></i>
+      <img src="/assets/logo-branca.png" alt="logo" />
+
+      <!-- Botão sair -->
+      <a href="/home.html" class="sair">
+        <i class="bi bi-arrow-left"></i>
+        <span class="texto">Sair</span>
+      </a>
+    </div>
+
+    <div class="app">
+      <!-- ================= SIDEBAR (MENU LATERAL) ================= -->
+      <div class="sidebar">
+        <!-- Perfil do usuário -->
+        <div class="sidebar-title">
+          <i class="bi bi-person-circle"></i>
+          <div class="top">
+            <h1>Olá Ruan!</h1>
+            <p>Administrador</p>
+          </div>
+        </div>
+
+        <!-- Links de navegação -->
+        <div class="links">
+          <div class="link-page">
+            <i class="bi bi-house"></i>
+            <a href="/painel-adm.html">Dashboard</a>
+          </div>
+          <div class="link-page">
+            <i class="bi bi-calendar"></i>
+            <a href="/painel-adm-calendario.html">Calendário</a>
+          </div>
+          <div class="link-page active">
+            <i class="bi bi-pen"></i>
+            <a href="#">Anotações</a>
+          </div>
+          <div class="link-page">
+            <i class="bi bi-people-fill"></i>
+            <a href="#" id="link-personais">Personais</a>
+          </div>
+        </div>
+
+        <!-- Sair (rodapé da sidebar) -->
+        <a href="index.html" class="sair-seta" id="sair-2">
+          <div class="link">
+            <i class="bi bi-arrow-left"></i>
+            <span class="texto">Sair</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ================= MAIN (CONTEÚDO PRINCIPAL) ================= -->
+      <div class="main">
+        <div class="personais-ativos">
+          <div class="top-personais">
+            <h1>Personais ativos</h1>
+            <p>6</p>
+          </div>
+          <ul>
+            <li>Matheus</li>
+            <li>Perdo</li>
+            <li>Pedro</li>
+            <li>Augusto</li>
+            <li>Gustavo</li>
+            <li>Thiago</li>
+            <li>Carlos</li>
+            <li>Samuel</li>
+          </ul>
+        </div>
+
+        <div class="personais-total">
+          <details class="dropdown">
+            <summary style="cursor: pointer"><i class="bi bi-chevron-down"></i>Personais</summary>
+            <div class="conteudo">
+              <div class="anotacao">
+                <h1>Matheus</h1>
+                <a href="#">Abrir anotacoes</a>
+              </div>
+              <div class="anotacao">
+                <h1>Pedro</h1>
+                <a href="#">Abrir anotacoes</a>
+              </div>
+              <div class="anotacao">
+                <h1>Augusto</h1>
+                <a href="#">Abrir anotacoes</a>
+              </div>
+              <div class="anotacao">
+                <h1>Gustavo</h1>
+                <a href="#">Abrir anotacoes</a>
+              </div>
+              <div class="anotacao">
+                <h1>Thiago</h1>
+                <a href="#">Abrir anotacoes</a>
+              </div>
+              <div class="anotacao">
+                <h1>Carlos</h1>
+                <a href="#">Abrir anotacoes</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+    <script src="/js/painel-adm.js"></script>
+  </body>
+</html>
