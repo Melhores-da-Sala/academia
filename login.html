@@ -20,20 +20,20 @@
             <div class="email_i_login">
                 <i class="bi bi-envelope"></i>
             </div>
-            <input class="caixa_email_login" type="email" placeholder="Email">
+            <input id="emailLogin" class="caixa_email_login" type="email" placeholder="Email">
         </div>
         <div class="senha_login">
             <div class="senha_i_login">
                 <i class="bi bi-lock-fill"></i>
             </div>
-            <input class="caixa_senha_login" type="password" placeholder="Senha" id="campo_senha">
+            <input id="senhaLogin" class="caixa_senha_login" type="password" placeholder="Senha">
             <i class="bi bi-eye-slash" id="toggle_olho" onclick="toggleSenha()"></i>
         </div>
-        <a href="painel_acesso.html">
-            <div class="botao_entrar_login">
-                <input class="entrar_login" type="submit" value="Entrar">
-            </div>
-        </a>
+        <div class="botao_entrar_login">
+            <button id="btnLogin" class="entrar_login">
+                Entrar
+            </button>
+        </div>
         <div>
             <a href="recuperar.html" class="esqueci_senha_login">Esquecia minha senha</a>
         </div>

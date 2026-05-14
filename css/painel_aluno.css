@@ -30,6 +30,11 @@
 }
 
 
+.menu_mobile_treinos {
+    display: none;
+}
+
+
 /* ===================== Burguer mebile ===================== */
 
 .painel_aluno_burguer { 
@@ -43,34 +48,6 @@
     color: white;
     background-color: var(--cor-primaria);
     border-radius: 50%;
-}
-
-/* ===================== Ação do burguer ===================== */
-
-.acao_clicar_burguer_painel_aluno {
-    display: none;
-    position: fixed;
-    top: 90px;
-    background-color: #D7D7D7;
-}
-
-.acao_clicar_burguer_painel_aluno.ativo {
-    display: block;
-}
-
-.acao_clicar_burguer_painel_aluno i{
-    font-size: 27px;
-    gap: 20px;
-}
-
-.acao_clicar_burguer_painel_aluno small{
-    font-size: 17px;
-    font-weight: 530;
-}
-
-.acao_clicar_burguer_painel_aluno a {
-    text-decoration: none;
-    color: black;
 }
 
 
@@ -529,7 +506,6 @@
     flex-direction: column;
 }
 
-/* 👇 Aqui está o ponto chave */
 .exercicios_treinos_aluno h3 {
     font-size: 15px;
     font-weight: bold;
@@ -677,6 +653,25 @@
 @media screen and  (max-width: 768px) {
 
     .painel_aluno_header_mobile {
+        display: flex;
+    }
+
+    .menu_mobile_treinos {
+    position: fixed;
+    top: 90px;
+    right: 5%;
+    width: 220px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    z-index: 999;
+    }
+
+    .menu_mobile_treinos.ativo {
         display: flex;
     }
 
