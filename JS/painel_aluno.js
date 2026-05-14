@@ -15,14 +15,17 @@ const links = document.querySelectorAll(".painel_aluno_nav_botoes a");
 // ======================
 // SAUDAÇÃO
 // ======================
-if (saudacao) {
-    saudacao.textContent = nomeAluno ? `Olá, ${nomeAluno}!` : 'Olá';
+const nome = localStorage.getItem("nomeUsuario");
+
+const nomeDesktop = document.getElementById("nomeUsuario");
+const nomeMobile = document.getElementById("nomeUsuarioMobile");
+
+if (nomeDesktop) {
+    nomeDesktop.innerText = `Olá ${nome}`;
 }
 
-if (saudacao_h1) {
-    saudacao_h1.textContent = nomeAluno 
-        ? `Bem-vindo de volta, ${nomeAluno}!` 
-        : 'Bem-vindo de volta!';
+if (nomeMobile) {
+    nomeMobile.innerText = `Olá ${nome}`;
 }
 
 // ======================

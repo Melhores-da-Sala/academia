@@ -169,7 +169,7 @@ body.tela_contas {
 #toggle_olho_cadastro {
     position: absolute;
     top: 16%;
-    right: 9%;
+    right: 7%;
     font-size: 20px;
     color: #7F7F7F;
     cursor: pointer;
@@ -681,7 +681,7 @@ body.fundo_painel_acesso {
     display: flex;
     flex-direction: column;
     background-color: #d6d6d6;
-    width: 320px;
+    width: 300px;
     height: 270px;
     margin: 20px auto;
     border-radius: 15px;
@@ -689,7 +689,28 @@ body.fundo_painel_acesso {
     align-items: center;
 }
 
-.escolha_aluno_painel {
+.escolha_aluno_painel a img,
+.escolha_professor_painel a img{
+    width: 200px;
+    height: 140px;
+}
+
+.escolha_aluno_painel a h1,
+.escolha_professor_painel a h1{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.escolha_aluno_painel a h1{
+    color: #09C184;
+}
+
+.escolha_professor_painel a h1{
+    color: #4190FF;
+}
+
+.escolha_aluno_painel{
     border: solid 5px #09C184;
 }
 
