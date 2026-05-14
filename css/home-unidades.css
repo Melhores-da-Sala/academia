@@ -395,6 +395,16 @@ body .home-unidades {
     align-items: center;
     padding: 15px;
     gap: 20px;
+    
+    /* ADICIONADO: Cursor de clique e transição suave */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ADICIONADO: Efeito de quando o mouse passa por cima (Hover) */
+.gs-unidade-card:hover {
+    transform: scale(1.04); /* Aumenta o card em 4% */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra para dar efeito de profundidade */
 }
 
 .gs-unidade-img-wrapper {
