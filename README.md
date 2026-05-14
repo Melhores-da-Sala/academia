@@ -1,15 +1,15 @@
 # 📄 Documentação Individual — Painel Administrativo ERP
 
 **📚 Disciplina:** Desenvolvimento Front-end  
-**📅 Data:** 30/04/2026  
+**📅 Data:** 14/05/2026
 
 ---
 
-- 🏷️ **Nome do Projeto:** MedSync ERP  
+- 🏷️ **Nome do Projeto:** GSports ERP  
 
 - 🏥 **Segmento Escolhido:** Área da Saúde
 
-- 🚀 **Nome da Equipe:** Melhores da Sala  
+- 🚀 **Nome da Equipe:** Melhores da Sala 
 - 👥 **Nome dos Alunos:**  
   - Gabriel Leonardo Vicente Cancian N°02  
   - Gustavo Lopez Zampiron N°09  
