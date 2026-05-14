@@ -575,7 +575,9 @@
     margin-top: 500px;
 }
 
-
+.logo_portal_acesso_preta_painel {
+    margin-bottom: -50px;
+}
 /* ===================== Painel do Aluno - Relatórios ===================== */
 
 .h1_relatorios_painel_aluno {
@@ -647,6 +649,8 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+
 
 /* ===================== Painel do Aluno - Tablet ===================== */
 
