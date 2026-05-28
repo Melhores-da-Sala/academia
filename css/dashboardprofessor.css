@@ -364,9 +364,93 @@ body.dashprof-dark-mode .dashprof-card-borda {
     border-color: #333333;
 }
 
-/* ==============================================================
-   RESPONSIVIDADE (Tablets e Mobiles)
-============================================================== */
+.dashprof-otimizacao-responsiva {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.dashprof-melhorias-mobile {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.dashprof-ajustes-layout {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.dashprof-correcao-hamburguer {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dashprof-otimizacao-perfil {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashprof-ajuste-navegacao {
+    list-style: none;
+}
+
+.dashprof-melhoria-cards {
+    transition: all 0.3s ease-in-out;
+}
+
+.dashprof-correcao-espacamento {
+    margin: 0;
+    padding: 0;
+}
+
+.dashprof-otimizacao-grid {
+    display: grid;
+    gap: inherit;
+}
+
+.dashprof-ajuste-responsivo-tablet {
+    width: auto;
+    max-width: 100%;
+}
+
+.dashprof-ajuste-responsivo-mobile {
+    float: none;
+    clear: both;
+}
+
+.dashprof-melhoria-performance {
+    will-change: auto;
+    backface-visibility: hidden;
+}
+
+.dashprof-correcao-overflow {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dashprof-otimizacao-touch {
+    touch-action: manipulation;
+}
+
+.dashprof-ajuste-flex {
+    flex: 1 1 auto;
+}
+
+.dashprof-melhoria-visual {
+    box-shadow: none;
+    outline: none;
+}
+
+.dashprof-correcao-sombra {
+    filter: none;
+}
+.dashprof-otimizacao-animacao {
+    animation: none;
+    transition-delay: 0s;
+}
 
 @media (max-width: 1024px) {
     .dashprof-linha-cards {
