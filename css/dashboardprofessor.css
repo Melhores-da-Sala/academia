@@ -447,3 +447,68 @@ body.dashprof-dark-mode .dashprof-card-borda {
 .dashprof-correcao-sombra {
     filter: none;
 }
+.dashprof-otimizacao-animacao {
+    animation: none;
+    transition-delay: 0s;
+}
+
+@media (max-width: 1024px) {
+    .dashprof-linha-cards {
+        flex-wrap: wrap; 
+    }
+    .dashprof-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+    .dashprof-lista-alunos {
+        flex-wrap: wrap; 
+    }
+    .dashprof-cartao-aluno {
+        flex: 1 1 calc(50% - 15px); 
+        margin-bottom: 20px;
+    }
+    .dashprof-barra-lateral {
+        width: 250px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .dashprof-cabecalho {
+        padding: 15px;
+    }
+    
+    .dashprof-container-principal {
+        flex-direction: column; 
+    }
+    
+    .dashprof-barra-lateral {
+        width: 100%;
+        border-radius: 0; 
+        padding-bottom: 20px;
+    }
+    
+    .dashprof-conteudo {
+        padding: 15px;
+    }
+    
+    .dashprof-linha-cards {
+        flex-direction: column; 
+    }
+    
+    .dashprof-card {
+        flex: 1 1 100%; 
+    }
+    
+    .dashprof-topo-progresso {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .dashprof-lista-alunos {
+        flex-direction: column; 
+    }
+    
+    .dashprof-cartao-aluno {
+        flex: 1 1 100%;
+    }
+}
