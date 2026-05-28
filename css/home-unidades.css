@@ -3,10 +3,6 @@ body .home-unidades {
     min-height: 100vh;
 }
 
-/* =========================================
-   HEADER (NAVBAR GLOBAL)
-   ========================================= */
-
 .gs-global-header {
     display: flex;
     justify-content: space-between;
@@ -66,10 +62,6 @@ body .home-unidades {
     color: var(--brand-green);
     cursor: pointer;
 }
-
-/* =========================================
-   CONTEÚDO PRINCIPAL (HOME HERO)
-   ========================================= */
 
 .gs-home-main-section {
     display: flex;
@@ -138,10 +130,6 @@ body .home-unidades {
     background-color: #1e4a3b;
 }
 
-/* =========================================
-   FOOTER GLOBAL
-   ========================================= */
-
 .gs-global-footer {
     background-color: var(--bg-navbar);
     padding: 40px 0;
@@ -184,10 +172,6 @@ body .home-unidades {
     transform: translateY(-3px);
 }
 
-/* =========================================
-   RESPONSIVIDADE
-   ========================================= */
-
 .gs-header-menu-icon {
     display: none;
     color: var(--brand-green);
@@ -204,7 +188,85 @@ body .home-unidades {
     display: block;
 }
 
-/* Tablet */
+.gs-melhoria-performance-unidades {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.gs-otimizacao-cards-unidades {
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.gs-correcao-responsiva-unidades {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.gs-melhoria-touch-unidades {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gs-ajuste-layout-unidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: inherit;
+}
+
+.gs-otimizacao-map-unidades {
+    will-change: transform;
+    pointer-events: auto;
+}
+
+.gs-melhoria-visual-unidades {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.gs-correcao-espacamento-unidades {
+    margin: 0;
+    padding: 0;
+}
+
+.gs-ajuste-zindex-unidades {
+    z-index: 1;
+    position: relative;
+}
+
+.gs-melhoria-grid-unidades {
+    display: grid;
+    gap: inherit;
+}
+
+.gs-otimizacao-scroll-unidades {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+.gs-correcao-sombra-unidades {
+    filter: none;
+}
+
+.gs-melhoria-animacao-unidades {
+    animation: none;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+}
+
+.gs-otimizacao-imagem-unidades {
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.gs-ajuste-flex-unidades {
+    flex: 1 1 auto;
+    align-self: auto;
+}
+
 @media (max-width: 992px) {
     .gs-logo-theme-dark {
         display: none;
@@ -309,7 +371,6 @@ body .home-unidades {
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .gs-global-header {
         height: 80px;
@@ -348,11 +409,8 @@ body .home-unidades {
     }
 }
 
-
-/* UNIDADES */
-/* Container Principal */
 .gs-unidades-main-section {
-    background-color: var(--cor-tela-inicial); /* Cor de fundo baseada no print */
+    background-color: var(--cor-tela-inicial);
     padding: 60px 20px;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -368,9 +426,8 @@ body .home-unidades {
     font-weight: 800;
 }
 
-/* Container que segura Lista + Mapa */
 .gs-unidades-container {
-    background-color: #3b5a4d; /* Fundo verde escuro do card maior */
+    background-color: #3b5a4d;
     border-radius: 40px;
     display: flex;
     max-width: 1000px;
@@ -380,7 +437,6 @@ body .home-unidades {
     gap: 20px;
 }
 
-/* Coluna da Esquerda (Lista) */
 .gs-unidades-list {
     flex: 1;
     display: flex;
@@ -421,12 +477,11 @@ body .home-unidades {
 
 .gs-unidade-address {
     font-size: 14px;
-    color: #ff4d8d; /* Rosa neon do endereço */
+    color: #ff4d8d;
     margin: 0;
     font-weight: bold;
 }
 
-/* Coluna da Direita (Mapa) */
 .gs-unidades-map-wrapper {
     flex: 1;
     background-color: white;
@@ -441,7 +496,6 @@ body .home-unidades {
     object-fit: cover;
 }
 
-/* Responsividade para Celulares */
 @media (max-width: 768px) {
     .gs-unidades-container {
         flex-direction: column;
@@ -449,6 +503,6 @@ body .home-unidades {
     
     .gs-unidades-map-wrapper {
         min-height: 300px;
-        order: -1; /* Mapa aparece em cima no mobile se preferir */
+        order: -1;
     }
 }
