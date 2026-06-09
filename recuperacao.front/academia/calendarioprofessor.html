@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário do Professor - GSports</title>
+    <link rel="stylesheet" href="css/calendarioprofessor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <div class="calendario-overlay" id="calendario-overlay"></div>
+
+    <header class="calendario-cabecalho">
+        <div class="calendario-menu-hamburguer" id="calendario-btn-hamburguer">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="calendario-logo">
+            <a href="dashboardprofessor.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="calendario-modo-escuro" id="calendario-btn-modo-escuro">
+            <span class="calendario-icone-lua">
+                <i class="bi bi-circle-half"></i>
+            </span>
+            Modo escuro
+        </div>
+    </header>
+
+    <div class="calendario-container-principal">
+
+        <aside class="calendario-barra-lateral" id="calendario-barra-lateral">
+            <div class="calendario-perfil">
+                <div class="calendario-foto-perfil">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="calendario-info-perfil">
+                    <h2>Olá Ruan!</h2>
+                    <p>Professor</p>
+                </div>
+            </div>
+
+            <nav class="calendario-menu-navegacao">
+                <a href="dashboardprofessor.html" class="calendario-item-menu">
+                    <i class="bi bi-house-door"></i>
+                    Dashboard
+                </a>
+                <a href="aulasprofessor.html" class="calendario-item-menu">
+                    <i class="bi bi-book"></i>
+                    Aulas
+                </a>
+                <a href="calendarioprofessor.html" class="calendario-item-menu calendario-ativo">
+                    <i class="bi bi-calendar3"></i>
+                    Calendário
+                </a>
+                <a href="anotacoesprofessor.html" class="calendario-item-menu">
+                    <i class="bi bi-pencil"></i>
+                    Anotações
+                </a>
+                <a href="alunosprofessor.html" class="calendario-item-menu">
+                    <i class="bi bi-people-fill"></i>
+                    Alunos
+                </a>
+            </nav>
+
+            <div class="calendario-rodape-lateral">
+                <a href="index.html">
+                    <button class="calendario-botao-sair">
+                        <i class="bi bi-arrow-left"></i>
+                        Sair
+                    </button>
+                </a>
+            </div>
+        </aside>
+
+        <div class="cal-conteudo">
+            <div class="cal-card">
+                <div class="cal-header">
+                    <button class="cal-nav-btn">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <span class="cal-mes">Janeiro</span>
+                    <button class="cal-nav-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="cal-grid">
+                    <div class="cal-dia-semana">Seg</div>
+                    <div class="cal-dia-semana">Ter</div>
+                    <div class="cal-dia-semana">Qua</div>
+                    <div class="cal-dia-semana">Qui</div>
+                    <div class="cal-dia-semana">Sex</div>
+                    <div class="cal-dia-semana">Sab</div>
+                    <div class="cal-dia-semana">Dom</div>
+
+                    <div class="cal-dia vazio"></div>
+                    <div class="cal-dia vazio"></div>
+
+                    <div class="cal-dia peito">1</div>
+                    <div class="cal-dia costas">2</div>
+                    <div class="cal-dia perna">3</div>
+                    <div class="cal-dia descanso">4</div>
+                    <div class="cal-dia peito">5</div>
+
+                    <div class="cal-dia costas">6</div>
+                    <div class="cal-dia perna">7</div>
+                    <div class="cal-dia descanso">8</div>
+                    <div class="cal-dia peito">9</div>
+                    <div class="cal-dia costas">10</div>
+                    <div class="cal-dia perna">11</div>
+                    <div class="cal-dia descanso">12</div>
+
+                    <div class="cal-dia peito">13</div>
+                    <div class="cal-dia costas">14</div>
+                    <div class="cal-dia perna">15</div>
+                    <div class="cal-dia descanso">16</div>
+                    <div class="cal-dia peito">17</div>
+                    <div class="cal-dia costas">18</div>
+                    <div class="cal-dia perna">19</div>
+
+                    <div class="cal-dia descanso">20</div>
+                    <div class="cal-dia peito">21</div>
+                    <div class="cal-dia costas">22</div>
+                    <div class="cal-dia perna">23</div>
+                    <div class="cal-dia descanso">24</div>
+                    <div class="cal-dia peito">25</div>
+                    <div class="cal-dia costas">26</div>
+
+                    <div class="cal-dia perna">27</div>
+                    <div class="cal-dia descanso">28</div>
+                    <div class="cal-dia peito">29</div>
+                    <div class="cal-dia costas">30</div>
+                    <div class="cal-dia perna">31</div>
+                </div>
+            </div>
+
+            <div class="cal-legenda">
+                <div class="cal-legenda-item">
+                    <div class="cal-legenda-cor peito"></div>
+                    <span class="cal-legenda-texto">Treino de Peito, Ombro e Triceps</span>
+                </div>
+                <div class="cal-legenda-item">
+                    <div class="cal-legenda-cor costas"></div>
+                    <span class="cal-legenda-texto">Treino de Costas e Bíceps</span>
+                </div>
+                <div class="cal-legenda-item">
+                    <div class="cal-legenda-cor perna"></div>
+                    <span class="cal-legenda-texto">Treino de Perna</span>
+                </div>
+                <div class="cal-legenda-item">
+                    <div class="cal-legenda-cor descanso"></div>
+                    <span class="cal-legenda-texto">Descansar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btnHamburguer = document.getElementById("calendario-btn-hamburguer");
+        const barraLateral = document.getElementById("calendario-barra-lateral");
+        const overlay = document.getElementById("calendario-overlay");
+
+        btnHamburguer.addEventListener("click", () => {
+            barraLateral.classList.toggle("oculta");
+            if (!barraLateral.classList.contains("oculta")) {
+                overlay.classList.add("ativo");
+            } else {
+                overlay.classList.remove("ativo");
+            }
+        });
+
+        overlay.addEventListener("click", () => {
+            barraLateral.classList.add("oculta");
+            overlay.classList.remove("ativo");
+        });
+
+        const btnModoEscuro = document.getElementById("calendario-btn-modo-escuro");
+        btnModoEscuro.addEventListener("click", () => {
+            document.body.classList.toggle("calendario-dark-mode");
+        });
+    </script>
+</body>
+</html>

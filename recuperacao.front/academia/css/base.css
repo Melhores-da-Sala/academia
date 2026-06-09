@@ -1,0 +1,140 @@
+* {
+    font-family: var(--fonte-padrao);
+    background-color: var(--default-background);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Light.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-Light.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Montserrat Regular Italic */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Italic.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-Italic.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Montserrat SemiBold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-SemiBold.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-SemiBold.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Montserrat Bold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-Bold.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Montserrat Bold Italic */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-BoldItalic.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Montserrat ExtraBold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-ExtraBold.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Montserrat ExtraBold Italic */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-ExtraBoldItalic.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Montserrat Black Italic */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-BlackItalic.woff2') format('woff2'),
+         url('../fonts/Montserrat/static/Montserrat-BlackItalic.woff') format('woff'),
+         url('../fonts/Montserrat/static/Montserrat-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    /* Paleta de Cores - Tons de Verde */
+    --cor-primaria: #09C184;         /* Verde Vibrante (Base) */
+    --cor-secundaria: #248F6B;       /* Verde Médio */
+    --cor-terciaria: #295C4B;        /* Verde Escuro */
+    --cor-quaternaria: #21332D;      /* Verde Petróleo Escuro */
+    --cor-fundo-profundo: #2B3330;   /* Verde Cinzento / Grafite */
+    --cor-fundo-contas: #382157;     /* Roxo Escuro / Grafite */
+    --cor-botao-sair: #CA2C14;
+    --cor-tela-inicial: #ACACAC;
+
+    /* Outros tipos de cores */
+    --cor-adm: #4190FF;
+
+    /* Configurações de Tipografia */
+    --fonte-padrao: 'Montserrat', sans-serif;
+
+    /* Pesos da Montserrat (Weights) */
+    --peso-claro: 300;
+    --peso-regular: 400;
+    --peso-italico: 400;
+    --peso-semibold: 600;
+    --peso-negrito: 700;
+    --peso-negrito-italico: 700;
+    --peso-extranegrito: 800;
+    --peso-extranegrito-italico: 800;
+    --peso-preto-italico: 900;
+
+    /* Cores globais */
+    --bg-main: #b8b8b8;
+    --bg-navbar: #2e3532;
+    --bg-logo-box: #cccccc;
+    --brand-green: #14b886;
+    --btn-green: #295e4d;
+    --text-white: #ffffff;
+
+    /* planos */
+    --fundo-pagina: #C596F4;
+    --fundo-cartoes: #323232;
+    --texto-primario: #ffffff;
+    --texto-secundario: #cccccc;
+    --ressalto: #9DC92D;
+    --borda-ciano: #04AFED;
+    --borda-violeta: #5E00E1;
+    --botao: #A51FFE;
+    --check-verde: #2AA639;
+}
