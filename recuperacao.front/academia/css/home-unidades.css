@@ -1,0 +1,508 @@
+body .home-unidades {
+    background-color: var(--cor-tela-inicial);
+    min-height: 100vh;
+}
+
+.gs-global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-navbar);
+    height: 100px;
+    width: 100%;
+}
+
+.gs-header-logo-area {
+    background-color: var(--bg-logo-box);
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gs-header-logo {
+    height: 85px;
+    width: auto;
+    object-fit: contain;
+}
+
+.gs-header-nav-links {
+    display: flex;
+    gap: 8vw;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.gs-header-nav-links a {
+    text-decoration: none;
+    color: var(--brand-green);
+    font-weight: var(--peso-regular);
+    font-size: 20px;
+    transition: opacity 0.3s ease, font-weight 0.3s ease;
+}
+
+.gs-header-nav-links a.gs-nav-item-active {
+    font-weight: var(--peso-negrito);
+}
+
+.gs-header-nav-links a:hover {
+    opacity: 0.8;
+}
+
+.gs-header-profile-icon {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.gs-header-profile-icon i {
+    font-size: 40px;
+    color: var(--brand-green);
+    cursor: pointer;
+}
+
+.gs-home-main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.gs-home-hero-banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 700px;
+    background-image: url('../assets/homem-treino.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+
+.gs-home-hero-content {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: var(--text-white);
+}
+
+.gs-home-hero-content h1 {
+    font-size: 42px;
+    font-weight: var(--peso-extranegrito);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.gs-home-hero-content p {
+    font-size: 15px;
+    font-weight: var(--peso-negrito);
+    line-height: 1.5;
+    max-width: 400px;
+    margin-left: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.gs-home-hero-cta-button {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--btn-green);
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: var(--peso-negrito);
+    padding: 20px 80px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.gs-home-hero-cta-button:hover {
+    background-color: #1e4a3b;
+}
+
+.gs-global-footer {
+    background-color: var(--bg-navbar);
+    padding: 40px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.gs-footer-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.gs-footer-brand img {
+    height: 50px;
+}
+
+.gs-footer-copyright p {
+    color: var(--text-white);
+    font-size: 14px;
+    font-weight: var(--peso-regular);
+    letter-spacing: 1px;
+}
+
+.gs-footer-social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.gs-footer-social-icons a {
+    color: var(--brand-green);
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.gs-footer-social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.gs-header-menu-icon {
+    display: none;
+    color: var(--brand-green);
+    font-size: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.gs-logo-theme-white {
+    display: none;
+}
+
+.gs-logo-theme-dark {
+    display: block;
+}
+
+.gs-melhoria-performance-unidades {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.gs-otimizacao-cards-unidades {
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.gs-correcao-responsiva-unidades {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.gs-melhoria-touch-unidades {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gs-ajuste-layout-unidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: inherit;
+}
+
+.gs-otimizacao-map-unidades {
+    will-change: transform;
+    pointer-events: auto;
+}
+
+.gs-melhoria-visual-unidades {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.gs-correcao-espacamento-unidades {
+    margin: 0;
+    padding: 0;
+}
+
+.gs-ajuste-zindex-unidades {
+    z-index: 1;
+    position: relative;
+}
+
+.gs-melhoria-grid-unidades {
+    display: grid;
+    gap: inherit;
+}
+
+.gs-otimizacao-scroll-unidades {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+.gs-correcao-sombra-unidades {
+    filter: none;
+}
+
+.gs-melhoria-animacao-unidades {
+    animation: none;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+}
+
+.gs-otimizacao-imagem-unidades {
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.gs-ajuste-flex-unidades {
+    flex: 1 1 auto;
+    align-self: auto;
+}
+
+@media (max-width: 992px) {
+    .gs-logo-theme-dark {
+        display: none;
+    }
+
+    .gs-logo-theme-white {
+        display: block;
+        height: 60px;
+    }
+
+    .gs-global-header {
+        height: 100px;
+        position: relative;
+    }
+
+    .gs-header-nav-links {
+        display: none;
+    }
+
+    .gs-header-menu-icon {
+        display: block;
+    }
+
+    .gs-header-nav-links.ativo, 
+    .gs-header-nav-links.gs-nav-ativo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-navbar);
+        padding: 30px 0;
+        gap: 30px;
+        z-index: 999;
+        box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+    }
+
+    .gs-header-logo-area {
+        background-color: transparent;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .gs-header-logo {
+        height: 80px;
+    }
+
+    .gs-header-profile-icon {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .gs-header-profile-icon i {
+        font-size: 45px;
+    }
+
+    .gs-home-main-section {
+        padding: 0;
+    }
+
+    .gs-home-hero-banner {
+        border-radius: 0;
+        height: 600px;
+    }
+
+    .gs-home-hero-content {
+        right: auto;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    .gs-home-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .gs-home-hero-content p {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .gs-home-hero-cta-button {
+        font-size: 26px;
+        padding: 18px 50px;
+        bottom: -30px;
+    }
+
+    .gs-footer-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .gs-footer-copyright p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gs-global-header {
+        height: 80px;
+    }
+
+    .gs-header-menu-icon {
+        font-size: 40px;
+    }
+
+    .gs-header-logo {
+        height: 50px;
+    }
+
+    .gs-header-profile-icon i {
+        font-size: 35px;
+    }
+
+    .gs-home-hero-banner {
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .gs-home-hero-content h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .gs-home-hero-content p {
+        font-size: 12px;
+    }
+
+    .gs-home-hero-cta-button {
+        font-size: 20px;
+        padding: 15px 40px;
+        bottom: -25px;
+    }
+}
+
+.gs-unidades-main-section {
+    background-color: var(--cor-tela-inicial);
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gs-unidades-title {
+    color: #1a2e26;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.gs-unidades-container {
+    background-color: #3b5a4d;
+    border-radius: 40px;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px;
+    gap: 20px;
+}
+
+.gs-unidades-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gs-unidade-card {
+    background-color: #1a2e26;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.gs-unidade-img-wrapper {
+    width: 120px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gs-unidade-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gs-unidade-info {
+    color: white;
+}
+
+.gs-unidade-name {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+
+.gs-unidade-address {
+    font-size: 14px;
+    color: #ff4d8d;
+    margin: 0;
+    font-weight: bold;
+}
+
+.gs-unidades-map-wrapper {
+    flex: 1;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.gs-unidades-map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gs-unidades-container {
+        flex-direction: column;
+    }
+    
+    .gs-unidades-map-wrapper {
+        min-height: 300px;
+        order: -1;
+    }
+}
