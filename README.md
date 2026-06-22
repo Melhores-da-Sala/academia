@@ -1,4 +1,4 @@
-# 📄 Documentação Individual — Painel Administrativo ERP
+# 📄 Documentação GSports ERP
 
 **📚 Disciplina:** Desenvolvimento Front-end  
 **📅 Data:** 14/05/2026
